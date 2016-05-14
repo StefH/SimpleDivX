@@ -1,0 +1,139 @@
+;Translation by : Cristiano Portela (onthewayhome)
+
+[SimpleDivX]
+;Input
+INPUT_FILES=Arquivos de origem
+FOLDER=Diretório
+VOB_FILES=Arquivos VOB
+CHECK_MAIN=Selecionar filme
+CHECK_ALL=Selecionar todos os arquivos
+VIDEO_INFORMATION=Informações de video
+RESOLUTION=Resolução
+ASPECT_RATIO=Aspecto
+FRAME_RATE=Frame Rate
+VIDEO_FORMAT=Formato
+MOVIE_LENGTH=Duração
+
+;Video
+VIDEO_OPTIONS=Opções de Video
+FRAME_OPTIONS=Opções de frames
+FRAMES_PER_SECOND=Frames/Segundo
+ADVANCED=Avançado
+VIDEO_CHECKING=Verificar ID da seqüência de video
+VIDEO_STREAM_ID=ID da seqüência de video
+CHECK_AUTO=Auto-detectar crop e resizing
+WIDTH=Largura
+HEIGHT=Altura
+PREVIEW=Pré-visualização
+RESIZING=Redimensionar
+CROPPING=Cropping
+CUSTOM_OUTPUT_FORMAT=Formato de saída
+OPEN_VOB_LBA=Abrir VOB bitstream como LBA
+FRAME_RANGE=Selecionar de
+TO=a
+
+;Audio
+GENERAL_AUDIO=Opções Gerais de Audio
+CREATE_AUDIO=Criar Audio
+AUDIO_STREAMS_LANGUAGES=Idiomas das Streams de audio
+CHECK_AUDIO=Verificar idioma do audio
+EXTRACT_ALL_AUDIO=Extrair todas os streams de audio
+CONVERT_ALL_AUDIO=Converter todos os streams de audio
+AUDIO_FORMAT=Formato de Audio
+TWO_CHANNELS=(2 canais)
+SIX_CHANNELS=(6 canais)
+AUDIO_BITRATE_AND_CONVERSION=Bitrate de audio e Conversão
+AUDIO_KBPS=Bitrate de audio (kbps)
+SAMPLE_RATE_CONVERSION=Conversão de amostragem
+AMPLIFY=Amplificar
+NORMALIZE=Normalizar atenuando picos
+NORMALIZE_MIDNIGHT=Normalizar amplificando (Midnight Mode)
+
+;Codec
+CODEC_OPTIONS=Opções do codec
+DIVX_OPTIONS=Opções DivX
+CHOOSE_CODEC=Selecionar Codec
+ADVANCED_SETTINGS=Opções avançadas
+MAX_KEYFRAME=Keyframes a cada
+FIRST_PASS_LOCATION=Localização do log da primeira passada
+AUTO_LOGFILENAMING=Automático (Arquivo de log será nomeado após o nome do projeto)
+MANUAL_LOGFILENAMING=Manual
+PASS_OPTIONS=Opções de passada
+CREATE_ONE_PASS_MOVIE=Fazer apenas 1 passada 
+CREATE_TWO_PASS_MOVIE=Fazer 2 passadas
+ONLY_FIRST_PASS=Fazer apenas a primeira passada
+ONLY_SECOND_PASS=Fazer apenas a segunda passada
+BOTH_PASSES=Fazer as duas passadas
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Opções de arquivos
+ADVANCED_BITRATE=Parâmetros avançados de Bitrate
+END_CREDITS_OPTIONS=Opções de créditos finais
+ENTER_BITRATE=Bitrate
+ENTER_FINAL_FILESIZE=Escolher tamanho do arquivo final
+GET_TIME=Obter duração do filme
+FILESIZE=Tamanho do arquivo
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Descrição
+HOURS=Hora(s)
+MINUTES=Minuto(s)
+SECONDS=Segundo(s)
+SLOW=Filme sem muita ação
+NORMAL=Filme normal
+FAST=Muita ação no filme ou cores brilhantes
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Não incluir créditos no filme
+ENDCREDITS_RECOMPRESS=Recomprimir créditos para
+RECOMPRESS_PCT=% do bitrate do filme
+ENDCREDITS_AUTOMATIC=Detecção automática
+ENDCREDITS_MANUAL=Créditos começam em
+WORKAROUND1=Corrigir 'mpeg2avi trava na 2-passada'
+
+;Project
+PROJECT_OPTIONS=Opções de Projeto
+BATCH_SETTINGS=Opções em lote
+PROJECT_NAME=Nome do Projeto
+TEMP_FOLDER=Pasta temporária
+OUTPUT_FOLDER=Pasta de saída
+OVERWRITE_FILES=Sobrescrever arquivos (sem avisar)
+DELETE_TEMP=Apagar arquivos temporários ao finalizar
+SPLIT_FILE=Dividir arquivo aos
+NORMAL=Normal
+BATCH_MODE=Em lote
+BUTTON_UP=Subir
+BUTTON_DOWN=Descer
+BUTTON_ADD=Adicionar
+BUTTON_REMOVE=Remover
+BUTTON_MODIFY=Modificar
+BUTTON_CLEAR=Limpar
+DELETE_BATCH=Apagar lote quando concluído
+
+;Output
+SYSTEM_SETTINGS=Opções de sistema
+SHUTDOWN=Desligar o Windows ao finalizar
+STATUS_INFORMATION=Situação
+PROGRESS=Progresso
+
+;Settings
+EXTERNAL_PROGRAMS=Programas externos
+ADVANCED_AUDIO_SETTINGS=Definições avançadas de audio
+AC3_PRELOAD_VALUE=Pré-carga do AC3
+AC3_INTERLEAVE_VALUE=Entrelaçamento do AC3
+PRIORITY_SETTINGS=Opções de prioridade
+AUDO_PRIORITY=Audio
+VIDEO_PRIORITY=Video
+DISK_PRIORITY=Disco
+SETTING_WARNING=(*) Definir para Highest não é recomendado!
+GET_DEFAULT_VALUES=Voltar ao padrão
+LANGUAGE_SETTINGS=Opções de idioma
+LANGUAGE=Idioma
+
+; External Program Settings
+PROGRAM_LOCATIONS=Localização de Programas Externos
+SAVE=Salvar
+CANCEL=Cancelar
+
+;Misc
+GENERAL_SUBTITLES=Opções de legendas
+CREATE_SUBTITLES=Inserir legendas utilizando VobSub
+SELECT_ALL_LANGUAGES=Selecionar todos os idiomas

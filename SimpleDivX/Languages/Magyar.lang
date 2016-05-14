@@ -1,0 +1,142 @@
+; Fordította : Hazso  Hazso@send.hu
+
+[SimpleDivX]
+;Input
+INPUT_FILES=Bemeneti Fájl
+FOLDER=Könyvtár
+VOB_FILES=VOB Fájl
+CHECK_MAIN=Film Kijelölés
+CHECK_ALL=Összes Fálj Kijelölés
+VIDEO_INFORMATION=Kép Információ
+RESOLUTION=Felbontás
+ASPECT_RATIO=Képméretarány
+FRAME_RATE=Képkocka Gyakoriság
+VIDEO_FORMAT=Video Formátum
+MOVIE_LENGTH=Film Hosszúság
+FRAMES=Képkocka
+
+
+;Video
+VIDEO_OPTIONS=Kép Beállitás
+FRAME_OPTIONS=Képkocka Beállitás
+FRAMES_PER_SECOND=Képkocka/Másodperc
+ADVANCED=Speciális
+VIDEO_CHECKING=Engedélyezi Kép Adat Vizsgálatát
+VIDEO_STREAM_ID=Kép Adat
+CHECK_AUTO=Auto Képvágás és Átméretezés Információ
+WIDTH=Szélesség
+HEIGHT=Magasság
+PREVIEW=Megtekint
+RESIZING=Átméretezés
+CROPPING=Vágás
+CUSTOM_OUTPUT_FORMAT=Kimeneti Formátum
+OPEN_VOB_LBA=Megnyitja VOB Adatot LBA
+FRAME_RANGE=Képkocka Választás Szerint
+TO=tõl
+
+;Audio
+GENERAL_AUDIO=Hang Beállítás
+CREATE_AUDIO=Hang Létrehozás
+AUDIO_STREAMS_LANGUAGES=Hang Adat És Nyelv
+CHECK_AUDIO=Hang Vizsgálat
+EXTRACT_ALL_AUDIO=Kiválasztja Mindegyik Hangot
+CONVERT_ALL_AUDIO=Átalakitja Mindegyik Hangot
+LANGUAGE=Nyelv
+AUDIO_FORMAT=Hang Formátum
+TWO_CHANNELS=(2 csatorna)
+SIX_CHANNELS=(6 csatorna)
+AUDIO_BITRATE_AND_CONVERSION=Hangbitráta Átalakítása
+AUDIO_KBPS=Bitráta (kbps)
+SAMPLE_RATE_CONVERSION=Hangminta Átalakítása
+AMPLIFY=Erõsít
+NORMALIZE=Csúcs Szint Normalizálása.
+NORMALIZE_MIDNIGHT= Csúcs Szint Normalizálása. (Mély Mód)
+
+;Codec
+CODEC_OPTIONS=Kódóló Beállítások
+DIVX_OPTIONS=DivX Beállítások
+CHOOSE_CODEC=Kódoló Választó
+ADVANCED_SETTINGS=Haladó Beallítások
+MAX_KEYFRAME=Maximum kulcs-képkocka
+FIRST_PASS_LOCATION=Elsõ menet Naplóállomány Elhelyezése
+AUTO_LOGFILENAMING=Automata (Naplóállomány elnevezése Projekt név Után.)
+MANUAL_LOGFILENAMING=Kézi
+PASS_OPTIONS=Menet Beállítások
+CREATE_ONE_PASS_MOVIE=Készítsen1MenetesFilmet 
+CREATE_TWO_PASS_MOVIE=Készítsen2MenetesFilmet 
+ONLY_FIRST_PASS=Készítse El az Elsõ Menetet.
+ONLY_SECOND_PASS= Készítse El a Második Menetet.
+BOTH_PASSES=Készítse El Mindkét Menetet.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitráta / Fájl Beállítás
+ADVANCED_BITRATE=Speciális Bitráta Paraméterek
+END_CREDITS_OPTIONS=Stáblista Beállítása
+ENTER_BITRATE=Bitráta Beirása
+ENTER_FINAL_FILESIZE=Végsö film Méret Beirása
+GET_TIME= Idõ Kiolvasása a Filmbõl.
+FILESIZE=Fájl Méret
+VIDEO_BITRATE=Bitráta
+DESCRIPTION=Körülbelül
+HOURS=Óra(s)
+MINUTES=Perc(s)
+SECONDS=Másodperc(s)
+SLOW=Nem Sok Mozgású Film.
+NORMAL=Normál Mozgású Film.
+FAST=Sok Mozgású Film Világos Szinekkel.
+ENDCREDITS_NORMAL=Normál
+ENDCREDITS_REMOVE=Ne Tartalmazza a Stáblistát a film.
+ENDCREDITS_RECOMPRESS=Újra Tömöríti a Stáblista
+RECOMPRESS_PCT=% A Film Bitrátája Alapján.
+ENDCREDITS_AUTOMATIC=Automata Felismerés.
+ENDCREDITS_MANUAL=Kézi=Stráblista Kezdete.
+WORKAROUND1=Fixálja 'mpeg2avit Ha Megakad a 2-passznál'.
+
+;Misc
+GENERAL_SUBTITLES=Felirat Beállítás
+CREATE_SUBTITLES=Feliratozáshoz Használja a Vobsubot
+SELECT_ALL_LANGUAGES=Kiválasztja Az Összes Nyelvet.
+
+;Project
+PROJECT_OPTIONS=Projekt Beállítás
+BATCH_SETTINGS=Kötegelt Beállítás
+PROJECT_NAME=Projekt Név
+TEMP_FOLDER=Ideglenes Könyvtár
+OUTPUT_FOLDER=Kimeneti Könyvtár
+OVERWRITE_FILES=Fájl Fölülirás (Figyelmeztetés Nélkül)
+DELETE_TEMP=Törölje Az Ideiglenes Fájlokat Mikor Végez.
+SPLIT_FILE=Fájl Vágása
+NORMAL_MODE=Normál
+BATCH_MODE=Kötegelt Beállitás
+BUTTON_UP=Fel
+BUTTON_DOWN=Le
+BUTTON_ADD=összes
+BUTTON_REMOVE=töröl
+BUTTON_MODIFY=Modosít
+BUTTON_CLEAR=Lista Törlés
+DELETE_BATCH=Delete batch entry when ready.
+
+;Kimenö Fajl
+SYSTEM_SETTINGS=Rendszer Beállítás
+STATUS_INFORMATION=Állapotinformáció
+PROGRESS=Folyamat
+SHUTDOWN=Számítógép Kikapcsolás Befejezés Után.
+
+;Settings
+EXTERNAL_PROGRAMS=Külsõ Prgramok
+ADVANCED_AUDIO_SETTINGS=Speciális Hang Beállítás
+AC3_PRELOAD_VALUE=AC3 Betöltési Érték
+AC3_INTERLEAVE_VALUE=AC3 Beékelési Érték
+PRIORITY_SETTINGS=Priorítás Beállítás
+AUDO_PRIORITY=Hang Kódoló Priorítás
+VIDEO_PRIORITY=Kép Kódoló Priorítás
+DISK_PRIORITY=Lemez Olvasás/ÍRás Priorítás
+SETTING_WARNING=(*)  Highest Beállítás Nem Javasolt!
+GET_DEFAULT_VALUES=Alapértelmezett
+LANGUAGE_SETTINGS=Nyelv Beállítás
+LANGUAGE=Nyelv
+
+; External Program Settings
+PROGRAM_LOCATIONS=External Program locations
+SAVE=save
+CANCEL=cancel

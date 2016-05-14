@@ -1,0 +1,174 @@
+; by [fränK] , Player1, Gizmo & Shogun.
+;
+; EDITED: 
+; Intial version by [fränK]
+; 18-09-2003 by Gizmo
+; 07-04-2004 by Player1
+; 20-08-2004 by Shogun
+; 27-02-2006 by h3nk42
+;
+; Nur hier aufgeführte Textfelder können übersetzt werden.
+
+[SimpleDivX]
+;Tabs
+TAB_INPUT=Quelle 
+TAB_VIDEO=Video  
+TAB_AUDIO=Audio  
+TAB_CODEC=Codec  
+TAB_COMPRESSION=Kompression  
+TAB_MISC=Sonstiges  
+TAB_PROJECT=Projekt  
+TAB_OUTPUT=Ausgabe 
+TAB_SETUP=Setup  
+  
+;General  
+QUIT=Beenden
+
+;Input
+INPUT_FILES=Quelldateien
+FOLDER=Verzeichnis der VOB-Dateien
+VOB_FILES=VOB-Dateiliste
+CHECK_MAIN=Hauptfilm auswählen
+CHECK_ALL=Alle Dateien auswählen
+VIDEO_INFORMATION=Videoinformationen
+RESOLUTION=Auflösung
+ASPECT_RATIO=Seitenverhältnis
+FRAME_RATE=Bildrate
+VIDEO_FORMAT=Videoformat
+MOVIE_LENGTH=Filmdauer
+CHAPTERS=Kapitel
+TITLE=Titel auswählen
+STATUS_BUSY=Status : Beschäftigt
+STATUS_READY=Status : Bereit
+
+;Video
+VIDEO_OPTIONS=Videooptionen
+FRAME_OPTIONS=LBA-/Bereichsoptionen
+FRAMES_PER_SECOND=Bilder pro Sekunde (fps)
+ADVANCED=Erweitert
+VIDEO_CHECKING=Videospuren überprüfen
+VIDEO_STREAM_ID=Videospur Nummer
+CHECK_AUTO=Automatische Skalierung und Zuschnitt
+WIDTH=Breite
+HEIGHT=Höhe
+PREVIEW=Vorschau
+RESIZING=Skalierung auf
+CROPPING=Zuschnitt auf
+CUSTOM_OUTPUT_FORMAT=Ausgabeformat
+OPEN_VOB_LBA=Öffne VOB-Datei ab LBA
+FRAME_RANGE=Bildbereich von
+TO=bis
+SOURCE_FORMAT=Eingabe Format
+
+;Audio
+GENERAL_AUDIO=Allgemeine Audiooptionen
+CREATE_AUDIO=Audio erstellen
+AUDIO_STREAMS_LANGUAGES=Audiospuren und -sprachen
+CHECK_AUDIO=Audiospuren überprüfen
+EXTRACT_ALL_AUDIO=Extrahiere alle Audiospuren
+CONVERT_ALL_AUDIO=Konvertiere alle Audiospuren
+AUDIO_FORMAT=Audioformat
+TWO_CHANNELS=(2 Kanäle)
+SIX_CHANNELS=(6 Kanäle)
+AUDIO_BITRATE_AND_CONVERSION=Audiobitrate und Konvertierung
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Ausgabefrequenz
+AMPLIFY=Pegel erhöhen um
+NORMALIZE=Normalisieren
+NORMALIZE_MIDNIGHT=Normalisieren (Mitternachtsmodus)
+
+;Codec
+CODEC_OPTIONS=Weitere Codecoptionen
+DIVX_OPTIONS=DivX-Optionen
+CHOOSE_CODEC=Verfügbare Videocodecs:
+ADVANCED_SETTINGS=Erweitert
+MAX_KEYFRAME=Schlüsselbild höchstens alle
+FIRST_PASS_LOCATION=Zielverzeichnis der 2-pass-Logdatei
+AUTO_LOGFILENAMING=Automatisch (Logdatei wird nach dem Projektnamen benannt)
+MANUAL_LOGFILENAMING=Manuell
+PASS_OPTIONS=2-pass-Optionen
+CREATE_ONE_PASS_MOVIE=1-pass (nach Bitrate)
+CREATE_TWO_PASS_MOVIE=2-pass (2 Durchgänge)
+ONLY_FIRST_PASS=2-pass, first pass (nur 1. Durchgang)
+ONLY_SECOND_PASS=2-pass, second pass (nur 2. Durchgang)
+BOTH_PASSES=2-pass (beide Durchgänge)
+WITH_AUDIO=mit XXX Audio.
+WITH_NO_AUDIO=ohne Audio.
+
+;Compression
+FRAMES=Bilder
+BITRATE_FILE_OPTIONS=Videobitrate / Dateigröße
+ADVANCED_BITRATE=Art des Filmes/der Szenenwechsel
+END_CREDITS_OPTIONS=Abspann des Filmes
+ENTER_BITRATE=Bitrate eingeben
+ENTER_FINAL_FILESIZE=Dateigröße eingeben
+GET_TIME=Automatische Erkennung der Filmdauer
+FILESIZE=Dateigröße
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Qualität
+HOURS=Stunde(n)
+MINUTES=Minute(n)
+SECONDS=Sekunde(n)
+SLOW=Film mit wenig Bewegung/Szenenwechseln (Liebesfilm)
+NORMAL=Normaler Film
+FAST=Film mit schnell bewegten Szenen (Actionfilm)
+ENDCREDITS_NORMAL=Normal (keine Änderung)
+ENDCREDITS_REMOVE=Abspann entfernen
+ENDCREDITS_RECOMPRESS=Neukomprimierung mit
+RECOMPRESS_PCT=% der Bitrate des Filmes
+ENDCREDITS_AUTOMATIC=Abspann automatisch erkennen
+ENDCREDITS_MANUAL=Abspann startet bei
+VIDEO_ONLY=(nur Video)
+VIDEO_AND_AUDIO=(Video und Audio)
+
+;Misc
+GENERAL_SUBTITLES=Allgemeine Untertiteloptionen
+CREATE_SUBTITLES=Untertitel erstellen mit VobSub
+SELECT_ALL_LANGUAGES=Wähle alle Sprachen.
+
+;Project
+PROJECT_OPTIONS=Projektoptionen
+BATCH_SETTINGS=Batcheinstellungen
+PROJECT_NAME=Projektname
+TEMP_FOLDER=Verzeichnis für die temporären Dateien
+OUTPUT_FOLDER=Verzeichnis für die fertigen Projektdateien
+OVERWRITE_FILES=Dateien überschreiben (ohne Warnung)
+DELETE_TEMP=Temporäre Dateien nach Beendigung löschen
+SPLIT_FILE=Datei teilen:
+SPLIT_PARTS=Teile, je
+SPLIT_MB=MB groß
+NORMAL=Normal
+BATCH_MODE=Batchmodus
+BUTTON_UP=Auf
+BUTTON_DOWN=Ab
+BUTTON_ADD=Hinzufügen
+BUTTON_REMOVE=Entfernen
+BUTTON_MODIFY=Ändern
+BUTTON_CLEAR=Alles löschen
+DELETE_BATCH=Lösche Batch-Eintrag wenn fertig.
+SPLIT_FADEOUT=Beim Ausblenden teilen
+
+;OutputFiles
+SYSTEM_SETTINGS=Sonstige Einstellungen
+STATUS_INFORMATION=Statusinformationen
+PROGRESS=Fortschritt
+SHUTDOWN=Windows nach Beendigung herunterfahren
+
+;Settings
+EXTERNAL_PROGRAMS=Externe Programme
+ADVANCED_AUDIO_SETTINGS=Erweiterte Audioeinstellungen
+AC3_PRELOAD_VALUE=Vor dem Videostart laden
+AC3_INTERLEAVE_VALUE=AC3 verschachteln alle
+PRIORITY_SETTINGS=Prioritätseinstellungen
+AUDO_PRIORITY=Audiokomprimierung
+VIDEO_PRIORITY=Videokomprimierung
+DISK_PRIORITY=Lesen/Schreiben
+SETTING_WARNING=(*) "Highest" wird nicht empfohlen!
+GET_DEFAULT_VALUES=Standardwerte laden
+LANGUAGE_SETTINGS=Spracheinstellungen
+LANGUAGE=Sprache
+
+; External Program Settings
+PROGRAM_LOCATIONS=Verzeichnisse für externe Programme
+SAVE=Speichern
+CANCEL=Abbrechen

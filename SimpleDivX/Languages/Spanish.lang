@@ -1,0 +1,163 @@
+;Translation by : Ángel Izquierdo & Sirio
+
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Entrada
+TAB_VIDEO=Vídeo
+TAB_AUDIO=Audio
+TAB_CODEC=Codec
+TAB_COMPRESSION=Compresión
+TAB_MISC=Misc
+TAB_PROJECT=Proyecto
+TAB_OUTPUT=Salida
+TAB_SETUP=Config
+
+;General
+QUIT=Salir
+
+;Input
+INPUT_FILES=Origen de Archivos
+FOLDER=Directorio de archivos:
+VOB_FILES=Archivos VOB/IFO
+CHECK_MAIN=Detectar película principal
+CHECK_ALL=Seleccionar todos los archivos
+VIDEO_INFORMATION=Información de Vídeo
+RESOLUTION=Resolución
+ASPECT_RATIO=Formato
+FRAME_RATE=Framerate
+VIDEO_FORMAT=Sistema
+MOVIE_LENGTH=Duración
+FRAMES=Fotogramas
+CHAPTERS=Capítulos
+TITLE=Elegir título:
+STATUS_BUSY=Estado: Ocupado
+STATUS_READY=Estado: Preparado
+
+;Video
+VIDEO_OPTIONS=Opciones de Vídeo
+FRAME_OPTIONS=Opciones de Fotograma
+FRAMES_PER_SECOND=Fotogramas/Segundo
+ADVANCED=Avanzado
+VIDEO_CHECKING=Permitir autoexaminar ID de cadena de vídeo
+VIDEO_STREAM_ID=ID de cadena de vídeo
+CHECK_AUTO=Autorrecortar y redimensionar
+WIDTH=Ancho
+HEIGHT=Alto
+PREVIEW=Vista Previa
+RESIZING=Redimensión
+CROPPING=Recorte
+CUSTOM_OUTPUT_FORMAT=Salida 
+OPEN_VOB_LBA=Abrir cadena de VOB en LBA
+FRAME_RANGE=Fotogramas desde
+TO=a
+SOURCE_FORMAT=Tipo de fuente de origen
+DEINTERLACE=Inverse telecine/Desentrelazado
+
+;Audio
+GENERAL_AUDIO=Audio General
+CREATE_AUDIO=Incluir Audio
+AUDIO_STREAMS_LANGUAGES=Idiomas y Tipos de Audio
+CHECK_AUDIO=Seleccionar Audio
+EXTRACT_ALL_AUDIO=Extraer todo el audio
+CONVERT_ALL_AUDIO=Convertir todo el audio
+AUDIO_FORMAT=Formato de Salida de Audio
+TWO_CHANNELS=(2 canales)
+SIX_CHANNELS=(6 canales)
+AUDIO_BITRATE_AND_CONVERSION=Bitrate y Conversión
+AUDIO_KBPS=Bitrate (kbps):
+SAMPLE_RATE_CONVERSION=Frecuencia de Muestreo:
+AMPLIFY=Amplificar
+NORMALIZE=Normalizar nivel de pico de audio
+NORMALIZE_MIDNIGHT=Normalizar nivel de pico sonoro en modo "Midnight"
+NO_AUDIO_FOUND=Audio no encontrado
+
+;Codec
+CODEC_OPTIONS=Opciones de Codec
+DIVX_OPTIONS=Opciones DivX
+CHOOSE_CODEC=Elección de Codec:
+ADVANCED_SETTINGS=Opciones Avanzadas
+MAX_KEYFRAME=Key-Frame máximo:
+FIRST_PASS_LOCATION=Ruta del archivo con el First-Pass:
+AUTO_LOGFILENAMING=Automático (El archivo será creado tras nombrar el proyecto)
+MANUAL_LOGFILENAMING=Manual
+PASS_OPTIONS=Opciones de Muestreo
+CREATE_ONE_PASS_MOVIE=Codificar vídeo con una pasada
+CREATE_TWO_PASS_MOVIE=Codificar vídeo con dos pasadas
+ONLY_FIRST_PASS=Realizar sólo la primera pasada
+ONLY_SECOND_PASS=Realizar sólo la segunda pasada
+BOTH_PASSES=Realizar dos pasadas
+WITH_AUDIO=y XXX audio
+WITH_NO_AUDIO=sin sonido
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Opciones de Proyecto
+END_CREDITS_OPTIONS=Créditos Finales - Opciones
+ENTER_BITRATE=Poner bitrate
+ENTER_FINAL_FILESIZE=Indicar tamaño final del archivo
+GET_TIME=Obtener duración del vídeo
+FILESIZE=Tamaño
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Descripción
+HOURS=Hora(s)
+MINUTES=Minuto(s)
+SECONDS=Segundo(s)
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=No incluir créditos finales
+ENDCREDITS_RECOMPRESS=Recomprimir créditos finales
+RECOMPRESS_PCT=% del bitrate de la película
+ENDCREDITS_AUTOMATIC=Detección automática
+ENDCREDITS_MANUAL=Inicio de créditos finales a
+VIDEO_ONLY=(Sólo vídeo)
+VIDEO_AND_AUDIO=(Vídeo y audio)
+
+;Misc
+GENERAL_SUBTITLES=Opciones Generales de Subtítulos
+CREATE_SUBTITLES=Crear subtítulos empleando VobSub
+SELECT_ALL_LANGUAGES=Seleccionar todos los idiomas
+CONTAINER_FORMAT=Tipo de Vídeo
+
+;Project
+PROJECT_OPTIONS=Opciones del Proyecto
+BATCH_SETTINGS=Lote de Archivos
+PROJECT_NAME=Nombre del proyecto:
+TEMP_FOLDER=Directorio temporal:
+OUTPUT_FOLDER=Directorio de salida:
+OVERWRITE_FILES=Sobreescribir archivos (sin avisar)
+DELETE_TEMP=Borrar archivos temporales al finalizar
+SPLIT_FILE=Dividir archivo en
+SPLIT_FADEOUT=Dividir al detectar atenuación
+SPLIT_PARTS=partes de
+SPLIT_MB=MB. cada una
+NORMAL_MODE=Normal
+BATCH_MODE=Lotes
+BUTTON_UP=Subir
+BUTTON_DOWN=Bajar
+BUTTON_ADD=Añadir
+BUTTON_REMOVE=Eliminar
+BUTTON_MODIFY=Modificar
+BUTTON_CLEAR=Borrar lista
+DELETE_BATCH=Eliminar lote de entrada cuando esté listo
+
+;OutputFiles
+SYSTEM_SETTINGS=Ajustes de Sistema
+STATUS_INFORMATION=Estado del Proceso
+PROGRESS=Progreso
+SHUTDOWN=Salir de Windows al finalizar
+
+;Settings
+EXTERNAL_PROGRAMS=Programas Externos
+PRIORITY_SETTINGS=Ajustes de Prioridad
+VIDEO_PRIORITY=Prioridad de vídeo:
+DISK_PRIORITY=Prioridad de disco:
+SETTING_WARNING=(*) No se recomienda utilizar el modo "Highest"
+GET_DEFAULT_VALUES=Valores por defecto
+LANGUAGE_SETTINGS=Elección de Idioma
+LANGUAGE=Lenguaje:
+
+; External Program Settings
+PROGRAM_LOCATIONS=Ubicación de programas externos:
+SAVE=Guardar
+CANCEL=Cancelar
+
+

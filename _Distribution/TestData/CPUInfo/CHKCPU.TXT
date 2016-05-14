@@ -1,0 +1,422 @@
+    CHKCPU
+    07/07/2005
+    by Jan Steunebrink
+
+    Homepage: http://web.inter.nl.net/hcc/J.Steunebrink/
+    E-mail  : J.Steunebrink@net.HCC.nl
+
+    CPU Identification utility v1.11
+    --------------------------------
+
+Introduction
+------------
+After a CPU and/or motherboard upgrade, it can be difficult to find the
+correct motherboard jumper settings for clockspeed, clock multiplier,
+and (for 486 only) internal cache Write-Back/Write-Through mode selection.
+I wrote the CHKCPU utility to have an easy check on these settings.
+On the other hand, CHKCPU is also useful for checking the CPU type and speed
+on a given machine, and due to its text-based output information from CHKCPU
+can easily be used to get CPU info from each machine in a network by calling
+CHKCPU from the network log-on script.
+
+The program
+-----------
+The program comes in a ZIP-file (CKCPU111.ZIP) which should contain the
+following 2 files: CHKCPU.EXE  ;the program
+                   CHKCPU.TXT  ;this text file.
+The files have a date-time stamp of 07/07/05 - 1:11 am.
+The program is written in assembly language and it is freeware.
+
+The program is started by typing CHKCPU at the command prompt.
+CHKCPU can be run from the DOS prompt or from a DOS-box within Windows.
+CHKCPU is designed to run under DOS 5.0 or higher, or any version of Windows.
+The behavior of CHKCPU under OS/2 is unknown.
+
+For complete information, I recommend running CHKCPU after a clean boot
+to DOS, without an expanded memory manager (EMM386 or QEMM) loaded.
+On most CPUs, CHKCPU can indicate the Clock multiplier and Bus clock speed
+only in 'Real mode'.
+
+
+On my upgraded 586 PC, CHKCPU displays the following information:
+
+ CPU Identification utility v1.11                 (c) 1997-2005 Jan Steunebrink
+ 컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+ CPU Vendor and Model: AMD K6-III+ 450/475/500/550
+ Internal CPU speed  : 601.2 MHz  (using internal Time Stamp Counter)
+ Clock Multiplier    : 6.0 
+ Bus clock speed     : 100.2 MHz
+ CPU-ID Vendor string: AuthenticAMD
+ CPU-ID Name string  : AMD-K6(tm)-III Processor
+ CPU-ID Signature    : 05D0
+                       납냅� Stepping or sub-model no.
+                       납읕 Model: Indicates CPU Model and 486 L1 cache mode
+                       냅� Family: 4=486, Am5x86, Cx5x86
+                       �           5=Pentium, Nx586, Cx6x86, K5/K6, C6, mP6
+                       �           6=PentiumPro/II/III, CxMII/III, Athlon, C3
+                       �           F=Pentium4, Athlon64
+                       읕 Type: 0=Standard, 1=Overdrive, 2=2nd Dual Pentium
+ Current CPU mode    : Real
+ Internal (L1) cache : Enabled in Write-Back mode
+
+On my laptop CHKCPU shows:
+
+ CPU Identification utility v1.11                 (c) 1997-2005 Jan Steunebrink
+ 컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+ CPU Vendor and Model: Intel PentiumII 233-366 A0-step for mobile use
+ Internal CPU speed  : 367.4 MHz  (using internal Time Stamp Counter)
+ Clock Multiplier    : 5.5 
+ Bus clock speed     : 66.8 MHz
+ CPU-ID Vendor string: GenuineIntel
+ CPU-ID Signature    : 066A
+                       납냅� Stepping or sub-model no.
+                       납읕 Model: Indicates CPU Model and 486 L1 cache mode
+                       냅� Family: 4=486, Am5x86, Cx5x86
+                       �           5=Pentium, Nx586, Cx6x86, K5/K6, C6, mP6
+                       �           6=PentiumPro/II/III, CxMII/III, Athlon, C3
+                       �           F=Pentium4, Athlon64
+                       읕 Type: 0=Standard, 1=Overdrive, 2=2nd Dual Pentium
+ Current CPU mode    : Real
+ Internal (L1) cache : Enabled in Write-Back mode
+
+Apart from this 'Normal' display, CHKCPU supports command-line switches
+to get another format or to display additional CPU information.
+You can get a list of these switches with the command CHKCPU /? or /H
+The following switches are supported:
+- With CHKCPU /C you get the CPUID only mode. In this mode, any code that
+  does more than CPUID data processing, like speed measurement, is skipped.
+  So this mode works like a safe detection mode and can be used for
+  troubleshooting problems when using CHKCPU.
+- With CHKCPU /D you get the Debug mode. It displays a dump of raw OS and
+  relevant CPUID level information. Great for troubleshooting "Unknown"
+  indications or getting info on new CPU models.
+- With CHKCPU /I you force the use of the Instruction timing method for CPU
+  speed measurement. Useful if the TSC method gives an incorrect reading.
+- With CHKCPU /R you force the use of Real (or Virtual) mode. Protected
+  mode via the DOS Protected Mode Interface is then not used.
+- With CHKCPU /S you get a Short display of CPU Type and Speed only.
+  Intended for use in network logon scripts. The output has no trailing CR.
+- With CHKCPU /V you get the Verbose mode. It displays additional CPUID info
+  like CPU features and the sizes of the L1 and integrated L2/L3 cache.
+  For CPUs with split Data/Instruction L1 caches, the combined value is shown.
+  Some CPU features are only displayed for specific CPUs. These are:
+   'AMD MMX extensions' and 'AMD 3DNow! extensions' for AMD K6 and higher,
+   'CPU Serial Number Enabled' for the PentiumIII,
+   'SSE3 support', 'Hyper-Threading technology' and '64-bit support'
+    for the Pentium 4 and Athlon 64.
+  The CPU features and the size of the caches, are all derived from
+  the CPU-ID information.
+Switches can be combined. Example: CHKCPU /S /C gives a short display of
+the CPU type only. The speed is not displayed.
+The /S switch has priority over the /D and /V switches, and the /D switch
+has priority over the /V switch.
+
+CHKCPU /V under WinXP on my Athlon XP (Barton) box looks like:
+
+ CPU Identification utility v1.11                 (c) 1997-2005 Jan Steunebrink
+ 컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+ CPU Vendor and Model: AMD Athlon XP 2000+-3200+
+ Internal CPU speed  : 1831.9 MHz  (using internal Time Stamp Counter)
+ Clock Multiplier    : Available only in Real Mode!
+ CPU-ID Vendor string: AuthenticAMD
+ CPU-ID Name string  : AMD Athlon(TM) XP 2500+
+ CPU-ID Signature    : 06A0
+ CPU Features        : Floating-Point Unit on chip: Yes
+                       Virtual Mode Extensions    : Yes
+                       Time Stamp Counter         : Yes
+                       MMX instruction set        : Yes
+                       AMD MMX extensions         : Yes
+                       3DNow! instruction set     : Yes
+                       AMD 3DNow! extensions      : Yes
+                       Streaming SIMD Extensions  : Yes
+                       SSE2 support               : No
+ Current CPU mode    : Protected
+ Internal (L1) cache : Enabled in Write-Back mode
+ Size of L1 cache    : 128 KB
+ Integrated L2 cache : 512 KB
+
+
+CHKCPU recognizes any 386 or higher CPU, however detailed information can
+only be displayed for CPUs which support the CPUID instruction or
+Cyrix CPUs with Device Identification Register (DIR) support.
+This covers some 486 and all 586/Pentium and higher CPUs.
+CHKCPU recognizes CPUs from Intel, AMD, NexGen, Cyrix/IBM, UMC, IDT, VIA,
+Rise, and Transmeta.
+If CHKCPU is run on a 386 or (non-Cyrix) 486 CPU without CPUID support,
+the CPU will be indicated as a 'classic' 386 or 'classic' 486 and a shortened
+display with only speed and (if present) cache information will follow.
+
+On Cyrix CPUs, the CPUID instruction can be disabled via a CPU configuration
+register. On some PCs the BIOS disables CPUID during boot-up. CHKCPU checks
+for this condition and enables CPUID again. All other Cyrix CPU configuration
+registers that CHKCPU uses are restored to their previous state.
+
+On IDT and VIA CPUs, the CPUID Vendor string and Signature can be programmed
+to any value. CHKCPU checks for this condition and temporarily disables this
+programming to show the real Vendor string and Signature of these CPUs.
+However, this check can only be done in 'Real mode' and is therefore skipped
+if the CPU is in 'Virtual or Protected mode' (EMM386, Windows).
+
+CHKCPU measures the CPU speed by accurately timing the execution of a bunch of
+slow 'Divide' instructions.
+For Pentium class CPUs however, the internal Time Stamp Counter (TSC) is used
+whenever possible to further improve the accuracy of the speed measurement.
+A message behind the CPU speed display indicates if the TSC is used.
+As using the TSC would crash the program when the CPU is in 'Virtual mode',
+the CPU speed measurement switches back to the (less accurate) instruction
+timing method when the CPU is not in 'Real or Protected mode'.
+
+
+Error and Unknown messages
+--------------------------
+CHKCPU has to use a lot of 32-bit instructions. If the program is run
+on a 16-bit CPU like the 8086/88, 80186/88, or 80286 you will see:
+ ERROR: This program requires a 386 or higher CPU!
+Note: If the /s option is used, you only see: No 386+
+
+If CHKCPU is unable to detect the CPU Vendor you get an "Unknown" indication.
+If CHKCPU is unable to detect the CPU Model you'll see -Unknown model-.
+"Unknown" indications are also possible if CHKCPU is unable to detect the
+Clock Multiplier or L1 cache size.
+
+If a Cyrix CPU is detected but no DIR support is found you get:
+ Cyrix Device Id Regs: - DIR registers could not be found -
+This is correct on the early Cx486 CPUs but most Cx486 and all Cx5x86 and
+later Cyrix CPUs should support the Device Identification Registers.
+
+On CPUs without CPUID support, CHKCPU will indicate:
+ CPU-ID Vendor string: - No CPUID -
+This the case on 386 and most 486 CPUs, and the Cyrix/IBM 5x86.
+
+
+Clock multiplier and CPU speed
+------------------------------
+Since the Intel 486DX2 hit the market, most CPUs run internally faster
+than externally.
+The Internal CPU speed display indicates the true internal CPU clock speed.
+The internal CPU clock speed = Bus clock X Clock multiplier.
+The Bus clock is the speed of the motherboard clock.
+On Pentium class CPUs, the clock multiplier is usually selectable in steps
+of 0.5 (x1.5, x2, x2.5, x3 etc.).
+Some CPUs have a fixed multiplier factor (Celeron, PentiumIII/4), and some
+use fractional factors like x1.75 (K5) or x2.33 (Winchip-2A).
+Modern CPUs (Athlon64/Pentium4) use whole numbers as multiplier factor.
+
+Most CPUs provide data on which Clock multiplier setting they are running.
+CHKCPU will display the Clock multiplier when available, and also
+calculate and displays the Bus clock speed in this case.
+Note that the classic Pentiums, like the Intel Pentium I, Pentium MMX, and
+AMD K6 do not provide any clock multiplier data.
+
+For Intel CPUs the internal speed equals the rating. So a Pentium 200 will
+run internally at 200 MHz. (66.6 x 3)
+For AMD, Cyrix, and Rise CPUs the internal speed can be lower than the PR
+rating due newer and more efficient design.
+For the K6-2 and later AMD CPUs upto 1400MHz, the internal speed equals the
+rating but modern CPUs use a performance figure as rating.
+
+
+Internal (L1) cache mode
+------------------------
+CHKCPU detects if the internal (Level 1) cache is disabled or enabled.
+If enabled, CHKCPU indicates if the cache operates in the Write-Through
+(read only cache) or Write-Back (read and write cache) mode.
+For the 486 CPU family, this information is derived from the CPU-ID signature.
+For Cyrix 486/5x86 CPUs, Configuration Control Register #2 (C2h) bit 1 (WBAK
+ - Write Back Cache Interface Pins Enable) supplies this information.
+
+The Pentium and higher CPU families normally operate their L1 cache in
+Write-Back mode. Exceptions are: the Nx586, the Intel Pentium 63/83 ODP (P24T)
+and the Cyrix 6x86/6x86MX/MII.
+The Nx586 has only Write-Through mode and is indicated as such.
+The P24T can operate in either the Write-Through or Write-Back mode.
+For this CPU, CHKCPU uses a special routine to detect the difference.
+The Cyrix 6x86 series usually operates in Write-Back mode but can be switched
+to Write-Through mode by enabling CR0 bit 29 (NW - No Write-back).
+CHKCPU checks this bit and displays the L1 cache mode accordingly.
+For all other Pentium class CPUs, CHKCPU assumes Write-Back mode.
+
+Note that for both the Nx586 and the P24T the CPU needs to be in 'Real mode'
+to be able to check the L1 cache mode.
+This check is therefore skipped if these CPUs are not running in 'Real mode'.
+
+
+Acknowledgments
+---------------
+I could not have written this program without the hard work of these people:
+- Christian Ludloff http://www.sandpile.org/ for his unsurpassed amount and
+  detail of CPU information.
+- Grzegorz Mazur http://grafi.ii.pw.edu.pl/gbm/x86/ for publishing the basic
+  algorithms for CPU detection.
+- Frank van Gilluwe, author of "The Undocumented PC" (second edition); still
+  my favorite hardware book.
+  The internal CPU speed detection routine according the instruction timing
+  method is based on ideas from his book.
+
+
+Feedback requested
+------------------
+If you encounter an "Unknown" message or if you have any questions regarding
+this program, please send me an E-mail with your CPU details and
+the CHKCPU /V and CHKCPU /D outputs.
+You can use DOS's redirect and append functions to get the outputs in a file.
+E.g. CHKCPU /V > MYCPU.TXT and CHKCPU /D >> MYCPU.TXT
+
+J.Steunebrink@net.HCC.nl
+
+------------------------------------------------------------------------------
+Chkcpu revision history:
+
+Versions 1.11
+07/07/2005
+- Updated the CPU data for new AMD Opteron, Athlon 64 (FX), Sempron, Turion,
+  Intel Pentium M, Pentium 4, and Celeron D models.
+- Added support for the Dual-Core AMD Opteron, Athlon 64 X2,
+  and Intel Pentium D CPUs.
+- Fixed a bug in the Hyper-Threading display.
+- Added Hyper-Threading and SSE3 display for the Athlon 64.
+- Added 64-bit support display for AMD Opteron, Athlon 64 (FX), Sempron,
+  Turion, and Intel Celeron D, Pentium 4, and Pentium D CPUs.
+
+Versions 1.10
+10/10/2004
+- Long overdue Chkcpu revision ;-)
+- Updated the CPU data for new AMD Opteron, Athlon 64 (FX), Athlon XP, Duron,
+  Sempron, Intel Celeron, PentiumIII, Pentium M, Pentium 4, Celeron D, Xeon,
+  and VIA C3 models.
+- Added detection of the AMD Multi Processor platform. This allows correct
+  differentiation between Athlon MP, Athlon XP, and Sempron models.
+- Added Clock multiplier support for the AMD Opteron, Athlon 64 (FX), Intel 
+  Pentium M, Celeron M, and VIA C3 Nehemiah core.
+- Fixed the incorrect CPU features display on newer Pentium 4 models.
+- Added CPU features display for SSE2, SSE3, and Hyper-Threading.
+- Moved the Integrated L2 cache size display in Verbose mode to the bottom
+  of the display, just below the L1 cache size.
+- Added Integrated L2 cache display for the VIA C3.
+- Added an Integrated L3 cache display for the Pentium 4.
+- Changed the Debug mode display to only show CPUID levels relevant for the
+  detected CPU.
+
+Version 1.9
+10/10/2002
+- Updated the CPU data for new AMD Athlon, Duron, Intel Celeron, PentiumIII,
+  Pentium 4, Celeron 4, and VIA C3 models.
+- Fixed the incorrect multiplier indication on newer Pentium 4 and Athlon CPUs.
+- Added a CPU-ID Name string display. If the CPU supports it, this function
+  displays the CPU Name or Brand string as stored in the CPU.
+
+Version 1.8
+07/07/2001
+- Updated the CPU data for new AMD K6-III+, Athlon, Duron, Intel Celeron,
+  PentiumIII, and VIA models.
+- Added support for the Pentium 4 and for Transmeta CPUs.
+- Corrected the VIA Cyrix III detection (Samuel core).
+- Added Clock multiplier support for the AMD Athlon, Duron, and VIA Cyrix III.
+- Added a /C command-line switch for troubleshooting CHKCPU problems.
+- Fixed a bug that caused floppy or sound problems or crashed Windows on PCs
+  which use a specific Intel I/O chip and a Celeron/PentiumII/III CPU.
+  This bug affected the Compaq Armada laptop series and several Dell laptop
+  and desktop models.
+
+Version 1.7
+08/08/2000
+- Updated the CPU data for new AMD K6-2+/III+, Athlon-E, Intel Celeron and
+  PentiumIII-E models, and added support for the AMD Duron and CyrixIII (Joshua).
+- Added a separate Clock multiplier display.
+- If the Clock multiplier value is know, CHKCPU will display the Bus clock
+  speed as well.
+- Rewritten the Internal speed detection routine to improve the accuracy of
+  the speed indication under Windows NT/2000.
+- Added code to prevent Windows from switching tasks during speed measurement.
+  This should prevent the occasional freak CPU speed readings under Windows.
+- Added detection for L1 cache WB/WT mode on the Cyrix 6x86/M2 series.
+  Previous versions of CHKCPU indicated the L1 cache mode of these CPUs
+  always as Write-Back.
+- Fixed the too high CPU speed indication on the Cyrix 486 and 6x86, and the
+  too low indication on the Cyrix 5x86.
+- Fixed a bug that crashed the program on a Cyrix 486.
+
+Version 1.6
+03/03/2000
+- Updated the CPU data for new AMD K6-2, AMD Athlon, and Intel Celeron models,
+  and added support for the Intel PentiumIII-E (Coppermine).
+- Fixed the 45% too low speed reading on the AMD Athlon when the TSC is not
+  used. (instruction timing method).
+- Increased the accuracy of the CPU speed measurement for fast CPUs, like the
+  AMD K6-2/III, Athlon, and Intel Celeron/PentiumII/III(-E).
+- Rewritten the basic CPU detection algorithm for better detection of NexGen,
+  Cyrix, and IDT CPUs. This algorithm works also in Virtual and Protected mode.
+- Added support for 386 and (non-Cyrix) 486 CPUs which do not know the CPUID
+  instruction. CHKCPU will no longer abort with an error on these CPUs.
+- Fixed a bug that crashed CHKCPU in Real mode on a Nx586, and fixed
+  the L1 cache mode detection on this CPU.
+- Changed the logic for the command-line switches so that in case of an
+  unrecognized option, the display defaults to the Short mode. In addition,
+  the command-line switches will also work if the space between CHKCPU and
+  the command-line switch, or between the switches, is omitted.
+- The speed reading in Short mode is now rounded off and displayed in
+  whole MHz.
+
+Version 1.5
+09/09/99
+- Updated the CPU data for new AMD K6-2, Intel Celeron, PentiumIII, and
+  IDT Winchip steppings, and added the AMD Athlon (K7).
+- Fixed a bug where an IDT CPU was displayed as an "IDT Rise -Unknown model-".
+- Added support for Command line switches. You can get a list with CHKCPU /?
+- An Intel Celeron CPU is now indicated as such. CHKCPU v1.5 is able to
+  differentiate between a PentiumII and a Celeron with the same signature.
+- Moved the integrated L2 cache size display to the Verbose mode, because it
+  is no longer required for visual differentiation between a PentiumII and
+  a Celeron.
+- Added display of various CPU features. (Verbose mode only)
+- Added display of the L1 cache size. (Verbose mode only)
+
+Version 1.4
+04/04/99
+- Updated the CPU data with the new AMD K6-2 (CXT-core), K6-III,
+  Intel PentiumII/Celeron, and PentiumIII steppings.
+- Added support for the Rise mP6 CPU.
+- Added display of the amount of integrated L2 cache on the PentiumPro/II/III,
+  AMD K6-III, and Cyrix M3 CPUs. For the Intel PentiumII an additional
+  'Celeron or Celeron-A type' indication is added when appropriate.
+- Rewritten the program so that it runs in (16-bit) Protected mode whenever a
+  DOS Protected Mode Interface (DPMI) host is present. (Windows, OS/2, etc.)
+  This improves the speed display accuracy in the DOS-box for all CPUs and in
+  addition, under Windows 3.x/95/98 on the Pentium class CPUs, the internal
+  Time Stamp Counter can now be used, just as in Real mode.
+- Added display of the Current CPU mode: Real, Virtual, or Protected.
+
+Version 1.3
+12/12/98
+- Updated the CPU data. The new AMD K6-2, IDT C6-2, and Intel PentiumII/
+  Celeron/Xeon steppings are now supported.
+- Added a new Internal speed detection routine for all CPUs that support the
+  Pentium Time Stamp Counter. This results in a more accurate speed display,
+  especially on non-Intel CPUs (only in Real mode).
+- Made the program better usable under Windows by adding checks for
+  protected mode before using 'restricted' instructions.
+  This avoids triggering a General Protection Fault.
+- Fixed a bug where the program was aborted by Windows if run on a 386
+  or (non-Cyrix) 486 CPU without CPUID support.
+
+Version 1.2
+04/04/98
+- Updated the CPU data. The new Pentium II 333 (Deschutes) is now supported.
+- Fixed the Intel Pentium Pro detection. CHKCPU v1.1 indicated these CPUs as
+  a "Cyrix -Unknown model-".
+
+Version 1.1
+02/02/98 First update.
+- Updated the CPU data.
+- Added CPU multiplication factor indication for the Cx486DX4 and AMD K5.
+- Expanded the internal CPU speed display with a decimal.
+- Updated the internal cache mode detection for early Cyrix/TI CPUs.
+- Fixed the Intel Pentium 63/83 ODP (P24T) internal cache mode detection.
+  CHKCPU v1.0 indicated the internal cache mode of the P24T always as WB.
+  This is not correct as the P24T can also operate in WT mode.
+  For this CPU, a routine has been added to detect the difference.
+
+Version 1.0
+12/12/97 First release.
+------------------------------------------------------------------------------
+

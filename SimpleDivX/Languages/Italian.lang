@@ -1,0 +1,160 @@
+;Translation by : Luca Snoriguzzi
+[SimpleDivX]
+;Tabs
+TAB_INPUT=Sorgente
+TAB_VIDEO=Video
+TAB_AUDIO=Audio
+TAB_CODEC=Codec
+TAB_COMPRESSION=Compressione
+TAB_MISC=Varie
+TAB_PROJECT=Progetto
+TAB_OUTPUT=Decodifica
+TAB_SETUP=Preferenze
+
+;General
+QUIT=Esci
+
+;Input
+INPUT_FILES=File sorgente
+FOLDER=Cartella file sorgente
+VOB_FILES=Lista files VOB
+CHECK_MAIN=Seleziona filmato principale
+CHECK_ALL=Seleziona tutti i filmati
+VIDEO_INFORMATION=Informazioni sul filmato
+RESOLUTION=Risoluzione
+ASPECT_RATIO=Proporzioni
+FRAME_RATE=Fotogrammi
+VIDEO_FORMAT=Formato video
+MOVIE_LENGTH=Durata
+FRAMES=fotogrammi
+CHAPTERS=Capitoli
+TITLE=Seleziona titolo
+STATUS_BUSY=Stato: Occupato
+STATUS_READY=Stato: Pronto
+
+;Video
+VIDEO_OPTIONS=Opzioni video
+FRAME_OPTIONS=Opzioni frame
+FRAMES_PER_SECOND=Fotogrammi per secondo
+ADVANCED=Impostazioni Avanzate
+VIDEO_CHECKING=Attiva autorilevamento ID stream video
+VIDEO_STREAM_ID=ID stream video
+CHECK_AUTO=Rileva automaticamente il formato
+WIDTH=Larghezza
+HEIGHT=Altezza
+PREVIEW=Anteprima
+RESIZING=Ridimensiona
+CROPPING=Ritaglia
+CUSTOM_OUTPUT_FORMAT=Formato destinazione
+OPEN_VOB_LBA=Apri VOB bitstream da LBA
+FRAME_RANGE=Intervallo frame da
+TO=a
+SOURCE_FORMAT=Formato sorgente
+DEINTERLACE=Filtro deinterlacciamento
+
+;Audio
+GENERAL_AUDIO=Opzioni audio
+CREATE_AUDIO=Includi una traccia audio
+AUDIO_STREAMS_LANGUAGES=Tracce audio e lingue
+CHECK_AUDIO=Seleziona una traccia audio tra quelle rilevate
+EXTRACT_ALL_AUDIO=Estrai tutte le tracce audio
+CONVERT_ALL_AUDIO=Converti tutte le tracce audio
+AUDIO_FORMAT=Formato audio
+TWO_CHANNELS=(2 canali)
+SIX_CHANNELS=(6 canali)
+AUDIO_BITRATE_AND_CONVERSION=Qualità audio e conversione
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Frequenza di campionamento
+AMPLIFY=Amplificazione
+NORMALIZE=Normalizza il livello dei picchi
+NORMALIZE_MIDNIGHT=Normalizza il livello dei picchi (modalità accurata ma lenta)
+NO_AUDIO_FOUND=Nessuna traccia audio rilevata
+
+;Codec
+CODEC_OPTIONS=Impostazioni codec
+DIVX_OPTIONS=Impostazioni compressione video
+CHOOSE_CODEC=Seleziona il codec da utilizzare
+ADVANCED_SETTINGS=Impostazioni avanzate
+MAX_KEYFRAME=N° max fotogrammi/chiave
+FIRST_PASS_LOCATION=Collocazione del file di log della prima passata
+AUTO_LOGFILENAMING=Automatica (Al file di log verrà dato un nome in base a quello del progetto)
+MANUAL_LOGFILENAMING=Manuale
+PASS_OPTIONS=Impostazioni passata
+CREATE_ONE_PASS_MOVIE=Crea video a ' 1 passata '
+CREATE_TWO_PASS_MOVIE=Crea video a ' 2 passate '
+ONLY_FIRST_PASS=Esegui solo la prima passata
+ONLY_SECOND_PASS=Esegui solo la seconda passata
+BOTH_PASSES=Esegui entrambe le passate
+WITH_AUDIO=con audio XXX.
+WITH_NO_AUDIO=senza audio.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate e dimensioni file
+END_CREDITS_OPTIONS=Opzioni titoli di coda
+ENTER_BITRATE=Specifica il bitrate
+ENTER_FINAL_FILESIZE=Specifica le dimensioni del filmato
+GET_TIME=Utilizza durata del film
+FILESIZE=Dimensione file
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Descrizione
+HOURS=Ore
+MINUTES=Minuti
+SECONDS=Secondi
+ENDCREDITS_NORMAL=Normale
+ENDCREDITS_REMOVE=Non includere i titoli di coda nel filmato
+ENDCREDITS_RECOMPRESS=Comprimi i titoli di coda il
+RECOMPRESS_PCT=% in più del filmato principale
+ENDCREDITS_AUTOMATIC=Rileva automaticamente
+ENDCREDITS_MANUAL=I titoli di coda iniziano a
+VIDEO_ONLY=(Solo video)
+VIDEO_AND_AUDIO=(Audio e video)
+
+
+;Misc
+GENERAL_SUBTITLES=Opzioni sottotitoli
+CREATE_SUBTITLES=Crea sottotitoli utilizzando VobSub
+SELECT_ALL_LANGUAGES=Seleziona tutte le lingue
+CONTAINER_FORMAT=Impostazioni formato video finale
+
+;Project
+PROJECT_OPTIONS=Impostazioni progetto
+BATCH_SETTINGS=Modalità di esecuzione della compressione
+PROJECT_NAME=Nome del progetto
+TEMP_FOLDER=Cartella files temporanei
+OUTPUT_FOLDER=Cartella di destinazione
+OVERWRITE_FILES=Sovrascrivi files (senza avvertire)
+DELETE_TEMP=Cancella files temporanei al termine
+SPLIT_FILE=Dividi il file finale in
+SPLIT_FADEOUT=Dividi automaticamente ad ogni cambiamento di scena (FadeOut)
+SPLIT_PARTS=parti, da
+SPLIT_MB=Mb ciasc.
+NORMAL_MODE=Normale
+BATCH_MODE=Modalità Batch
+BUTTON_UP=Su
+BUTTON_DOWN=Giù
+BUTTON_ADD=Aggiungi
+BUTTON_REMOVE=Rimuovi
+BUTTON_MODIFY=Modifica
+BUTTON_CLEAR=Svuota lista
+DELETE_BATCH=Svuota lista Batch al termine
+
+;OutputFiles
+SYSTEM_SETTINGS=Impostazioni di sistema
+STATUS_INFORMATION=Informazioni di stato
+PROGRESS=Stato
+SHUTDOWN=Arresta il sistema al termine delle operazioni
+
+;Settings
+EXTERNAL_PROGRAMS=Programmi esterni
+PRIORITY_SETTINGS=Impostazioni priorità
+VIDEO_PRIORITY=Priorità codifica video
+DISK_PRIORITY=Priorità lettura/scrittura
+SETTING_WARNING=(*) Sono sconsigliate impostazioni esegerate!
+GET_DEFAULT_VALUES=Imposta valori predefiniti
+LANGUAGE_SETTINGS=Impostazioni linguaggio
+LANGUAGE=Linguaggio
+
+; External Program Settings
+PROGRAM_LOCATIONS=Percorso programmi esterni
+SAVE=Salva
+CANCEL=Annulla

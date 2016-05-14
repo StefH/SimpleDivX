@@ -1,0 +1,157 @@
+;Translation by : Antonio Barbosa
+
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Entrada
+TAB_VIDEO=Vídeo
+TAB_AUDIO=Audio
+TAB_CODEC=Codec
+TAB_COMPRESSION=Compressão
+TAB_MISC=Misc
+TAB_PROJECT=Projecto
+TAB_OUTPUT=Saída
+TAB_SETUP=Config
+
+;General
+QUIT=Sair
+
+;Input
+INPUT_FILES=Ficheiros de origem
+FOLDER=Pasta
+VOB_FILES=Ficheiros VOB
+CHECK_MAIN=Escolha Filme
+CHECK_ALL=Escolha Todos os Ficheiros
+VIDEO_INFORMATION=Informação de Video
+RESOLUTION=Resolução
+ASPECT_RATIO=Ratio de Imagem
+FRAME_RATE=Velocidade de Fotograma
+VIDEO_FORMAT=Formato
+MOVIE_LENGTH=Duração
+FRAMES=Frames
+
+;Video
+VIDEO_OPTIONS=Opções Video
+FRAME_OPTIONS=Opções de frames
+FRAMES_PER_SECOND=Frames/Segundo
+ADVANCED=Avançado
+VIDEO_CHECKING=Verificação do ID -sequência video
+VIDEO_STREAM_ID=ID da sequência de video
+CHECK_AUTO=Captura automática de recorte e dimensão
+WIDTH=Largura
+HEIGHT=Altura
+PREVIEW=Pré-visualização
+RESIZING=Redimensionar
+CROPPING=Recortar
+CUSTOM_OUTPUT_FORMAT=Personalizar formato
+OPEN_VOB_LBA=Abrir VOB bitstream no LBA
+FRAME_RANGE=Intervalo de Frames de
+TO=a
+
+;Audio
+GENERAL_AUDIO=Opções Gerais de Audio
+CREATE_AUDIO=Criar Audio
+AUDIO_STREAMS_LANGUAGES=Sequências de audio e idioma
+CHECK_AUDIO=Verificar Audio
+EXTRACT_ALL_AUDIO=Extrair todo o Audio
+CONVERT_ALL_AUDIO=Converter todo o Audio
+AUDIO_FORMAT=Formato Audio
+TWO_CHANNELS=(2 canais)
+SIX_CHANNELS=(6 canais)
+AUDIO_BITRATE_AND_CONVERSION=AudioBitrate e Conversão
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION= conversão do Samplerate
+AMPLIFY=Amplificar
+NORMALIZE=Normalizar níveis de pico.
+NORMALIZE_MIDNIGHT=Normalizar níveis de pico. (Modo Meia-Noite)
+
+
+;Codec
+CODEC_OPTIONS=Opções de Codec
+DIVX_OPTIONS=Opções DivX
+CHOOSE_CODEC=Escolha Codec
+ADVANCED_SETTINGS=Config. avançada
+MAX_KEYFRAME=Frame-chave a cada
+FIRST_PASS_LOCATION=Localização do ficheiro de log da primeira passagem
+AUTO_LOGFILENAMING=Automatico (ficheiro de Log ficará com nome do projecto.)
+MANUAL_LOGFILENAMING=Manual
+PASS_OPTIONS=Opções de passos
+CREATE_ONE_PASS_MOVIE=Criar ficheiro a 1 passo
+CREATE_TWO_PASS_MOVIE=Criar ficheiro a 2 passos
+ONLY_FIRST_PASS=Fazer apenas primeiro passo.
+ONLY_SECOND_PASS=Fazerapenas segundo passo.
+BOTH_PASSES=Fazer ambos os passos.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Opções de ficheiros
+ADVANCED_BITRATE=Parâmetros avançados de Bitrate
+END_CREDITS_OPTIONS=Opções de créditos finais
+ENTER_BITRATE=Definir bitrate
+ENTER_FINAL_FILESIZE=Definir tamanho final do filme
+GET_TIME=Obter tempo no filme.
+FILESIZE=Tamanho
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Descrição
+HOURS=Hora(s)
+MINUTES=Minuto(s)
+SECONDS=Segundo(s)
+SLOW=Filme sem muita acção.
+NORMAL=Filme com acção normal.
+FAST=Filme com muita acção ou com com cores brilhantes.
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Não incluir créditos finais no filme.
+ENDCREDITS_RECOMPRESS=Re-comprimir creditos finais.
+RECOMPRESS_PCT=% do bitrate do filme principal.
+ENDCREDITS_AUTOMATIC=Detecção automatica.
+ENDCREDITS_MANUAL=Manual-créditos finais começam a
+WORKAROUND1=Repara 'problemas mpeg2avi quando fazendo a 2 passos'.
+
+;Misc
+GENERAL_SUBTITLES=Opções genericas de legendagem
+CREATE_SUBTITLES=Criar legendas usando VobSub
+SELECT_ALL_LANGUAGES=Seleccionar todas os idiomas.
+CONTAINER_FORMAT=Formato do filme
+
+;Project
+PROJECT_OPTIONS=Opções de projecto
+BATCH_SETTINGS=Opções de Batch
+PROJECT_NAME=Nome do projecto
+TEMP_FOLDER=Pasta temporária
+OUTPUT_FOLDER=Pasta de saída
+OVERWRITE_FILES=Re-escrever ficheiros (sem avisar)
+DELETE_TEMP=Apagar ficheiros temporários quando terminar.
+SPLIT_FILE=Dividir o ficheiro aos
+NORMAL_MODE=Normal
+BATCH_MODE=Formato Batch
+BUTTON_UP=Cima
+BUTTON_DOWN=Baixo
+BUTTON_ADD=Acrescentar
+BUTTON_REMOVE=Remover
+BUTTON_MODIFY=Modificar
+BUTTON_CLEAR=Apagar lista
+
+;OutputFiles
+SYSTEM_SETTINGS=Configurações de sistema
+STATUS_INFORMATION=Informação de status
+PROGRESS=Progresso
+SHUTDOWN=Encerrar windows quando terminar
+
+;Settings
+EXTERNAL_PROGRAMS=Programas externos
+ADVANCED_AUDIO_SETTINGS=Configurações avançadas de áudio.
+AC3_PRELOAD_VALUE=Valor AC3 Pré-carregado
+AC3_INTERLEAVE_VALUE=Valor AC3 Interleave
+PRIORITY_SETTINGS=Configurações prioritárias
+AUDO_PRIORITY=codificação áudio
+VIDEO_PRIORITY=codificação Video
+DISK_PRIORITY=escrita/leitura de disco
+SETTING_WARNING=(*) Configurações máximas não recomendadas!
+GET_DEFAULT_VALUES=Valores iniciais
+LANGUAGE_SETTINGS=Configurações de idioma
+LANGUAGE=Idioma
+
+; External Program Settings
+PROGRAM_LOCATIONS=Localização de programas externos [*]
+SAVE=Gravar [*]
+CANCEL=cancelar [*]
+

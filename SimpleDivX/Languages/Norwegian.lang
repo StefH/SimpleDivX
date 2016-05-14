@@ -1,0 +1,157 @@
+; Norwegian Language File v0.1 by wiak [ tommarnk@gmail.com ]
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Inngang
+TAB_VIDEO=Video
+TAB_AUDIO=Lyd
+TAB_CODEC=Codec
+TAB_COMPRESSION=Kompresjon
+TAB_MISC=Misc
+TAB_PROJECT=Prosjekt
+TAB_OUTPUT=Utgang
+TAB_SETUP=Instillinger
+
+;General
+QUIT=Avslutt
+
+;Input
+INPUT_FILES=Inngang Filer
+FOLDER=Mappe
+VOB_FILES=VOB / IFO Filer
+CHECK_MAIN=Velg ut Hoved Film
+CHECK_ALL=Velg ut Alle Arkiver
+VIDEO_INFORMATION=Video Informasjon
+RESOLUTION=Resolusjon
+ASPECT_RATIO=Aspekt Forhold
+FRAME_RATE=Framerate
+VIDEO_FORMAT=Video Format
+MOVIE_LENGTH=Film Lengde
+FRAMES=Rekkevidder
+
+;Video
+VIDEO_OPTIONS=Video Instillinger
+FRAME_OPTIONS=Ramm inn Instillinger
+FRAMES_PER_SECOND=Frames/Second
+ADVANCED=Avansert
+VIDEO_CHECKING=Muliggjør Video Strøm ID å sjekking
+VIDEO_STREAM_ID=VideoStrøm ID
+CHECK_AUTO=Auto cropping og resizing
+WIDTH=bredde
+HEIGHT=høyde
+PREVIEW=Preview
+RESIZING=Resizing
+CROPPING=Cropping
+CUSTOM_OUTPUT_FORMAT=Custom Output Format
+OPEN_VOB_LBA=Åpne VOB bitstream på LBA
+FRAME_RANGE=Ramm inn Rekkevidde fra
+TO=til
+
+;Audio
+GENERAL_AUDIO=Generell Audio
+CREATE_AUDIO=Skap Audio
+AUDIO_STREAMS_LANGUAGES=Audio Strømer og Språk
+CHECK_AUDIO=Sjekk Audio
+EXTRACT_ALL_AUDIO=Trekk ut all lyd
+CONVERT_ALL_AUDIO=Forvandle all lyd
+AUDIO_FORMAT=Lyd Format
+TWO_CHANNELS=(2 kanaler)
+SIX_CHANNELS=(6 kanaler)
+AUDIO_BITRATE_AND_CONVERSION=Audiobitrate og Omdanning
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Samplerate Omdanning
+AMPLIFY=Forsterk
+NORMALIZE=Peak level normalize.
+NORMALIZE_MIDNIGHT=Toppnivå normaliserer. (Midnatt Modus)
+
+;Codec
+CODEC_OPTIONS=Codec Alternativer
+DIVX_OPTIONS=DivX Alternativer
+CHOOSE_CODEC=Velg Codec
+ADVANCED_SETTINGS=Avanserte Innstillinger
+MAX_KEYFRAME=Maksimum Nøkkel Rammer INN
+FIRST_PASS_LOCATION=Først-passerer loggarkivplassering
+AUTO_LOGFILENAMING=Automatisk (Logfile kalt etter Prosjekt Navnet.) 
+MANUAL_LOGFILENAMING=Håndbok
+PASS_OPTIONS=Passer Alternativer
+CREATE_ONE_PASS_MOVIE=Skap en 1-passfilm
+CREATE_TWO_PASS_MOVIE=Skap en 2-passfilm
+ONLY_FIRST_PASS=Gjør bare først pass. 
+ONLY_SECOND_PASS=Gjør bare andre pass. 
+BOTH_PASSES=Gjør begge pass.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Fil Innstillinger
+ADVANCED_BITRATE=Avansert Bitrate Parametere
+END_CREDITS_OPTIONS=End-Credits Innstillinger
+ENTER_BITRATE=Skriv inn bitrate
+ENTER_FINAL_FILESIZE=Skriv inn final filmstørrelse
+GET_TIME=Hent tid fra film.
+FILESIZE=Filstørrelse
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Beskrivelse
+HOURS=Time(r)
+MINUTES=Minutte(r)
+SECONDS=Sekund(er)
+SLOW=Ikke mye liv i filmen.
+NORMAL=Normal bevegelses-film.
+FAST=Mye bevegelser eller lys film.
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Ikke inkluder rulletekst på slutten av filmen.
+ENDCREDITS_RECOMPRESS=Rekomprimer rulletekst på
+RECOMPRESS_PCT=% of the bitrate from main movie.
+ENDCREDITS_AUTOMATIC=Automatisk oppdagelse.
+ENDCREDITS_MANUAL=Manual=rulletekst starter på
+WORKAROUND1=Fiks 'mpeg2avi henger under 2-pass'.
+
+;Misc
+GENERAL_SUBTITLES=Generell undertekst egenskaper
+CREATE_SUBTITLES=Lag undertekst ved hjelp av VobSub
+SELECT_ALL_LANGUAGES=Velg alle språk.
+CONTAINER_FORMAT=Movie Container Format
+
+;Project
+PROJECT_OPTIONS=Prosjekt Innstillinger
+BATCH_SETTINGS=Batch Innstillinger
+PROJECT_NAME=Prosjektnavn
+TEMP_FOLDER=Temp mappe
+OUTPUT_FOLDER=Output mappe
+OVERWRITE_FILES=Overskriv filer (Uten advarsel)
+DELETE_TEMP=Slett temp-filer når ferdig.
+SPLIT_FILE=Splitt total filer på
+SPLIT_PARTS=deler, av
+SPLIT_MB=MB. each
+NORMAL_MODE=Normal
+BATCH_MODE=Batch Mode
+BUTTON_UP=Up
+BUTTON_DOWN=Down
+BUTTON_ADD=Add
+BUTTON_REMOVE=Fjern
+BUTTON_MODIFY=Endre
+BUTTON_CLEAR=Clear Liste
+DELETE_BATCH=Delete batch entry when ready. Slett batch entry når klar.
+
+;OutputFiles
+SYSTEM_SETTINGS=System Innstillinger
+STATUS_INFORMATION=Status Informasjon
+PROGRESS=Status
+SHUTDOWN=Shutdown windows when finished.
+
+;Settings
+EXTERNAL_PROGRAMS=External Programs
+ADVANCED_AUDIO_SETTINGS=Advanced Audio Settings
+AC3_PRELOAD_VALUE=AC3 Preload value
+AC3_INTERLEAVE_VALUE=AC3 Interleave Value
+PRIORITY_SETTINGS=Priority Settings
+AUDO_PRIORITY=Audio Encoding Priority
+VIDEO_PRIORITY=Video Encoding Priority
+DISK_PRIORITY=Disk read/write Priority
+SETTING_WARNING=(*) Setting to Highest is not recommended!
+GET_DEFAULT_VALUES=Get Defaults
+LANGUAGE_SETTINGS=Language Settings
+LANGUAGE=Language
+
+; External Program Settings
+PROGRAM_LOCATIONS=External Program locations
+SAVE=save
+CANCEL=cancel

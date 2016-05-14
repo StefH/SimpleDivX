@@ -1,0 +1,22 @@
+getaviinfo
+param1=TestData/xvid_640x352_23.976.avi
+
+#
+# Search the frame where the (video) filesize is 100MB
+#
+#filesize2frame
+#param1=f:\\divx\\The Manchurian Candidate - 1.avi
+#param2=100
+
+#filesize2frame
+#param1=f:\\divx\\The Manchurian Candidate - 2.avi
+#param2=222
+
+#searchsplitpoints
+#param1=h:\\FILES\\Ghost_.avi
+#param2=5
+#param3=2
+#param4=30
+#param5=1
+
+listcodecs

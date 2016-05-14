@@ -1,0 +1,38 @@
+BODY {
+	FONT-FAMILY: Times, Arial, Helvetica; FONT-SIZE: normal
+}
+A:link {
+	COLOR: #006090; FONT-WEIGHT: bold
+	
+}
+A:active {
+	COLOR: #ff0000; FONT-WEIGHT: bold
+}
+A:visited {
+	COLOR: #0050a0; FONT-WEIGHT: bold
+}
+A:hover {
+	COLOR: #003060; FONT-WEIGHT: bold
+}
+HR {
+	COLOR: #0050a0
+}
+.head {
+	COLOR: #000000; FONT-SIZE: 150%; FONT-WEIGHT: bold
+}
+
+h1 {
+	;COLOR: #002050; FONT-SIZE: 150%; FONT-WEIGHT: bold;
+}
+
+h2 {
+	COLOR: #002050; FONT-SIZE: 125%; FONT-WEIGHT: bold
+}
+
+h3 {
+	COLOR: #002050; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+
+h4 {
+	COLOR: #002050; FONT-SIZE: 90%; FONT-WEIGHT: bold; text-indent: 0em
+}

@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "genericmm", "genericmm.vcproj", "{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84} = {9AA87C1D-A27E-47D9-917E-9328D4429B84}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseClasses", "..\Dependencies\DirectShow9-BaseClasses\baseclasses.vcproj", "{9AA87C1D-A27E-47D9-917E-9328D4429B84}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug for CallGenericMM = Debug for CallGenericMM
+		Debug for getsplitframe = Debug for getsplitframe
+		Debug Unicode = Debug Unicode
+		Release = Release
+		Release for CallGenericMM = Release for CallGenericMM
+		Release for getsplitframe = Release for getsplitframe
+		Release Unicode = Release Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug.ActiveCfg = Debug|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug.Build.0 = Debug|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug for CallGenericMM.ActiveCfg = Debug for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug for CallGenericMM.Build.0 = Debug for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug for getsplitframe.ActiveCfg = Debug for getsplitframe|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug for getsplitframe.Build.0 = Debug for getsplitframe|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug Unicode.ActiveCfg = Debug for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug Unicode.Build.0 = Debug for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release.ActiveCfg = Release|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release.Build.0 = Release|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release for CallGenericMM.ActiveCfg = Release for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release for CallGenericMM.Build.0 = Release for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release for getsplitframe.ActiveCfg = Release for getsplitframe|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release for getsplitframe.Build.0 = Release for getsplitframe|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release Unicode.ActiveCfg = Release for CallGenericMM|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release Unicode.Build.0 = Release for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug.ActiveCfg = Debug|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug.Build.0 = Debug|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug for CallGenericMM.ActiveCfg = Debug for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug for CallGenericMM.Build.0 = Debug for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug for getsplitframe.ActiveCfg = Debug for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug for getsplitframe.Build.0 = Debug for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release.ActiveCfg = Release|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release.Build.0 = Release|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release for CallGenericMM.ActiveCfg = Release for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release for CallGenericMM.Build.0 = Release for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release for getsplitframe.ActiveCfg = Release for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release for getsplitframe.Build.0 = Release for CallGenericMM|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release Unicode.Build.0 = Release Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

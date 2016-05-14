@@ -1,0 +1,156 @@
+;Translation by : djibeXX
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Entrée
+TAB_VIDEO=Video
+TAB_AUDIO=Audio
+TAB_CODEC=Codec
+TAB_COMPRESSION=Compression
+TAB_MISC=Divers
+TAB_PROJECT=Projet
+TAB_OUTPUT=Sortie
+TAB_SETUP=Config
+
+;Général
+QUIT=Quitter
+
+;Entrée
+INPUT_FILES=Fichiers à encoder
+FOLDER=Dossier
+VOB_FILES=Fichiers VOB
+CHECK_MAIN=Auto-sélection du film
+CHECK_ALL=Sélectionner tous les fichiers
+VIDEO_INFORMATION=Informations générales
+RESOLUTION=Résolution
+ASPECT_RATIO=Format d’image
+FRAME_RATE=Zone
+VIDEO_FORMAT=Région du DVD
+MOVIE_LENGTH=Durée
+FRAMES=Images
+
+;Vidéo
+VIDEO_OPTIONS=Paramètres vidéos
+FRAME_OPTIONS=Paramètres des sections
+FRAMES_PER_SECOND=Images/Seconde
+ADVANCED=Avancé
+VIDEO_CHECKING=Auto-détection du canal vidéo
+VIDEO_STREAM_ID=Bande vidéo ID
+CHECK_AUTO=Cadrage / Taille automatique
+WIDTH=Largeur
+HEIGHT=Hauteur
+PREVIEW=Prévisualisation
+RESIZING=Retailler
+CROPPING=Recadrer
+CUSTOM_OUTPUT_FORMAT=Format Prédéfinis
+OPEN_VOB_LBA=Commencer au LBA
+FRAME_RANGE=De l'image
+TO=à
+
+;Audio
+GENERAL_AUDIO=Paramètres généraux
+CREATE_AUDIO=Inclure la bande son
+AUDIO_STREAMS_LANGUAGES=Canaux audio et langues
+CHECK_AUDIO=Auto-détecter la bande son
+EXTRACT_ALL_AUDIO=Extraire toutes les pistes Audio
+CONVERT_ALL_AUDIO=Inclure la bande son suivante
+AUDIO_FORMAT=Compression
+TWO_CHANNELS=(2 canaux)
+SIX_CHANNELS=(6 canaux)
+AUDIO_BITRATE_AND_CONVERSION=Qualité du son et de l’encodage
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Fréquence d'échantillonnage
+AMPLIFY=Amplifier le son
+NORMALIZE=Normaliser le volume
+NORMALIZE_MIDNIGHT=Normaliser (Egaliser les pics)
+
+;Codec
+CODEC_OPTIONS=Réglages du Codec
+DIVX_OPTIONS=Paramètres d'encodage du DivX
+CHOOSE_CODEC=Codec à utiliser
+ADVANCED_SETTINGS=Réglages avancés
+MAX_KEYFRAME=Images-Clés max. toutes les
+FIRST_PASS_LOCATION=Location du log de la 1ère passe
+AUTO_LOGFILENAMING=Automatique (Le log aura le nom du projet)
+MANUAL_LOGFILENAMING=Manuel
+PASS_OPTIONS=Réglages des paramètres multi-passes
+CREATE_ONE_PASS_MOVIE=Créer un DivX en 1 passe
+CREATE_TWO_PASS_MOVIE=Créer un DivX en 2 passes
+ONLY_FIRST_PASS=Faire seulement la 1ère passe
+ONLY_SECOND_PASS=Faire seulement la 2ème passe
+BOTH_PASSES=Faire les 2 passes (recommandé)
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Gestion de la taille finale
+ADVANCED_BITRATE=Paramètres avancés du bitrate
+END_CREDITS_OPTIONS=Options du générique
+ENTER_BITRATE=Entrer le bitrate
+ENTER_FINAL_FILESIZE=Entrer la taille finale
+GET_TIME=Auto-détection de la durée du film
+FILESIZE=Taille du fichier
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Indice de qualité
+HOURS=Heure(s)
+MINUTES=Minute(s)
+SECONDS=Seconde(s)
+SLOW=Film lent
+NORMAL=Film normal
+FAST=Film d'action
+ENDCREDITS_NORMAL=Traitement classique
+ENDCREDITS_REMOVE=Ne pas inclure le générique
+ENDCREDITS_RECOMPRESS=Recompresser le générique à
+RECOMPRESS_PCT=% du bitrate du film
+ENDCREDITS_AUTOMATIC=Détection automatique
+ENDCREDITS_MANUAL=Manuel=Début du générique à
+WORKAROUND1=Fixer le 'mpeg2avi bogue en 2ème passe'
+
+;Divers
+GENERAL_SUBTITLES=Options générales des sous-titres
+CREATE_SUBTITLES=Créer des sous-titres avec VobSub
+SELECT_ALL_LANGUAGES=Sélectionner toutes les langues
+CONTAINER_FORMAT=Format du fichier de sortie
+
+;Projet
+PROJECT_OPTIONS=Options du projet
+BATCH_SETTINGS=Liste des tâches
+PROJECT_NAME=Nom du projet
+TEMP_FOLDER=Dossier temporaire
+OUTPUT_FOLDER=Dossier de destination
+OVERWRITE_FILES=Ecraser les fichiers (sans alerte)
+DELETE_TEMP=Effacer les fichiers temporaires à la fin
+SPLIT_FILE=Couper le fichier à
+NORMAL_MODE=Normal (1 encodage)
+BATCH_MODE=Mode multi-tâches
+BUTTON_UP=Haut
+BUTTON_DOWN=Bas
+BUTTON_ADD=Ajouter
+BUTTON_REMOVE=Effacer
+BUTTON_MODIFY=Modifier
+BUTTON_CLEAR=Effacer liste
+DELETE_BATCH=Effacer la tâche après son exécution
+
+;Sortie
+SYSTEM_SETTINGS=Gestion du système
+STATUS_INFORMATION=Etat
+PROGRESS=Progression
+SHUTDOWN=Eteindre le PC une fois l'encodage terminé
+
+;Config
+EXTERNAL_PROGRAMS=Logiciels tiers
+ADVANCED_AUDIO_SETTINGS=Paramètres Audio avancés
+AC3_PRELOAD_VALUE=Préchargement de l'AC3
+AC3_INTERLEAVE_VALUE=Désentrelacement AC3
+PRIORITY_SETTINGS=Réglages de la priorité
+AUDO_PRIORITY=Encodage Audio
+VIDEO_PRIORITY=Encodage Vidéo
+DISK_PRIORITY=Lect./Ecrit. sur DD
+SETTING_WARNING=(*) Highest est déconseillé!
+GET_DEFAULT_VALUES=Paramètres par défaut
+LANGUAGE_SETTINGS=Paramètres linguistiques
+LANGUAGE=Langue de l'interface
+
+;Paramètres des programmes externes
+PROGRAM_LOCATIONS=Localisation des programmes externes
+SAVE=Enregistrer
+CANCEL=Annuler
+

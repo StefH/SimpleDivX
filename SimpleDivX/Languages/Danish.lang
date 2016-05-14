@@ -1,0 +1,157 @@
+; Oversat til dansk af Morten Christiansen (mkc@studmed.au.dk)
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Input
+TAB_VIDEO=Video
+TAB_AUDIO=Lyd
+TAB_CODEC=Codec
+TAB_COMPRESSION=Kompression
+TAB_MISC=Andet
+TAB_PROJECT=Projekt
+TAB_OUTPUT=Output
+TAB_SETUP=Indstillinger
+
+;General
+QUIT=Afslut
+
+;Input
+INPUT_FILES=Input-filer
+FOLDER=Mappe
+VOB_FILES=VOB-filer
+CHECK_MAIN=Vælg film-filer
+CHECK_ALL=Vælg film-filer samt ekstra-materiale
+VIDEO_INFORMATION=Videoinformation
+RESOLUTION=Opløsning
+ASPECT_RATIO=Aspect Ratio
+FRAME_RATE=Billeder pr sek
+VIDEO_FORMAT=Video-format
+MOVIE_LENGTH=Filmlængde
+FRAMES=antal billeder
+
+;Video
+VIDEO_OPTIONS=Video-instillinger
+FRAME_OPTIONS=Billede-instillinger
+FRAMES_PER_SECOND=Billeder pr sek
+ADVANCED=Avanceret
+VIDEO_CHECKING=Muliggør Video Stream ID Chekking
+VIDEO_STREAM_ID=Video Stream ID
+CHECK_AUTO=Automatisk størrelsestilpasning
+WIDTH=bredde
+HEIGHT=højde
+PREVIEW=Afprøv indstillingerne
+RESIZING=Størrelsesforhold
+CROPPING=Tilskæring
+CUSTOM_OUTPUT_FORMAT=Output-format
+OPEN_VOB_LBA=Åbn VOB bitstream på LBA
+FRAME_RANGE=Billede-rækkevidde fra
+TO=til
+
+;Audio
+GENERAL_AUDIO=Generelle lydindstillinger
+CREATE_AUDIO=Opret lyd
+AUDIO_STREAMS_LANGUAGES=Lyd-streams og sprog
+CHECK_AUDIO=Tjek lyd
+EXTRACT_ALL_AUDIO=udpak al lyd
+CONVERT_ALL_AUDIO=Konverter al lyd
+AUDIO_FORMAT=Lyd-format
+TWO_CHANNELS=(2 kanaler)
+SIX_CHANNELS=(6 kanaler)
+AUDIO_BITRATE_AND_CONVERSION=Lyd-bitrate og konvertering
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Samplerate konvertering
+AMPLIFY=Forstærk
+NORMALIZE=Normaliser Peak-level
+NORMALIZE_MIDNIGHT=Normaliser Peak-level (Midnight Mode)
+
+;Codec
+DIVX_OPTIONS=DivX-indstillinger
+CODEC_OPTIONS=Codec-indstillinger
+CHOOSE_CODEC=Vælg Codec
+ADVANCED_SETTINGS=Avanceret
+MAX_KEYFRAME=Maksimum Key-Frame
+FIRST_PASS_LOCATION=1-pass log-filens placering
+AUTO_LOGFILENAMING=Automatisk (Log-filen bliver opkaldt efter projektets navn) 
+MANUAL_LOGFILENAMING=Manuelt
+PASS_OPTIONS=Godkendelses-indstillinger
+CREATE_ONE_PASS_MOVIE=Opret 1-pass-procedure
+CREATE_TWO_PASS_MOVIE=Opret 2-pass-procedure
+ONLY_FIRST_PASS=Foretag kun 1-pass-procedure
+ONLY_SECOND_PASS=Foretag kun 2-pass-procedure
+BOTH_PASSES=Foretag begge procedurer
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Fil-Indstillinger
+ADVANCED_BITRATE=Avancerede bitrate-parametere
+END_CREDITS_OPTIONS=Rulletekst-indstillinger
+ENTER_BITRATE=Angiv bitrate
+ENTER_FINAL_FILESIZE=Angiv endelig filmstørrelse
+GET_TIME=Hent tid fra film
+FILESIZE=Filstørrelse
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Beskrivelse
+HOURS=Time(r)
+MINUTES=Minut(ter)
+SECONDS=Sekund(er)
+SLOW=Lidt bevægelse i filmen
+NORMAL=Normal bevægelse i filmen
+FAST=Meget bevægelse i filmen eller meget lyse billeder i filmen
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Inkluder Ikke rulletekster sidst i filmen
+ENDCREDITS_RECOMPRESS=Rekomprimer rulletekst på
+RECOMPRESS_PCT=% af bitrate fra filmen
+ENDCREDITS_AUTOMATIC=Automatisk
+ENDCREDITS_MANUAL=Manuelt; rulletekst starter på
+WORKAROUND1=Fiks 'mpeg2avi fryser under 2-godkendelsesproces'
+
+;Misc
+GENERAL_SUBTITLES=Generelle undertekst-indstillinger
+CREATE_SUBTITLES=Opret undertekster vha. VobSub
+SELECT_ALL_LANGUAGES=Vælg alle sprog
+CONTAINER_FORMAT=Filmens fil-type
+
+;Project
+PROJECT_OPTIONS=Projekt-indstillinger
+BATCH_SETTINGS=Batch-indstillinger
+PROJECT_NAME=Projektnavn
+TEMP_FOLDER=Midlertidig mappe (temp-mappe)
+OUTPUT_FOLDER=Output mappe
+OVERWRITE_FILES=Overskriv filer (Uden advarsel)
+DELETE_TEMP=Slet temp-filer ved afslutningen
+SPLIT_FILE=Opdel filmen i
+SPLIT_PARTS=filer, af max.
+SPLIT_MB=MB pr. fil
+NORMAL_MODE=Normal
+BATCH_MODE=Batch Mode
+BUTTON_UP=Op
+BUTTON_DOWN=Ned
+BUTTON_ADD=Tilføj
+BUTTON_REMOVE=Fjern
+BUTTON_MODIFY=Ændre
+BUTTON_CLEAR=Ryd liste
+DELETE_BATCH=Slet 'batch entry' når klar
+
+;OutputFiles
+SYSTEM_SETTINGS=System-indstillinger
+STATUS_INFORMATION=Status-information
+PROGRESS=Status
+SHUTDOWN=Luk Windows ved afslutning
+
+;Settings
+EXTERNAL_PROGRAMS=Eksterne (indkorporerede) programmer
+ADVANCED_AUDIO_SETTINGS=Avancerede lyd-indstillinger
+AC3_PRELOAD_VALUE=AC3 preloadværdi
+AC3_INTERLEAVE_VALUE=AC3 indfletningsværdi
+PRIORITY_SETTINGS=Prioriterings-indstillinger
+AUDO_PRIORITY=Prioriter Lyd-kodning
+VIDEO_PRIORITY=Prioriter Video-kodning
+DISK_PRIORITY=Prioriter Disk r/w
+SETTING_WARNING=(*) Highest frarådes!
+GET_DEFAULT_VALUES=Nulstil alt
+LANGUAGE_SETTINGS=Sprog-indstillinger
+LANGUAGE=Sprog
+
+; External Program Settings
+PROGRAM_LOCATIONS=Extern program-placering
+SAVE=Gem
+CANCEL=Annuller

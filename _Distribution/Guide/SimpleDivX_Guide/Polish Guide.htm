@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-2">
+<title></title>
+<link href="StyleSheet/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body link="#0000FF" vlink="#800080" lang="EN-US">
+
+<table border="2" cellpadding="0" cellspacing="0" width="100%"
+bgcolor="#FFFFFF" bordercolor="#111111" id="AutoNumber1" summary="s"
+style="border-collapse: collapse">
+    <tr>
+        <td width="100%"><p align="center" class="MsoNormal"
+        style="text-align:center">Polish Guide v1.0<br>
+        By: Zbigniew Szumel 5-15-2002<br>
+        For: <span class="SpellE">SimpleDivX</span> 0.99<br>
+        By: CyberDemonII
+        <a href="http://www.simpledivx.org">http://www.simpledivx.org</a>
+        </td>
+    </tr>
+</table>
+<br>
+<b>SimpleDivX</b> ma 6 zak³adek u góry okna programu, eka¿da oznaczona numerem i nazw±. 
+W tej instrukcji bêdziemy siê poruszaæ w³asnie po tych zak³adkach.
+<br>
+Kiedy po raz pierwszy uruchomisz program
+SimpleDivX ipowinien wygl±daæ tak jak ni¿ej na obrazku:
+
+<h1><br>Zak³adka 1: Input</h1>
+<img src="Images/EN/input.png" alt="">
+<br>
+
+<h3>Pliki wej¶ciowe:</h3>
+Kliknij na drugi przycisk po prawej u góry i powinno pojawiæ siê nastêpuj±ce okno.<br>
+<img src="Images/EN/folder.png" alt="">
+<br>
+Wybierz folder do którego skopiowa³e¶ pliki vob u¿ywaj±c programu smartripper, 
+i nastêpnie kliknij ok.<br> 
+Je¶li podczas kopiowania w Smartripper u¿y³es
+opcji 'files' mo¿esz teraz zaznaczyæ 'select all files',
+je¶li u¿y³e¶ opcji 'movie' lub inego programu do
+kopiowania dvd wybierz 'select main movie'.
+
+<h3>Informacje o filmie (Video Information)</h3>
+Tutaj znajduj± siê podstawowe informacje o filmie dvd kóry chcesz przekonwertowaæ.
+
+<h1><br>Zak³adka 2: Video</h1>
+<img src="Images/EN/video.png" alt=""><br>
+
+<p align="center" class="MsoNormal" style="text-align:center">
+
+<h3>Frames/Second (fps):</h3>
+Tutaj wybierasz warto¶æ *wyj¶ciow±t* ilo¶ci
+klatek na sekundê. Dla PAL powinie¶ wybraæ 25.000, a dla 
+NTSC wybierz 23.976 lub 29.970.
+
+
+<h3>Postfilter Quality:</h3>
+<i>
+High = wy¿sza jako¶æ/wolniejsza kompresja<br>
+Low = ni¿sza jako¶æ/szybsza kompresja
+</i>
+
+<h3>Reference Quality:</h3>
+Róznice pomiêdzy opcjami tutaj trudno jest
+wyja¶niæ ale w kilku s³owach mo¿na ujaæ to tak: opcja IDCT
+jest u¿ywana  przy DEKODOWANIU DCT podczas kompresji. Polecamy
+u¿yæ nastêpuj±ce opcje w zale¿no¶ci od procesora jaki
+posiadasz::
+<i>
+Pentium w/mmx: 16-bit MMX ichen<br>
+PentiumII: 32-bit MMX<br>
+PentiumIII: 32-bit MMX<br>
+PentiumIV: 64-bit FPU<br>
+K6-2/3: 16-bit MMX ichen<br>
+Athlon/Duron: 32-bit MMX<br>
+Athlon XP: 32-bit MMX
+</i>
+
+<h4>Output Mode:</h4>
+SimpleDivX potrafi zakodowaæ film w róznych
+formatach, polecamy jednak yv12 dlatego ¿e Divx jest jedynym
+kodekiem wspomaganym przez SimpleDivX.
+
+<h4>Output Format:</h4>
+Wybierz taki format wyj¶ciowy jaki chcesz.
+Program zawiera ju¿ kilka popularnych predefiniowanych formatów
+ale mo¿esz wybraæ 'custom' i wprowadziæ w³asne opcje.
+
+
+<h4>Open VOB Bitstream at LBA (Advanced Users):</h4>
+Wybierz je¶li chcesz rozpocz±æ
+kodowanie od konkretnego LBA.
+
+<h4>Frames Range:</h4>
+Tutaj okre¶lasz dok³adn± ilo¶æ klatek
+które maj± byæ zakodowane. Mo¿esz tutaj skompresowaæ krótki
+fragment filmu a potem sprawdziæ jego jako¶æ,.
+
+
+<h1><br>Zak³adka 3: Audio</h1>
+<img src="Images/EN/audio.png" alt="">
+<br>
+
+
+<h4>Create Audio:</h4>
+Odznacz t± opcjê je¶li nie chcesz aby
+program konwertowa³ równie¿ d¼wiêk.
+
+<h4>Extract all AC3 Audio Streams:</h4>
+Opcja ta spowoduje skopiowanie wszytkich ¶cie¿ek
+d¼wiêkowych z filmu. *UWAGA* Ale tylko zaznaczona ¶cie¿ka d¼wiêkowa
+zostanie po³±czona z obrazem.
+
+<h4>Audio Stream ID:</h4>
+Lista ¶cie¿ek d¼wiêkowych w filmie. G³ówna
+¶cie¿ka zazwyczaj jest oznaczona jako 0X80, podczas gdy pozosta³e
+oznaczaj± ¶cie¿ki d¼wiêowe w innych jêzykach lub komentarze
+twórców.
+
+<h4>Audio Language:</h4>
+W przypadku niektórych DVD, SimpleDivX bêdzie
+móg³ okre¶liæ jak± ¶cie¿kê d¼wiêkow± mamy w konkretnym
+przypadku.
+
+<h4>Audio kbps:</h4>
+Podaje bitrate ¶cie¿ki d¼wiêkowej,
+pomocne przy okre¶leniu czy bêdziemy j± kompresowaæ czy te¿ nie.
+
+<h4>Audio Format:</h4>
+<i>
+MP3: Mo¿esz skompresowaæ d¼wiêk do formatu MP3.<br>
+AC3: Mo¿esz pozostawiæ oryginaln± ¶cie¿kê d¼wiêkow± w foramcie AC3.<br>
+OGG: Mo¿esz skompresowaæ d¼wiêk do formatu OGG.
+</i>
+
+<h1><br>Zakladka 4: Codec</h1>
+<img src="Images/EN/codec.png" alt="">
+<br>
+(Do wyboru s± tylko zainstalowane kodeki, w
+tym przypadku Divx5, pozosta³e jako niezainstalowane s±
+nieaktywne)
+
+<h4>1-Pass DivX file:</h4>
+Film jest kompresowany ze sta³ym bitratem,
+co oznacza, ¿e ka¿da klatka ma takis sam bitrate.
+
+<h4>2-Pass DivX file:</h4>
+Film jest kompresowany ze zmiennym bitratem,
+oznacza to, ¿e sceny o du¿ej ilo¶ci ruchu otrzymaj± wiêcej
+bitów i na odwrót. W rezulatacie jako¶æ jest o wiele lepsza
+ni¿ w poprzednim trybie, ale kompresja trwa 2 razy d³u¿ej.
+TRYB POLECANY.
+
+<h3>(DivX 5.x PRO)</h3>
+
+<h4>Global Motion Compensation:</h4>
+Opcja GMC pomaga przy scenach z kadrowaniem
+i zbli¿eniach.
+
+<h4>Quarter Pixel:</h4>
+Opcja ta pozwala na lepsze
+okre¶lenie przesuniêæ makrobloków w kaltce co powinno zwiêkszyæ
+jako¶æ filmu.
+
+<h4>Bidirectional Encoding:</h4>
+Zwiêksza kompresjê filmu przy zachowaniu
+tej same jako¶ci wykorzystuj±c kaltki typu b-frames.
+
+
+<h4>Do Only First Pass:</h4>
+Zostanie dokonana tylko pierwsza kompresja z
+dwóch, po jej zakoñczeniu bêdziesz musia³
+wybraæ opcjê 'Do Only Second Pass' aby program dokona³ drugiej
+kompresji.
+
+<h1><br>Zak³adka 5: Compression</h1>
+<img src="Images/EN/compression.png" alt="">
+<br>
+(Obrazek przedstawia tylko przyk³adowe opcje)
+
+<h4>Get Time From Movie:</h4>
+Zaznaczeni tej opcji spowoduje odczytanie
+czasu filmu z plików .vob. Nie musi ona odpowiadac rzeczywistej
+d³ugo¶ci i nale¿y t± warto¶æ sprawdziæ w odtwarzaczu dvd..
+
+<h4>(End Credits Options)</h4>
+SimpleDivX potrafi na 3 sposoby potraktowaæ
+napisy koñcowe w filmie. Mo¿na skompreoswaæ je normalnie (z
+takim samym bitratem jak film), w ogóle ich nie kompreoswaæ i
+nie do³±czaæ do filmu koñcowego, albo skompresowaæ je z ni¿szym
+bitratem (oszczêdzaj±c w ten sposób bitrate na sam film).
+
+<h1><br>Zak³adka 6: Output</h1>
+<img src="Images/EN/output.png" alt="">
+<br>
+
+<h4>Temp Folder:</h4>
+Tuatj program zapisze tymczasowe pliki tworzone podczas kompresji.
+
+<h4>Output Folder:</h4>
+Tutaj zostanie zapisany koñcowy plik avi.
+
+<h4>Split Total File:</h4>
+Je¶li tworzysz film na wiêcej ni¿ 1 cdrom
+program mo¿e go samodzielnie podzieliæ na gotowe czê¶ci wed³ug wskazanej wielko¶c czê¶ci.
+
+<h4>Status Information:</h4>
+Okno to informuje o postêpie kompresji filmu i poszczególnych etapach.
+
+<h1><br>TAB 7: Setup</h1>
+<img src="Images/EN/setup.png" alt="">
+<br>
+
+<h4>Po³o¿enie programów zewnêtrznych</h4>
+Kliknij na przycisk po prawej u góry i powinno pojawiæ siê nastêpuj±ce okno.
+
+<img src="Images/EN/program_locations.png" alt="">
+<br>
+
+Teraz zmieñ wszytkie ¶cie¿ki na tam gdzie zainstalowa³e¶ <b>SimpleDivX</b>. 
+Tutaj mo¿esz wskazaæ po³o¿enie tych programów je¶li masz ju¿ je zainstalowane na komputerze,
+ale pakiet instalcyjny programu zawsze zawiera ich najnowsze 
+wersje st±d najlepiej jest wskazaæ folder SimpleDivX.
+</body>
+</html>

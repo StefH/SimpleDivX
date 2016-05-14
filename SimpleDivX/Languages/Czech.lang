@@ -1,0 +1,168 @@
+;Translation by:
+;- Lagardere for version 1.38
+;- Veronika for 1.40.22
+
+[SimpleDivX]
+;Tabs
+TAB_INPUT=Vstup
+TAB_VIDEO=Obraz
+TAB_AUDIO=Zvuk
+TAB_CODEC=Kodek
+TAB_COMPRESSION=Komprese
+TAB_MISC=Rùzné
+TAB_PROJECT=Projekt
+TAB_OUTPUT=Výstup
+TAB_SETUP=Nastavení
+
+;General
+QUIT=Konec
+
+;Input
+INPUT_FILES=Vstupní soubor
+FOLDER=Složka:
+VOB_FILES=Soubory VOB:
+CHECK_MAIN=Vybrat vlastní film
+CHECK_ALL=Vybrat všechny soubory
+VIDEO_INFORMATION=Informace o obraze
+RESOLUTION=Rozlišení
+ASPECT_RATIO=Pomìr
+FRAME_RATE=Frekvence snímkù
+VIDEO_FORMAT=Formát obrazu
+MOVIE_LENGTH=Délka filmu
+FRAMES=Snímkù
+CHAPTERS=Kapitoly
+TITLE=Vyber titul
+STATUS_BUSY=Stav : Zaneprazdneny
+STATUS_READY=Stav : Pripraveny
+
+;Video
+VIDEO_OPTIONS=Možnosti obrazu
+FRAME_OPTIONS=Možnosti snímkù
+FRAMES_PER_SECOND=Snímkù/sekund
+ADVANCED=Pokroèilé
+VIDEO_CHECKING=Povolit ovìøení ID stopy obrazu
+VIDEO_STREAM_ID=ID stopy obrazu
+CHECK_AUTO=Automaticky zmìnit velikost a oøezat
+WIDTH=šíøka
+HEIGHT=výška
+PREVIEW=Náhled
+RESIZING=Zmìna velikosti
+CROPPING=Oøezání
+CUSTOM_OUTPUT_FORMAT=Pøizpùsobit výstup na
+OPEN_VOB_LBA=Otevøít bitovou stopu na LBA
+FRAME_RANGE=Rozsah snímkù od
+TO=do
+SOURCE_FORMAT=Zdrojovy format
+
+;Audio
+GENERAL_AUDIO=Hlavní zvuk
+CREATE_AUDIO=Vytvoøit zvuk
+AUDIO_STREAMS_LANGUAGES=Zvukové stopy a jazyky
+CHECK_AUDIO=Ovìøit zvuk
+EXTRACT_ALL_AUDIO=Extrahovat všechny zvuky
+CONVERT_ALL_AUDIO=Pøevést všechny zvuky
+AUDIO_FORMAT=Formát zvuku
+TWO_CHANNELS=(2 kanály)
+SIX_CHANNELS=(6 kanálù)
+AUDIO_BITRATE_AND_CONVERSION=Pøenosová rychlost zvuku a konverze
+AUDIO_KBPS=Pøenosová rychlost (kbps)
+SAMPLE_RATE_CONVERSION=Konverze vzorkovací frekvence
+AMPLIFY=Zesílit
+NORMALIZE=Normalizovat úroveò výšek
+NORMALIZE_MIDNIGHT=Normalizovat úroveò výšek (Noèní režim)
+
+;Codec
+CODEC_OPTIONS=Možnosti kodeku
+DIVX_OPTIONS=Možnosti DivX
+CHOOSE_CODEC=Výbìr kodeku
+ADVANCED_SETTINGS=Pokroèilé nastavení
+MAX_KEYFRAME=Klíèové snímky každých
+FIRST_PASS_LOCATION=Umístìní protokolového souboru prvního prùchodu
+AUTO_LOGFILENAMING=Automaticky (stejné jméno protokolu jako projektu)
+MANUAL_LOGFILENAMING=Manuálnì
+PASS_OPTIONS=Možnosti prùchodù
+CREATE_ONE_PASS_MOVIE=1-prùchodový soubor
+CREATE_TWO_PASS_MOVIE=2-prùchodový soubor
+ONLY_FIRST_PASS=Vykonat jen první prùchod
+ONLY_SECOND_PASS=Vykonat jen druhý prùchod
+BOTH_PASSES=Vykonat oba prùchody
+WITH_AUDIO=s XXX audio.
+WITH_NO_AUDIO=bez audia.
+
+;Compression
+BITRATE_FILE_OPTIONS=Rychlost dat/Možnosti souboru
+ADVANCED_BITRATE=Pokroèilé parametry rychlosti dat
+END_CREDITS_OPTIONS=Možnosti závìreèných titulkù
+ENTER_BITRATE=Zadat rychlost dat
+ENTER_FINAL_FILESIZE=Zadat finální velikost filmu
+GET_TIME=Získat èas z filmu
+FILESIZE=Velikost souboru
+VIDEO_BITRATE=Rychlost dat
+DESCRIPTION=Popis
+HOURS=Hodin(y)
+MINUTES=Minut(y)
+SECONDS=Sekund(y)
+SLOW=Málo akce ve filmu
+NORMAL=Normální pohyb ve filmu
+FAST=Hodnì akce ve filmu nebo jasné barvy
+ENDCREDITS_NORMAL=Normální
+ENDCREDITS_REMOVE=Neobsahovat závìreèné titulky ve filmu
+ENDCREDITS_RECOMPRESS=Pøekompresovat titulky na
+RECOMPRESS_PCT=% rychlosti dat vlastního filmu
+ENDCREDITS_AUTOMATIC=Automatické rozpoznání
+ENDCREDITS_MANUAL=Manuálnì - závìreèné titulky zaèínají na
+VIDEO_ONLY=(Pouze Video)
+VIDEO_AND_AUDIO=(Video a Audio)
+
+;Misc
+GENERAL_SUBTITLES=Hlavní možnosti titulkù
+CREATE_SUBTITLES=Vytvoøit titulky použitím VobSub
+SELECT_ALL_LANGUAGES=Vybrat všechny jazyky
+CONTAINER_FORMAT=Formát tvaru filmu
+
+;Project
+PROJECT_OPTIONS=Možnosti projektu
+BATCH_SETTINGS=Dávkové nastavení
+PROJECT_NAME=Jméno projektu:
+TEMP_FOLDER=Doèasná složka:
+OUTPUT_FOLDER=Výstupní složka:
+OVERWRITE_FILES=Pøepsat soubory (bez upozornìní)
+DELETE_TEMP=Pøi ukonèení odstranit doèasné soubory
+SPLIT_FILE=Rozdìlit soubor na
+SPLIT_PARTS=èásti, pøi
+SPLIT_MB=MB u každé znich
+NORMAL_MODE=Normální
+BATCH_MODE=Dávkový režim
+BUTTON_UP=Nahoru
+BUTTON_DOWN=Dolù
+BUTTON_ADD=Pøidat
+BUTTON_REMOVE=Vyjmout
+BUTTON_MODIFY=Upravit
+BUTTON_CLEAR=Smazat
+DELETE_BATCH=Smazat dávkový záznam pøi pøipravenosti
+
+;OutputFiles
+SYSTEM_SETTINGS=Nastavení systému
+STATUS_INFORMATION=Informace o stavu
+PROGRESS=Postup
+SHUTDOWN=Pøi dokonèení vypnout poèítaè
+SPLIT_FADEOUT= Rozdelit na ustupu
+
+;Settings
+EXTERNAL_PROGRAMS=Externí programy
+ADVANCED_AUDIO_SETTINGS=Pokroèilé nastavení zvuku
+AC3_PRELOAD_VALUE=Znovu naètení AC3
+AC3_INTERLEAVE_VALUE=Proložení AC3
+PRIORITY_SETTINGS=Nastavení priorit
+AUDO_PRIORITY=Kódování zvuku
+VIDEO_PRIORITY=Kódování obrazu
+DISK_PRIORITY=Ètení a zápis
+SETTING_WARNING=(*) Nastavení na nejvyšší není doporuèeno!
+GET_DEFAULT_VALUES=Standardní hodnoty
+LANGUAGE_SETTINGS=Nastavení jazyku
+LANGUAGE=Jazyk
+
+; External Program Settings
+PROGRAM_LOCATIONS=Umístìní externích programù
+SAVE=Uložit
+CANCEL=Storno

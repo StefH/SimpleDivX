@@ -1,0 +1,155 @@
+; Русский
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=На входе
+TAB_VIDEO=Видео
+TAB_AUDIO=Звук
+TAB_CODEC=Кодек
+TAB_COMPRESSION=Сжатие
+TAB_MISC=Разное
+TAB_PROJECT=Проект
+TAB_OUTPUT=На выходе
+TAB_SETUP=Установки
+
+;General
+QUIT=Выйти
+
+;Input
+INPUT_FILES=Входные файлы
+FOLDER=Папка
+VOB_FILES=VOB / IFO файлы
+CHECK_MAIN=Выбрать основной фильм
+CHECK_ALL=Выбрать все файлы
+VIDEO_INFORMATION=Видео информация
+RESOLUTION=Разрешение
+ASPECT_RATIO=Формат кадра
+FRAME_RATE=Скорость
+VIDEO_FORMAT=Формат видео
+MOVIE_LENGTH=Длительность
+FRAMES=Кадр(-а,-ов)
+
+;Video
+VIDEO_OPTIONS=Опции видео
+FRAME_OPTIONS=Опции кадра
+FRAMES_PER_SECOND=Кадров/Секунду
+ADVANCED=Дополнительно
+VIDEO_CHECKING=Включить проверку ID видеопотока
+VIDEO_STREAM_ID=ID видеопотока
+CHECK_AUTO=Размеры и обрезка автоматически
+WIDTH=ширина
+HEIGHT=высота
+PREVIEW=Просмотр
+RESIZING=Размеры
+CROPPING=Обрезка
+CUSTOM_OUTPUT_FORMAT=Выходной формат
+OPEN_VOB_LBA=Открыть поток бит VOB на LBA
+FRAME_RANGE=Ряд кадров с
+TO=до
+
+;Audio
+GENERAL_AUDIO=Основные настройки
+CREATE_AUDIO=Создать звук
+AUDIO_STREAMS_LANGUAGES=Звуковые потоки и языки
+CHECK_AUDIO=Проверить аудио
+EXTRACT_ALL_AUDIO=Извлечь все звуковые дорожки
+CONVERT_ALL_AUDIO=Преобразовать все звуковые дорожки
+AUDIO_FORMAT=Формат звука
+TWO_CHANNELS=(2 канала)
+SIX_CHANNELS=(6 каналов)
+AUDIO_BITRATE_AND_CONVERSION=Качество и преобразование звука
+AUDIO_KBPS=Качество (kbps)
+SAMPLE_RATE_CONVERSION=Частота дискретизации
+AMPLIFY=Усилить на
+NORMALIZE=Нормализация пикового уровня
+NORMALIZE_MIDNIGHT=Нормализация пикового уровня с дополнительным усилением
+
+;Codec
+CODEC_OPTIONS=Установки кодека
+DIVX_OPTIONS=Установки DivX
+CHOOSE_CODEC=Выбор кодека
+ADVANCED_SETTINGS=Дополнительно
+MAX_KEYFRAME=Макс. интервал Key-Frame
+FIRST_PASS_LOCATION=Расположение и название лог-файла первого прохода
+AUTO_LOGFILENAMING=Автоматически (Лог-файл будет назван как проект)
+MANUAL_LOGFILENAMING=Вручную
+PASS_OPTIONS=Установки проходов
+CREATE_ONE_PASS_MOVIE=1-проходный фильм
+CREATE_TWO_PASS_MOVIE=2-проходный фильм
+ONLY_FIRST_PASS=Выполнить только первый проход.
+ONLY_SECOND_PASS=Выполнить только второй проход.
+BOTH_PASSES=Выполнить оба прохода.
+
+;Compression
+BITRATE_FILE_OPTIONS=Качество / Установки файла
+ADVANCED_BITRATE=Дополнительные настройки качества
+END_CREDITS_OPTIONS=Установки заключительных титров
+ENTER_BITRATE=Ввести битрейт
+ENTER_FINAL_FILESIZE=Ввести размер файла
+GET_TIME=Извлечь длительность из фильма.
+FILESIZE=Размер файла
+VIDEO_BITRATE=Битрейт
+DESCRIPTION=Описание
+HOURS=Час(-а)
+MINUTES=Минут(-а,-ы)
+SECONDS=Секунд(-а,-ы)
+SLOW=В фильме немного движения.
+NORMAL=В фильме достаточно движения.
+FAST=В фильме много движения или ярких цветов.
+ENDCREDITS_NORMAL=Как и все
+ENDCREDITS_REMOVE=Не включать
+ENDCREDITS_RECOMPRESS=Сжать с
+RECOMPRESS_PCT=% битрейта основного фильма
+ENDCREDITS_AUTOMATIC=Автоматическое определение
+ENDCREDITS_MANUAL=Вручную = начинаются на
+WORKAROUND1=Поправить косяк 'mpeg2avi hangs when doing a 2-pass'
+
+;Misc
+GENERAL_SUBTITLES=Основные настройки субтитров
+CREATE_SUBTITLES=Создать субтитры, используя VobSub
+SELECT_ALL_LANGUAGES=Выбрать все языки
+CONTAINER_FORMAT=Формат носителя фильма
+
+;Project
+PROJECT_OPTIONS=Установки проекта
+BATCH_SETTINGS=Установки серии
+PROJECT_NAME=Имя проекта
+TEMP_FOLDER=Временная папка
+OUTPUT_FOLDER=Выходная папка
+OVERWRITE_FILES=Перезаписывать файлы (без предупреждения)
+DELETE_TEMP=Удалить временные файлы по завершению
+SPLIT_FILE=Разбить файл по
+NORMAL_MODE=Обычный режим
+BATCH_MODE=Режим серии
+BUTTON_UP=Вверх
+BUTTON_DOWN=Вниз
+BUTTON_ADD=Добавить
+BUTTON_REMOVE=Удалить
+BUTTON_MODIFY=Изменить
+BUTTON_CLEAR=Очистить
+DELETE_BATCH=Удалить запись о серии по завершению.
+
+;OutputFiles
+SYSTEM_SETTINGS=Системные настройки
+STATUS_INFORMATION=Информация о состоянии
+PROGRESS=Прогресс
+SHUTDOWN=Выключить компьютер по завершению
+
+;Settings
+EXTERNAL_PROGRAMS=Внешние программы
+ADVANCED_AUDIO_SETTINGS=Дополнительные настройки звука
+AC3_PRELOAD_VALUE=Предзагрузка AC3
+AC3_INTERLEAVE_VALUE=Чередование AC3
+PRIORITY_SETTINGS=Настройки приоритетов
+AUDO_PRIORITY=Сжатие звука
+VIDEO_PRIORITY=Сжатие видео
+DISK_PRIORITY=Чтение/запись
+SETTING_WARNING=(*) Установка на highest не рекомендуется!
+GET_DEFAULT_VALUES=По умолчанию
+LANGUAGE_SETTINGS=Установка языка
+LANGUAGE=Язык
+
+; External Program Settings
+PROGRAM_LOCATIONS=Местонахождение внешних программ
+SAVE=Сохранить
+CANCEL=Отмена

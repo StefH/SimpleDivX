@@ -1,0 +1,46 @@
+vStrip - version 0.8d, by [maven] (maven@maven.de).
+
+Usage:
+  vStrip [@]In [-Options] [[=]IDs]
+  In  denotes the input-file and has to be the first argument. If a '@'
+      is prepended to the name, it is read as a streamlist (textfile).
+  Options:
+  -!  defaults to strip everything,
+  -b  disables macrovision removal,
+  -d  enables demux mode (not producing a VOB anymore),
+  -e  disables VOB-assumptions (no 2048 byte sectors), enables demux,
+  -g  only keeps GOP-Headers of the Video-Stream(s),
+  -l  lists the CELL-Positions parsed from the IFO-file,
+  -u  tries to parse (and output) UDF-filesystem on In (e.g. vStrip M:\ -u)
+  -c  splits the VOB by CELL-ID,
+  -v  splits the VOB by VOB-ID,
+  -oM sets the output filename to M (add '+' in front to append),
+  -iN sets the IFO-file filename to N,
+  -jO sets default angle for IFO-Parsing to O (=1, 0 disables removal),
+  -pP selects program-chain (PGC) P (from IFO-file) and enables IFO-Parsing,
+  -$Q splits output-file(s) after Q megabytes (1024KB chunks),
+  -aR changes the aspect-ratio to R,
+  -fS changes the frame-rate to S,
+  -sT seeks to LBA T (2048 byte sectors),
+  -tU file IO: clib then ASPI (U=1), ASPI then clib (U=2), clib only (U=3),
+  IDs hex stream-ids (e.g. 0xe0), seperated by a space. If a '=' is
+      prepended to the id, the last stream is remapped to this id.
+Hints:
+  - Demux mode can split, too (but "c" and "v" are exclusive),
+  - All the options w/o an argument can be combined (e.g. "-!dc")
+  - Try a test-run on the VOB first (only filename as parameter),
+  - Frame-rates:
+    [1] 23.976 (24000/1001) fps    [5] 30 fps
+    [2] 24 fps                     [6] 50 fps
+    [3] 25 fps                     [7] 59.94 (60000/1001) fps
+    [4] 29.97 (30000/1001) fps     [8] 60 fps
+  - Aspect-ratios:
+    [1] square pixels              [3] 16:9 display
+    [2] 4:3 display                [4] 2.21:1 display
+Examples:
+  To get a list of the streams in a VOB:
+    vStrip in.vob
+  To keep video and AC3 stream 0x81 mapped to 0x80 using PGC 0 and 1GB chunks:
+    vStrip @in.lst -iin.ifo -p0 -$1024 -!oout.vob 0xe0 0xbd 0x81 =0x80
+  To demux the video-stream:
+    vStrip in.vob -!doout.m2v 0xe0

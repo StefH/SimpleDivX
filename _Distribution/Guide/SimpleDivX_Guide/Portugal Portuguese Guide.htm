@@ -1,0 +1,387 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<title>SimpleDivX : Guia em Português Brasileiro</title>
+<link href="StyleSheet/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body link="#0000FF" vlink="#800080" lang="EN-US">
+
+<table border="2" cellpadding="0" cellspacing="10" width="100%"
+bgcolor="#FFFFFF" bordercolor="#111111" summary="s"
+style="border-collapse: collapse">
+    <tr>
+        <td width="100%"><p align="center" 
+        style="text-align:center">Guia em Português Brasileiro<br>
+        Created By: Ed McVinny , 06-09-2002<br>
+	Updated By: CyberDemonII , 24-02-2003<br>
+	Traduzido para Português de Portugal por: Gonçalo Duarte (Gonk), 30-03-2003<br>
+        For: SimpleDivX 1.2<br>
+        <br>
+        <a href="http://www.simpledivx.org">http://www.simpledivx.org</a>
+        </td>
+    </tr>
+</table>
+<BR>
+<strong>SimpleDivX</strong> tem 8 menus localizados próximo da parte superior da janela do programa, 
+cada um com os números e a sua descrição. 
+Esta opção vai ajuda-lo em todos os passos do programa, um de cada vez
+<BR>
+<BR>
+Ao executar SimpleDivX, deve  obter algo como se pode ver na imagem seguinte::
+
+<h1><br>Opção 1: Input</h1>
+<img src="Images/EN/input.png" alt="">
+
+<h4>Project Name:</h4>
+Aqui pode alterar o nome do projecto, 
+para aquele que desejar, a maioria das pessoas utiliza o próprio nome do filme. 
+Este nome será o mesmo dos seus ficheiros de saída, 
+ao contrário de algumas ferramentas que o renomeiam como 'movie1.avi' etc.
+
+<h4>Input Files:</h4>
+Clique na pequena caixa localizada a direita e a caixa de imagem apresentada deverá aparecer.
+<BR>
+<img src="Images/EN/folder.png" alt="">
+<BR>
+Seleccione a mesma pasta que usou para ripar os ficheiros  vob usando o Smartripper ou outra ferramenta qualquer  e clique ok.
+
+<h4>Vob Files:</h4>
+Se usou a opção "files" enquanto estava a usar o smartripper pode marcar a caixa "select all files", 
+se usou a opção "movie" ou ainda se usou uma ferramenta diferente para ripping, 
+deve marcar a caixa "select main movie".
+
+<h4>Video Information:</h4>
+Esta opção mostra todas as informações relevantes sobre o DVD que se está a fazer o backup
+
+<h1><br>Opção 2: Video</h1>
+<img src="Images/EN/video.png" alt="">
+
+<h4>Frames/Second (fps)</h4>
+Aqui selecciona-se o framerate de saída desejado. 
+Usuários do sistema de vídeo PAL devem seleccionar 25.000, 
+enquanto usuários do sistema de vídeo NTSC devem seleccionar 23.976 ou 29.970. 
+SimpleDivX normalmente selecciona o framerate detectado nos ficheiros vob.
+<br>
+Nota do Tradutor (Brasileiro): a maioria dos DVDs brasileiros que encodeei só tiveram sincronia
+de audio e vídeo seleccionando 23,976 como framerate, 
+embora tenham sido detectados na opção Input como sendo 29,970 fps. 
+Também já encontrei DVDs em todos os outros framerates, sendo que, 
+pela ordem de frequência em que encontrei: 23.976; 29.970; 25.000 e apenas 1 único a 24.000
+
+<h4>Enable Video Stream ID checking:</h4>
+Seleccionar esta caixa fará com que o Simpledivx verifique a identificação da 
+sequência de vídeo que se seleccionou.
+
+<h4>Auto-Retrieve Crop And Resizing Info:</h4>
+Seleccionar a caixa "Auto-Retrieve cropping and resizing info" para que o programa 
+encontre automaticamente os valores de resize e crop.
+<br>
+Nota do Tradutor: Pela minha experiência esta opção funciona muito bem 
+reduzindo em muito os erros de escolha de configurações desastrosas.
+
+<h4>Output Format:</h4>
+Seleccione o formato de saída de acordo com as suas necessidades. 
+Muitos formatos populares são pré-definidos, 
+mas também pode seleccionar <b>"custom"</b> e definir o seu próprio formato.
+
+<h4>Open VOB Bitstream at LBA</h4>
+(Usuários Avançados): Seleccione esta caixa se quiser começar o filme a partir de uma LBA específica.
+
+<h4>Frames Range:</h4>
+Aqui podes seleccionar a quantia exacta de frames que se quer converter. 
+É muito útil para converter pequenos excertos do filme para determinar a qualidade, 
+verificar que o <i>framerate</i> está correcto, criar clips, etc.
+
+<h1><br>Advanced Video Settings</h1>
+<img src="Images/EN/adv_video.png" alt=""><br>
+Ao precionar o botão "Advanced" Button, aparece o seguinte sub-menu:
+
+<h4>Postfilter Quality:</h4>
+<i>
+- High , alta qualidade/conversão mais lenta<br>
+- Low , baixa qualidade/conversão mais rápida</i><br>
+(Deixe em 'High' para obter melhores resultados)
+
+<h4>Reference Quality:</h4>
+As diferenças entre cada uma destas opções é muito difícil de explicar, 
+mas podemos tentar clarificar um pouco alguns erros .Simplificando, 
+IDCT é usado para descodificar usando configurações mais específicas de codificação.<br>
+Nós sugerimos usar as seguintes opções, de acordo com seu tipo de processador:<br>
+<i>Pentium w/mmx: 16-bit MMX ichen</i><br>
+<i>PentiumII: 32-bit MMX</i><br>
+<i>PentiumIII: 32-bit MMX</i><br>
+<i>PentiumIV: 64-bit FPU</i><br>
+<i>K6-2/3: 16-bit MMX ichen</i><br>
+<i>Athlon/Duron: 32-bit MMX</i><br>
+<i>Athlon XP: 32-bit MMX</i><br>
+
+<h4>Output Mode:</h4>
+SimpleDivX pode criar uma vasta variedade de formatos, 
+mas recomendamos que utilize yv12, 
+uma vez que o DivX / XviD / 3ivx são os únicos codec’s actualmente suportados pelo SimpleDivX.
+
+<h1><br>Opção 3: Audio</h1>
+<img src="Images/EN/audio.png"  alt="">
+
+<h4>Create Audio:</h4>
+Desmarque esta caixa se não quiser que o SimpleDivx crie o de áudio para o seu ficheiro de vídeo.
+
+<h4>Enable Audio Stream ID checking:</h4>
+Quando esta opção, esta seleccionada apenas faixas de áudio validadas são mostradas no ecrã. 
+(E aconselhável que deixe esta opção activada)<br>
+<b>Nota do tradutor (Brasileiro):</b> alguns filmes não informam correctamente o stream 
+de áudio ou mesmo ou mesmo informam que existe um presente. 
+Neste caso, desmarque esta opção e seleccione manualmente 0x80 para áudio em inglês
+
+<h4>Extract all AC3 Audio Streams:</h4>
+Esta opção irá extrair todas as faixas de áudio disponíveis no filme.<br>
+<i>Nota:</i> Apenas a Audio Stream ID seleccionada será juntada (multiplexada) ao ficheiro de vídeo.
+
+<h4>Audio Stream ID:</h4>
+Esta opção lista todas as faixas de áudio existentes no filme. 
+O áudio principal quase sempre será 0X80, 
+enquanto os outros serão normalmente usados para idiomas alternativos/comentários/áudio especial
+
+<h4>Audio Language:</h4>
+Quando os ficheiros  *.ifo são copiados de um DVD, 
+SimpleDivX é capaz de informar correctamente o idioma exacto contido na áudio stream seleccionada.
+
+<h4>Audio bitrate:</h4>
+Útil para seleccionar a qualidade e tamanho de compressão do áudio, ou ainda não comprimi-lo.
+
+<h4>Audio Format:</h4>
+<i>
+MP3: Comprime áudio no formato MP3. (apenas stereo)<br>
+AC3: Mantém a qualidade de áudio original. (Pode ser Dolby-Digital Stereo, 5.0 ou 5.1 canais). É possível escolher entre 6 e 2 canais.<br>
+OGG: Comprimem audio usando o formato OGG. (apenas stereo)</i>
+
+<h4>Audio Compression kbps:</h4>
+Escolha aqui a compressão para a stream de áudio. Para Mp3, 128/160 kbps é o recomendado.<br>
+Quando escolher a compressão Ogg, 
+a qualidade de áudio fica muito melhor com baixos bitrates, logo, para filmes de 1 cd, pode escolher 64kbps.<br>
+Normalmente pode escolher entre 112/160kbps.
+Quando AC3 for o formato de áudio escolhido, 
+é possível recomprimir esta stream para um bitrate mais baixo. 
+Mas para um filme de 6 canais de áudio, é melhor escolher um mínimo de 256kbps.
+
+<i>Nota do Tradutor (Brasileiro):</i> de longe, 
+AC3 é o formato que dá mais qualidade ao áudio. Porém, tudo tem um preço. 
+Um áudio melhor significa um áudio que ocupa mais espaço. 
+Mais espaço ocupado significa um menor bitrate de vídeo. A escolha é sua.
+
+<h4>Samplerate Conversion</h4>
+Para Mp3 e Ogg é possível escolher 48000 ou ainda 44100Hz. 
+Normalmente pode deixar ficar a 48000Hz, 
+a menos que a placa de som que está a usar não suporte. 
+<b>Nota do tradutor:</b> Que é algo de muito raro hoje em dia.<br>
+<b>Nota do tradutor (Brasileiro):</b> algumas versões hackeadas do codec de mp3 existentes 
+tem um problema com 48.000Hz. 
+Pode ser um problema fazer áudio e vídeo se encontrarem se você deu a 
+sorte de ter justo a versão problemática e fez a 48.000Hz.
+
+<h4>Amplify</h4>
+Marque esta opção para amplificar o som em alguns dB. 
+Não é recomendado escolher um valor maior do que 3 dB, 
+pois  poderá vir a ouvir alguns estalos nos momentos de silêncio do filme.
+
+<h4>Peak level normalize</h4>
+Quando esta opção está marcada, 
+o som será normalizado a 100% (o que significa que as partes mais silenciosas do filme serão 100%, 
+o que removerá os estalos)
+
+<h4>Peak level normalize [midnight mode]</h4>
+Quando esta opção está marcada, 
+o som será normalizado a 100% e as partes de áudio mais baixas serão amplificadas um pouco.
+
+<h1><br>Opção 4: Codec</h1>
+<img src="Images/EN/codec.png" alt=""><br><br>
+<i>Nota:</i> serão mostrados apenas os codec’s instalados. Os demais estarão indisponíveis.<br>
+<b>Nota do tradutor (Brasileiro):</b> Se você instalou o codec Divx 4.02 após a instalação do codec Divx 5.02, 
+o codec Divx 5.02 será desabilitado em razão da substituição de alguns ficheiros 
+necessários ao funcionamento do codec Divx 5.02. 
+Isto não o impedirá de assistir aos filmes encodeados no formato Divx 5.02, 
+mas o impedirá de gerar seus filmes neste formato. 
+É possível que o mesmo ocorra com outras versões do codec, 
+caso sejam instaladas posteriormente a uma versão mais actualizada do mesmo.
+
+<h4>1-Pass DivX file:</h4>
+Ficheiros  DivX de 1 passagem são criados usando um bitrate constante, o que significa que o filme inteiro possui o mesmo bitrate.<br>
+<b>Nota do tradutor (Brasileiro ):</b> apenas em tese. 
+Na prática, ocorrem variações no bitrate, de acordo com a movimentação do filme
+
+<h4>2-Pass DivX file:</h4>
+Ficheiros  DivX de 2 passagens são criadas usando-se um bitrate variável, 
+o que significa que cenas com muito movimento serão comprimidas com um bitrate maior, 
+enquanto cenas de pouco movimento serão comprimidas num bitrate menor. 
+O resultado disso é um filme de uma qualidade muito maior do que um ficheiro comprimido 
+com apenas 1 passagem, mas leva praticamente o dobro do tempo para fazer a conversão.<br>
+<b>Nota do tradutor ( Brasileiro):</b> esta tem sido já a muito tempo uma questão 
+controversa no mundo DivX. Nem todo mundo concorda que fazer 2 passadas realmente melhora o filme.<br>
+<b>Nota do tradutor:</b> Na minha opinião melhora e muito.
+
+<h4>Do Only First Pass:</h4>
+SimpleDivX irá apenas fazer a primeira passagem no filme, 
+então quando esta tarefa estiver completa, Terá que voltar a esta opção e seleccionar 'Do Only Second Pass'. 
+É bastante útil quando se tem pouco tempo livre de cada vez para usar o computador.
+
+<h4>Maximum Keyframe:</h4>
+Um keyframe pode ser definido como sendo o frame que será comprimido usando o bitrate máximo que definiu. 
+Um intervalo longo faz com que uma cena preta com algo branco que se esteja a  movimentar nela 
+(como os créditos ou algo do tipo) deixe um rastro na tela por mais tempo. 
+Isto faz com que o filme fique menor, mas há uma perda nítida de qualidade. 
+Pessoalmente (tradutor(Brasileiro), tenho usado um intervalo de 120 frames. 
+O filme fica um pouco maior, mas dá maiores possibilidades de corte de partes do filme 
+(por exemplo, os créditos, se o filme não coube no cd), 
+facilita na divisão do filme em mais de 1 cd, esse tipo de coisa.
+
+<h3>Codec Advanced Settings</h3>
+<img src="Images/EN/divx5_adv.png" alt="">
+
+<h4>Global Motion Compensation:</h4>
+GMC ajuda em zoom e cenas panorâmicas.
+
+<h4>Quarter Pixel:</h4>
+Quarter pixel aumenta a perfeição dos macroblocos de blocos do filme.<br>
+<b>Nota do tradutor( Brasileiro):</b> realmente, melhora muito a qualidade do filme. 
+Mas deixa a conversão um pouco mais lenta. Pouca coisa.
+
+<h4>Bidirectional Encoding:</h4>
+Pode ajudar no aumento da taxa de compressão de algumas cenas por ficar indo e voltando nos frames que estiver comprimindo.
+
+<h4>De-Interlace</h4>
+Utiliza a funcionalidade de desentrelaçamento do codec DivX 5.X PRO.<br>
+<b>Nota do tradutor:</b> Em 95% dos filmes é melhor não usar esta opção pois vai apresentar 
+linhas horizontais durante o play  do filme.
+
+<h1><br><br>Opção 5: Compression</h1>
+<img src="Images/EN/compression.png" alt="">
+<br>(a imagem acima é apenas um exemplo)
+
+<h4>Get Time From Movie:</h4>
+Esta característica tenta ler a duração do filme a partir dos ficheiros .vob. 
+Não é muito exacta, mas se estiver errada, 
+insira a duração especificada na contracapa do DVD, 
+desmarcando a caixa Get Time From Movie e digitando o tempo correcto.
+
+<h4>(End Credits Options)</h4>
+SimpleDivX oferece três maneiras para lidar com os créditos finais.<br>
+- Pode comprimi-los normalmente (usa o mesmo bitrate que o filme normal);<br>
+- Não os incluir completamente;<br>
+- Recomprimi-los usando um bitrate menor (economizando um bitrate melhor para o próprio filme).<br>
+
+<h4>Fix 'mpeg2avi hang when doing a 2-pass:</h4>
+Utilize esta opção se tiver problemas com o filme (como travamentos, etc) 
+quando estiver utilizando a conversão com 2 passagens. 
+Pode corrigir alguns problemas eventuais de travamentos também.
+
+
+<h1><br>Opção 6: Project</h1>
+<img src="Images/EN/project.png" alt="">
+
+<h4>Project Name:</h4>
+Escreva aqui o nome de saída de seu projecto acabado.
+
+<h4>Temp Folder:</h4>
+Esta será a pasta onde os ficheiros  temporários de vídeo, áudio e log serão salvos.
+
+<h4>Output Folder:</h4>
+É aqui que o filme completo será gravado (poderá ser um arquivo *.avi ou *.ogm)
+
+<h4>Overwrite files:</h4>
+Se for marcada, escreve por cima dos ficheiros  temporários sem avisar
+
+<h4>Delete temp-files:</h4>
+Se for marcada, apagará os ficheiros  temporários ao finalizar a conversão
+
+<h4>Split Total File:</h4>
+Se você estiver a fazer uma cópia em 2 cds, SimpleDivX pode dividir o arquivo automaticamente.<br><br>
+<b>Nota do tradutor (Brasileiro):</b> essa opção funciona bem, 
+mas você pode ter o azar de dividir o filme justo numa cena de acção. 
+Como sugestão, use o Virtualdub incluído com o Simpledivx e divida ele manualmente. 
+Abra o programa, vá em Files e procure o filme que criou. 
+Vá em vídeo e marque Direct Stream Copy. Faça o mesmo em Audio. 
+Marque onde quer que o filme inicie, usando o gancho virado para a esquerda (o penúltimo botão). 
+Procure mais ou menos ande acha que o arquivo vai ficar, 
+com o tamanho que quer e procure o próximo keyframe (o botão que tem uma chave) e use o 
+gancho voltado para a direita (o último botão). Vá a File, Save As Avi. Pronto.
+
+<h4>Normal</h4>
+Neste modo, só é possível fazer a conversão de um filme por vez (é o modo utilizado em versões anteriores a 1.1).
+
+<h4>Batch Mode</h4>
+Esta opção permite fazer vários projectos em sequência. 
+Utilize-a da seguinte forma: defina tudo o que for necessário para cada projecto. 
+De seguida, clique em Add e o filme será adicionado a uma lista de tarefas. 
+Após se ter definido todos os projectos que deseja, 
+apenas clique em Start e será dado início a conversão, 
+de acordo com a ordem que definiu (o filme que estiver no topo da lista será o primeiro e assim por diante). 
+Opção muito útil para quando se deixa o pc a trabalhar durante a noite... ;-)
+
+<h1><br>Opção 7: Output</h1>
+<img src="Images/EN/output.png" alt=""><br>
+
+<h4>Shutdown windows</h4>
+Desliga o Windows ao finalizar a conversão 
+(e se estiver a utilizar uma fonte de alimentação do tipo ATX, 
+com gerenciamento de energia activado, seu computador também)
+
+<h4>Status Information:</h4>
+Esta opção informa o progresso da conversão usando SimpleDivX.
+
+<h4>Start:</h4>
+Dá início ao processo de conversão
+
+<h4>Quit:</h4>
+Finaliza o programa.
+
+
+<h1><br>Opção 7: Setup</h1>
+<img src="Images/EN/setup.png" alt="">
+
+<h4>External Program Locations:</h4>
+<img src="Images/EN/program_locations.png" alt=""><br>
+Aqui poderá mudar a localização dos três programas necessários ao funcionamento do SimpleDivX. 
+Esta opção é utilizada por usuários que já tem estes programas em algum outro directório do seu computador. 
+Entretanto, SimpleDivX sempre inclui as últimas versões dos programas necessários ao seu funcionamento. 
+Dessa forma, recomendamos que mantenha a localização dos mesmos na pasta em que instalou o SimpleDivX
+
+<h4>Advanced Audio Settings</h4>
+Se a correspondencia do filme em si com o seu audio está a dar problemas, altere o entrelaçamento e pré-carga do áudio aqui.
+
+<h4>Priority Settings</h4>
+Escolha aqui as definições de prioridade para :<br>
+<i>
+- Audio<br>
+- Video<br>
+- Disk<br>
+</i>
+
+<h4>Language</h4>
+Escolha aqui a sua língua<br><br>
+
+<b>Nota:</b> Definir um valor alto não significa que isso fará SimpleDivX ser executado mais rapidamente. 
+Significa apenas que ele terá mais ciclos de uso do processador do que as demais tarefas que estiverem sendo executadas.<br><br>
+
+<b>Nota do tradutor: {</b><br>
+<b>Nota do tradutor (Brasileiro):</b>
+Preferencialmente, desactive tudo o que não for absolutamente necessário quando estiver a converter um filme, 
+independentemente do programa que estiver usando para isso. 
+O “travamente” de um pode resultar num filme defeituoso, 
+ou mesmo numa completa perda de tempo, como por exemplo um sistema de anti-vírus. 
+Apenas como sugestão, elimine o spyware do seu pc. 
+Na maioria dos casos, isso trava com frequência e pode impedir de completar a conversão de um filme. 
+Lembre-se que esta é uma tarefa que leva algum  tempo e que durante esse período, 
+tudo o que ocorrer na energia (oscilações, etc), 
+bem como outras tarefas problemáticas sendo executadas simultaneamente podem resultar em problemas. 
+Se preferir utilizá-las, faça-o por sua conta e risco. 
+O mesmo vale para a remoção do spyware. 
+A remoção de alguns simplesmente inabilita o programa que o utiliza. 
+Em todo caso, uma boa limpeza no seu pc ajuda muito a resolver a maioria dos problemas de “travamento”.
+
+} Esta é uma nota muito importante que nunca é de mais fixar. E que lhe poderá poupar muitos dissabores
+
+
+</body>
+</html>

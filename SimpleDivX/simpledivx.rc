@@ -1,0 +1,917 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_VIDEO_ADV DIALOGEX 0, 0, 320, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advanced Video Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,283,109,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,109,30,14
+    LTEXT           "&Postfilter Quality",IDC_STATIC,54,28,50,8
+    LTEXT           "&IDCT",IDC_STATIC,54,46,57,8
+    LTEXT           "Output &Mode",IDC_STATIC,54,64,55,8
+    COMBOBOX        IDC_COMBO_POSTFILTER,126,26,170,45,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_REFQ,126,44,170,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OUTPUTMODE,126,62,170,58,CBS_DROPDOWNLIST | WS_TABSTOP
+    ICON            IDI_FILM,IDC_STATIC,20,40,20,20
+    GROUPBOX        "Settings",IDC_STATIC,7,7,306,79
+END
+
+IDD_DIALOG_MISC DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "6. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "General Subtitle Options",IDC_STATIC_GENERAL_SUBTITLE,6,7,330,174
+    ICON            IDI_WORLDSOUND,IDC_STATIC,22,64,20,20
+    CONTROL         "&Create Subtitles using VobSub",IDC_CREATE_SUBTITLES,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,62,32,211,10
+    ICON            IDI_SUBTITLES,IDC_STATIC,19,27,20,20
+    LTEXT           "Language",IDC_STATIC_SUBTITLESTRID,62,64,50,8
+    CONTROL         "Select All Languages",IDC_CHECK_ALL_LANG,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,62,163,105,10
+    LISTBOX         IDC_LIST_LANG,61,74,93,80,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Container Format",IDC_STATIC_CONTAINER,6,186,330,71
+    CONTROL         "AVI",IDC_RADIO_CONTAINER_AVI,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,62,202,27,10
+    CONTROL         "OGM",IDC_RADIO_CONTAINER_OGM,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,215,33,10
+    CONTROL         "Matroska",IDC_RADIO_CONTAINER_MATROSKA,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,227,45,10
+    CONTROL         "MP4",IDC_RADIO_CONTAINER_MP4,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,239,31,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_VIDEO_ADV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_VIDEO_ADV DLGINIT
+BEGIN
+    IDC_COMBO_POSTFILTER, 0x403, 5, 0
+0x6948, 0x6867, "\000" 
+    IDC_COMBO_POSTFILTER, 0x403, 4, 0
+0x6f4c, 0x0077, 
+    IDC_COMBO_REFQ, 0x403, 6, 0
+0x5046, 0x3655, 0x0034, 
+    IDC_COMBO_REFQ, 0x403, 6, 0
+0x4d4d, 0x3358, 0x0032, 
+    IDC_COMBO_REFQ, 0x403, 10, 0
+0x4d4d, 0x5f58, 0x4843, 0x4e45, 0x0031, 
+    IDC_COMBO_REFQ, 0x403, 8, 0
+0x4d4d, 0x5f58, 0x4141, 0x004e, 
+    IDC_COMBO_REFQ, 0x403, 8, 0
+0x3239, 0x5f32, 0x4d41, 0x0044, 
+    IDC_COMBO_REFQ, 0x403, 8, 0
+0x3239, 0x5f32, 0x5353, 0x0045, 
+    IDC_COMBO_REFQ, 0x403, 10, 0
+0x4146, 0x5453, 0x4d5f, 0x4849, 0x0041, 
+    IDC_COMBO_REFQ, 0x403, 9, 0
+0x4552, 0x5f46, 0x494d, 0x4148, "\000" 
+    IDC_COMBO_OUTPUTMODE, 0x403, 8, 0
+0x7250, 0x7665, 0x6569, 0x0077, 
+    IDC_COMBO_OUTPUTMODE, 0x403, 10, 0
+0x3432, 0x6962, 0x2074, 0x4752, 0x0042, 
+    IDC_COMBO_OUTPUTMODE, 0x403, 23, 0
+0x5641, 0x2049, 0x5659, 0x3231, 0x2820, 0x6944, 0x5876, 0x2f20, 0x5820, 
+0x6976, 0x2944, "\000" 
+    IDC_COMBO_OUTPUTMODE, 0x403, 9, 0
+0x5641, 0x2049, 0x5559, 0x3259, "\000" 
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SimpleDivX_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SimpleDivX 9999"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,260,7,50,14
+    PUSHBUTTON      "fffff",IDCANCEL,260,23,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SimpleDivX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,0
+ PRODUCTVERSION 1,5,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Copyright (c)  Stef Heyenrath 1999-2016"
+            VALUE "CompanyName", "."
+            VALUE "FileDescription", "Convert DVD to DivX/XviD/H264 with AC3 or MP3 audio."
+            VALUE "FileVersion", "1.5.0.0"
+            VALUE "InternalName", "SimpleDivX"
+            VALUE "LegalCopyright", "Copyright (c)  Stef Heyenrath 1999-2016"
+            VALUE "LegalTrademarks", "-"
+            VALUE "OriginalFilename", "SimpleDivX"
+            VALUE "PrivateBuild", "-"
+            VALUE "ProductName", "SimpleDivX"
+            VALUE "ProductVersion", "1.5.0.0"
+            VALUE "SpecialBuild", "-"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_INPUTFILES DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "1. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "&Input Files",IDC_STATIC_INPUT_FILES,8,7,330,215
+    LTEXT           "Folder",IDC_STATIC_FOLDER,54,20,97,8
+    EDITTEXT        IDC_FOLDER_EDIT,54,30,200,10,ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_VOBFOLDER,262,30,18,11
+    ICON            IDI_DVDDRIVE,IDC_STATIC,20,24,20,20,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    ICON            IDI_MAPFOLDER,IDC_STATIC,20,111,20,20
+    LTEXT           "Vob files",IDC_STATIC_VOB_FILES,54,51,127,8
+    CONTROL         "Select Main Movie",IDC_STATIC_CHECK_MAIN,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,57,154,123,10
+    CONTROL         "Select All Files",IDC_STATIC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,57,169,129,10
+    GROUPBOX        "V&ideo Information",IDC_STATIC_VIDEO_INFORMATION,8,229,330,77
+    ICON            IDI_INFO,IDC_STATIC,20,261,20,20
+    LTEXT           "Resolution",IDC_STATIC_RES,54,247,51,8
+    CTEXT           "? x ?",IDC_STATIC_RESOLUTION,112,247,50,10,0,WS_EX_STATICEDGE
+    LTEXT           "Framerate",IDC_STATIC_FRAMERATE,54,267,51,8
+    CTEXT           "? fps",IDC_STATIC_FPS,112,267,50,10,0,WS_EX_STATICEDGE
+    LTEXT           "Movie Length",IDC_STATIC_MOVIE_LENGTH,54,287,51,8
+    CTEXT           "   h   m   s",IDC_STATIC_LENGTH,112,287,50,10,0,WS_EX_STATICEDGE
+    LTEXT           "Aspect Ratio",IDC_STATIC_ASPECT,202,247,53,8
+    CTEXT           "?",IDC_STATIC_FORMAT,262,267,50,10,0,WS_EX_STATICEDGE
+    LTEXT           "Video Format",IDC_STATIC_VF,202,267,52,8
+    CTEXT           "? : ?",IDC_STATIC_RATIO,262,247,50,10,0,WS_EX_STATICEDGE
+    LTEXT           "Status : ready",IDC_STATUS,204,66,110,8
+    LISTBOX         IDC_LIST_VOBS,54,64,134,81,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Choose Title",IDC_STATIC_TITLES,57,195,51,8
+    COMBOBOX        IDC_COMBO_TITLES,112,193,26,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Chapters",IDC_STATIC_CHAP,202,286,52,8
+    CTEXT           "?",IDC_STATIC_CHAPTERS,262,287,50,10,0,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_COMPRESSION DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "5. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Bitrate",IDC_STATIC_VIDEO_BITRATE,54,102,50,8
+    EDITTEXT        IDC_MINBITRATE,116,101,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Bitrate / File Options",IDC_STATIC_BITRATE_FILE_OPTIONS,7,5,331,134
+    CONTROL         "Enter bitrate",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,54,19,182,10
+    CONTROL         "Enter final movie filesize",IDC_RADIO21,"Button",BS_AUTORADIOBUTTON | BS_FLAT,54,30,126,10
+    EDITTEXT        IDC_EDIT_HOUR,269,67,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MIN,269,84,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_SEC,269,101,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Movie Length",IDC_STATIC_MOVIE_LENGTH_CPAGE,54,68,50,8
+    LTEXT           "Hour(s)",IDC_STATIC_HOURS,220,67,44,8,0,WS_EX_RIGHT
+    LTEXT           "Minute(s)",IDC_STATIC_MINUTES,225,85,40,8,0,WS_EX_RIGHT
+    LTEXT           "Second(s)",IDC_STATIC_SECONDS,210,101,54,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_FRAMES,116,67,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Frames",IDC_STATIC_FRAMES_CPAGE2,152,68,59,8
+    LTEXT           "File size",IDC_STATIC_FILESIZE,54,85,59,8
+    EDITTEXT        IDC_EDIT_FileSize,116,84,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "MB",IDC_STATIC,152,85,31,8
+    LTEXT           "(Video + Audio)",IDC_STATIC_FINAL,188,31,107,8
+    LTEXT           "kbps",IDC_STATIC,152,102,37,8
+    CONTROL         "Get Time from Movie.",IDC_GET_TIME,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,54,51,236,10
+    LTEXT           "[ Good Quality ]",IDC_STATIC_Q,116,119,65,8
+    CONTROL         "Automatic detection.",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED | WS_GROUP,65,267,224,10
+    CONTROL         "Manual, end-credits start at",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,65,279,106,10
+    EDITTEXT        IDC_EDIT_ENDCREDITS_FRAMES,174,279,30,10,ES_RIGHT | ES_NUMBER | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "End-Credits Options",IDC_STATIC_END_CREDITS_OPTIONS,7,214,331,90
+    CONTROL         "Normal",IDC_RADIO_END1,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED | WS_GROUP,54,230,135,10
+    CONTROL         "Do not include end-credits in movie.",IDC_RADIO_END2,
+                    "Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,54,242,237,10
+    CONTROL         "Recompress end-credits at",IDC_RADIO_END3,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,54,254,99,10
+    ICON            IDI_CALC,IDC_STATIC,20,19,20,20
+    ICON            IDI_MPG,IDC_STATIC,20,236,20,20
+    ICON            IDI_TIME,IDC_STATIC,19,86,20,20
+    LTEXT           "Description",IDC_STATIC_DESCRIPTION,54,119,58,8
+    EDITTEXT        IDC_EC_BR,157,254,24,10,ES_RIGHT | ES_NUMBER | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "% of the bitrate from main movie.",IDC_STATIC_RECOMPRESS_PCT,190,255,113,8,WS_DISABLED
+    LTEXT           "frames.",IDC_STATIC_FRAMES_CPAGE,208,280,73,8,WS_DISABLED
+END
+
+IDD_DIALOG_AUDIO_OPTIONS DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "3. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "&General Audio Options",IDC_STATIC_GENERAL_AUDIO,8,7,330,298
+    CONTROL         "&Create Audio",IDC_CREATE_AUDIO,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,62,29,211,10
+    CONTROL         "Enable Audio Stream &ID checking",IDC_CHECK_AUDIO,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,62,71,233,10
+    LTEXT           "Language",IDC_STATIC_AUDIOSTRID,56,95,39,8
+    COMBOBOX        IDC_COMBO_AUDIO_STREAMID,100,94,180,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Samplerate Conversion",IDC_STATIC_CONV,62,230,109,8
+    CONTROL         "48000 Hz",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,175,230,47,10
+    CONTROL         "44100 Hz",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_FLAT,175,241,47,10
+    LTEXT           "Bitrate (kbps)",IDC_STATIC_AUDIO_KBPS,62,209,100,8
+    COMBOBOX        IDC_COMBO_AUDIO,175,207,45,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Audio Streams && Languages",IDC_STATIC_AUDIO_STREAMS_LANGUAGES,8,53,330,252
+    GROUPBOX        "Audio Bitrate && Conversion",IDC_STATIC_AUDIO_BITRATE_AND_CONVERSION,8,190,330,115
+    GROUPBOX        "Audio Format",IDC_STATIC_AUDIO_FORMAT,8,120,330,185
+    CONTROL         "&MP3",IDC_RADIO_MP3,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,62,142,31,10
+    CONTROL         "&AC3",IDC_RADIO_AC3,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,156,29,10
+    CONTROL         "O&GG",IDC_RADIO_OGG,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,169,32,10
+    CONTROL         "A&mplify",IDC_CHECK_WAVEUP,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,62,258,81,10
+    CONTROL         "Peak level normalize.",IDC_CHECK_NORM,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,62,271,235,10
+    CONTROL         "Peak level normalize (Midnight Mode)",IDC_CHECK_NORM2,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED | WS_TABSTOP,62,284,226,10
+    ICON            IDI_VOLUME,IDC_STATIC,20,266,21,20
+    ICON            IDI_SPEAKER,IDC_STATIC,20,225,21,20
+    ICON            IDI_GEARS3,IDC_STATIC,292,247,20,20,NOT WS_VISIBLE
+    ICON            IDI_WORLDSOUND,IDC_STATIC,20,89,21,20
+    ICON            IDI_SPK2,IDC_STATIC,20,149,21,20
+    LTEXT           "(2 channels)",IDC_STATIC_MP3_CHANNELS,113,142,113,8
+    LTEXT           "(2 channels)",IDC_STATIC_OGG_CHANNELS,113,170,121,8
+    ICON            IDI_AUDIO,IDC_STATIC,19,24,21,20
+    CONTROL         "Spin1",IDC_SPIN_AMPLIFY,"msctls_updown32",UDS_ARROWKEYS | UDS_NOTHOUSANDS,175,258,11,11
+    EDITTEXT        IDC_EDIT_AMPLIFY,147,259,24,10,ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    CONTROL         "(6 channels)",IDC_RADIO_NORECOMPRESSAC3,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,175,156,98,10
+    CONTROL         "(2 channels)",IDC_RADIO_RECOMPRESSAC3,"Button",BS_AUTORADIOBUTTON | BS_FLAT,101,156,71,10
+    CONTROL         "ABR",IDC_CHECK_VBR,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,232,209,31,10
+    LTEXT           " DELAY",IDC_STATIC_DELAY,275,21,42,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_VIDEO_OPTIONS DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "2. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "&Video Options",IDC_STATIC_VIDEO_OPTIONS,7,7,308,230
+    LTEXT           "Custom Output &Format",IDC_STATIC_CUSTOM_OUTPUT_FORMAT,55,136,74,8
+    COMBOBOX        IDC_COMBO_FPS,175,51,60,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OUTPUTFORMAT,156,134,130,101,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    ICON            IDI_FILM,IDC_STATIC,20,36,20,20
+    LTEXT           "Cropping",IDC_STATIC_CROPPING,90,156,60,8
+    LTEXT           "Resizing",IDC_STATIC_RESIZING,90,174,60,8
+    LTEXT           "width =",IDC_STATIC_W2,143,157,35,8,0,WS_EX_RIGHT
+    LTEXT           "width =",IDC_STATIC_W3,143,175,35,8,0,WS_EX_RIGHT
+    LTEXT           ", height =",IDC_STATIC_H2,221,175,34,8,0,WS_EX_RIGHT
+    LTEXT           ", height =",IDC_STATIC_H1,221,157,34,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_CX,183,156,25,10,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CY,259,156,25,10,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DX,183,174,25,10,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DY,259,174,25,10,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Previe&w",IDC_VIDEOPREVIEW,205,199,80,14
+    GROUPBOX        "&Range options",IDC_STATIC_FRAME_OPTIONS,7,240,308,64
+    CONTROL         "Open VOB bitstream at LBA",IDC_CHECK_LBA,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,55,260,158,10
+    EDITTEXT        IDC_EDIT_LBA,245,260,40,10,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "&Range from ",IDC_CHECK_FRAMERANGE,"Button",BS_AUTOCHECKBOX | BS_LEFT | BS_FLAT | WS_TABSTOP,55,279,101,10
+    EDITTEXT        IDC_START_FRAME,159,279,40,10,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "to",IDC_STATIC_TO,209,280,15,8
+    EDITTEXT        IDC_END_FRAME,245,279,40,10,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    ICON            IDI_RESIZE,IDC_STATIC,20,130,20,20
+    ICON            IDI_SUNSET,IDC_STATIC,20,267,20,20
+    CONTROL         "Auto cropping and resizing.",IDC_CHECK_AUTO,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,55,109,155,10
+    COMBOBOX        IDC_COMBO_SIZE,250,108,35,136,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Advanced",IDC_BUTTON_ADVANCED,205,216,80,14,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "Normal",IDC_RADIO_NORMAL,"Button",BS_AUTORADIOBUTTON | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED,72,207,38,10
+    CONTROL         "Pan-Scan",IDC_RADIO_PANSCAN,"Button",BS_AUTORADIOBUTTON | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED,72,219,47,10
+    LTEXT           "width =",IDC_STATIC_W1,210,110,32,8,0,WS_EX_RIGHT
+    LTEXT           "Inverse Telecine && DeInterlacing",IDC_STATIC_DEINTERLACE,55,78,104,8
+    COMBOBOX        IDC_COMBO_DEINTERLACE,175,76,60,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Frames per sec",IDC_STATIC_FRAMES_PER_SECOND,56,54,108,8
+    COMBOBOX        IDC_COMBO_SOURCE_FORMAT,175,25,60,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Source format",IDC_STATIC_SOURCE_FORMAT,56,29,108,8
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 270, 181
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "BYE",IDOK,210,160,50,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "Author Information",IDC_STATIC,7,7,256,38
+    EDITTEXT        IDC_EDIT_CREDITS,15,60,235,84,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "Credits && Thanx",IDC_STATIC,7,50,256,104
+    ICON            IDI_INFO1,IDC_STATIC,210,17,20,20,SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Visit HomePage",IDC_HOMEPAGE,110,20,65,15,BS_CENTER | BS_FLAT,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Send Email",IDC_EMAIL,20,20,65,15,BS_CENTER | BS_FLAT
+END
+
+IDD_DIALOG_OUTPUTFILES DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "8. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Status Information",IDC_STATIC_STATUS_INFORMATION,8,54,330,249
+    EDITTEXT        IDC_INFO,57,70,265,206,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Progress",IDC_STATIC_PROGRESS,15,285,39,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,57,285,215,10
+    DEFPUSHBUTTON   "Start",IDC_START,283,282,40,15
+    CONTROL         "Shutdown Windows when finished.",IDC_CHECK_SHUTDOWN,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,57,24,238,10
+    ICON            IDI_NOTE,IDC_STATIC,20,163,20,20
+    GROUPBOX        "System Settings",IDC_STATIC_SYSTEM_SETTINGS,8,7,330,40
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 292, 132
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Program Locations"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Program Locations",IDC_STATIC_PROGRAM_LOCATIONS,5,5,280,92
+    LTEXT           "mencoder",IDC_STATIC,11,18,32,8
+    EDITTEXT        IDC_MENCODER_EDIT,54,17,200,10,ES_AUTOHSCROLL | ES_OEMCONVERT | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "....",IDC_MENCODER_LOCATION,259,17,18,11,BS_CENTER | BS_VCENTER
+    LTEXT           "VirtualDub",IDC_STATIC,11,57,35,8
+    EDITTEXT        IDC_VIRTUALDUB_EDIT,54,56,200,10,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "....",IDC_VIRTUALDUB_LOCATION,259,56,18,11,BS_VCENTER
+    LTEXT           "mplayer",IDC_STATIC,12,37,27,8
+    EDITTEXT        IDC_MPLAYER_EDIT,54,36,200,10,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_MPLAYER_LOCATION,259,36,18,11,BS_VCENTER
+    PUSHBUTTON      "Save",IDOK,189,110,40,12
+    PUSHBUTTON      "Cancel",IDCANCEL,245,110,40,12
+    EDITTEXT        IDC_MKVMERGE_EDIT,54,75,200,10,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "....",IDC_MKVMERGE_LOCATION,260,75,18,11,BS_VCENTER | WS_DISABLED
+    LTEXT           "mkvmerge",IDC_STATIC,12,76,34,8,WS_DISABLED
+END
+
+IDD_DIALOG_CODEC_OPTIONS DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "4. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Create DivX Options",IDC_STATIC_DIVX_OPTIONS,8,7,330,54
+    CONTROL         "Create a 1-pass DivX file",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,62,26,215,10
+    CONTROL         "Create a 2-pass DivX file",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,39,220,10
+    GROUPBOX        "Codec Options",IDC_STATIC_CODEC_OPTIONS,8,65,330,180
+    LTEXT           "Choose the DivX codec you have installed :",IDC_STATIC_CHOOSE_CODEC,17,82,206,8
+    EDITTEXT        IDC_EDIT_KEYFRAME,161,166,30,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Maximum KeyFrame interval at",IDC_STATIC_MAX_KF,62,167,96,8
+    LTEXT           "frames.",IDC_STATIC_FRAMES,196,167,51,8
+    EDITTEXT        IDC_EDIT_DIVXLOG,137,221,90,10,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "First-Pass log file location",IDC_STATIC_FIRST_PASS_LOCATION,63,194,227,8
+    GROUPBOX        "Pass Options",IDC_STATIC_PASS_OPTIONS,8,249,330,55
+    CONTROL         "Do only first pass.",IDC_PASS_0,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,62,264,132,10
+    CONTROL         "Do only second pass.",IDC_PASS_1,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,276,148,10
+    CONTROL         "Do both passes.",IDC_PASS_2,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,288,118,10
+    ICON            IDI_AUDIOVIDEO,IDC_STATIC,20,26,20,20
+    ICON            IDI_GEAR,IDC_STATIC,20,271,20,20
+    ICON            IDI_KEY1,IDC_STATIC,20,161,20,20
+    ICON            IDI_ICON_LOGFILE,IDC_STATIC,20,208,20,20
+    PUSHBUTTON      "...",IDC_LOGFILE,233,220,18,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Advanced Settings",IDC_ADV_SET,161,114,80,13,WS_DISABLED
+    CONTROL         "Automatic (Logfile will be named after the Project Name.)",IDC_RADIO_AUTO_LOGFILENAMING,
+                    "Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,62,207,244,10
+    CONTROL         "Manual",IDC_RADIO_MANUAL_LOGFILENAMING,"Button",BS_AUTORADIOBUTTON | BS_FLAT,62,221,70,10
+    ICON            IDI_DIVX,IDC_STATIC,21,109,20,20
+    COMBOBOX        IDC_COMBO_CODEC,63,113,80,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ADV DIALOGEX 0, 0, 185, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advanced Codec Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Back",IDOK,139,152,40,14
+    CONTROL         "Global Motion Compensation",IDC_CHECK_GMC,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,74,106,10
+    CONTROL         "Quarter - Pixel",IDC_CHECK_QP,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,83,60,10
+    CONTROL         "Bidirectional Encoding",IDC_CHECK_BI,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,91,86,10
+    GROUPBOX        "DivX 4.x / DivX 5.x / DivX 5.x PRO / XviD",IDC_STATIC_NORMAL,5,5,175,50
+    GROUPBOX        "DivX 5.x PRO",IDC_STATIC_PRO,5,60,175,82
+    LTEXT           "Min. Quantizer",IDC_STATIC_MINQ,15,19,46,8
+    LTEXT           "Max. Quantizer",IDC_STATIC_MAXQ,15,35,48,8
+    EDITTEXT        IDC_EDIT_MINQ,71,19,20,10,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MAXQ,71,35,20,10,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Very High Quality",IDC_CHECK_VHQ,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,15,110,70,10
+    CONTROL         "Lumi Masking",IDC_CHECK_LUMI,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,16,119,59,10
+    CONTROL         "Chroma Motion",IDC_CHECK_CHROMA,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,15,130,63,10
+    CONTROL         "Darkness Masking",IDC_CHECK_DARK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,82,103,75,10
+    CONTROL         "Trellis",IDC_CHECK_TRELLIS,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,97,122,34,10
+END
+
+IDD_DIALOG_SETUP DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "9. WWWWXXXXYYYYZZZZ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "External Programs",IDC_STATIC_EXTERNAL_PROGRAMS,7,5,331,70
+    EDITTEXT        IDC_EDIT_PROGRAM_LOCATIONS,52,25,182,38,ES_MULTILINE | ES_OEMCONVERT | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    ICON            IDI_TOOLS,IDC_STATIC,18,27,20,20
+    PUSHBUTTON      "....",IDC_BROWSE_PROGRAM,240,52,18,11
+    PUSHBUTTON      "get default values",IDC_GET_DEF,248,289,90,15
+    GROUPBOX        "Priority Settings",IDC_STATIC_PRIORITY_SETTINGS,7,90,331,110
+    LTEXT           "Video Encoding Priority",IDC_STATIC_VIDEO_PRIORITY,52,140,74,8
+    COMBOBOX        IDC_VIDEO_PRIO,135,138,60,93,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Disk read/write Priority",IDC_STATIC_DISK_PRIORITY,52,166,72,8
+    COMBOBOX        IDC_DISK_PRIO,135,163,60,93,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(*) Setting to Highest is not recommended",IDC_STATIC_SETTING_WARNING,156,184,150,8
+    LTEXT           "*",IDC_STATIC,198,140,8,8
+    LTEXT           "*",IDC_STATIC,198,166,8,8
+    ICON            IDI_PROC,IDC_STATIC,18,136,20,20
+    PUSHBUTTON      "<< Print Debug Settings >>",IDC_BUTTON_PRINTDEBUG,7,290,103,14
+    GROUPBOX        "Language Settings",IDC_STATIC_LANGUAGE_SETTINGS,7,212,331,70
+    COMBOBOX        IDC_LST_LANGUAGES,136,242,60,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language",IDC_STATIC_LANGUAGE,52,245,72,8
+    ICON            IDI_LANGSEL,IDC_STATIC,18,239,20,20
+END
+
+IDD_DIALOG_PROJECT DIALOGEX 0, 0, 345, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "7. Project"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Project Options",IDC_STATIC_PROJECT_OPTIONS,7,7,331,165
+    LTEXT           "Temp Folder : ",IDC_STATIC_TEMP_FOLDER,51,48,175,8
+    EDITTEXT        IDC_TEMPFOLDER,54,58,171,10,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "....",IDC_TEMP_LOCATION,229,58,18,11
+    LTEXT           "Output Folder : ",IDC_STATIC_OUTPUT_FOLDER,51,76,170,8
+    EDITTEXT        IDC_OUTPUTAVIFOLDER,54,86,170,10,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Overwrite Files (without warning)",IDC_CHECK_OVERWRITE_AVI,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,54,106,252,10
+    CONTROL         "Split total file in",IDC_CHECK_SPLIT,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,54,138,75,10
+    EDITTEXT        IDC_SPLITAT,208,138,35,10,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "MB. each",IDC_STATIC_SPLIT_MB,249,139,40,8
+    PUSHBUTTON      "....",IDC_AVI_LOCATION,229,86,18,11
+    ICON            IDI_FOLDER1,IDC_STATIC,20,65,20,20
+    ICON            IDI_PIECE,IDC_STATIC,17,133,20,20
+    CONTROL         "Delete Temp Files when finished.",IDC_CHECK_DEL_TEMP,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,54,118,243,10
+    GROUPBOX        "Batch Settings",IDC_STATIC_BATCH_SETTINGS,7,179,331,125
+    PUSHBUTTON      "Add",IDC_ADD,54,282,45,12
+    PUSHBUTTON      "Remove",IDC_REMOVE,112,282,45,12
+    PUSHBUTTON      "Up",IDC_BUTTON_UP,278,218,24,12
+    PUSHBUTTON      "Down",IDC_BUTTON_DOWN,278,256,24,12
+    CONTROL         "Normal",IDC_RADIO_NORMALMODE,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,54,193,148,10
+    CONTROL         "Batch Mode",IDC_RADIO_BATCHMODE,"Button",BS_AUTORADIOBUTTON | BS_FLAT,54,205,128,10
+    PUSHBUTTON      "Clear List",IDC_BUTTON_CLEAR,228,282,45,12
+    EDITTEXT        IDC_PROJNAME,54,32,170,10,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Project Name",IDC_STATIC_PROJECT_NAME,53,22,171,8
+    ICON            IDI_NOTEPAD2,IDC_STATIC,20,24,20,20
+    PUSHBUTTON      "Modify",IDC_BUTTON_MODIFY,170,282,45,12
+    CONTROL         "Delete batch entry when ready.",IDC_CHECK_DELETE_BATCH,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,155,195,115,10
+    LISTBOX         IDC_LIST_BATCH,54,219,220,57,LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    ICON            IDI_NOTEPAD,IDC_STATIC,20,234,20,20
+    COMBOBOX        IDC_CMB_SPLIT_PARTS,133,136,25,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "parts, of",IDC_STATIC_SPLIT_IN_PARTS,163,139,26,8
+    CONTROL         "Split on Fade-Out",IDC_CHECK_SPLIT_FADEOUT,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,54,154,215,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_INPUTFILES, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+
+    IDD_DIALOG_COMPRESSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_AUDIO_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+
+    IDD_DIALOG_VIDEO_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DIALOG_OUTPUTFILES, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DIALOG_CODEC_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_ADV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DIALOG_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_VIDEO_OPTIONS DLGINIT
+BEGIN
+    IDC_COMBO_FPS, 0x403, 7, 0
+0x3031, 0x302e, 0x3030, "\000" 
+    IDC_COMBO_FPS, 0x403, 7, 0
+0x3531, 0x302e, 0x3030, "\000" 
+    IDC_COMBO_FPS, 0x403, 7, 0
+0x3332, 0x392e, 0x3637, "\000" 
+    IDC_COMBO_FPS, 0x403, 7, 0
+0x3432, 0x302e, 0x3030, "\000" 
+    IDC_COMBO_FPS, 0x403, 7, 0
+0x3532, 0x302e, 0x3030, "\000" 
+    IDC_COMBO_FPS, 0x403, 7, 0
+0x3932, 0x392e, 0x3037, "\000" 
+    IDC_COMBO_OUTPUTFORMAT, 0x403, 36, 0
+0x544e, 0x4353, 0x3420, 0x333a, 0x2820, 0x2e31, 0x3333, 0x313a, 0x4620, 
+0x6c75, 0x206c, 0x6373, 0x6572, 0x6e65, 0xbd20, 0x722d, 0x7365, 0x0029, 
+
+    IDC_COMBO_DEINTERLACE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO_DEINTERLACE, 0x403, 13, 0
+0x6564, 0x692d, 0x746e, 0x7265, 0x616c, 0x6563, "\000" 
+    IDC_COMBO_DEINTERLACE, 0x403, 5, 0
+0x5649, 0x4354, "\000" 
+    IDC_COMBO_SOURCE_FORMAT, 0x403, 6, 0
+0x6f4d, 0x6976, 0x0065, 
+    IDC_COMBO_SOURCE_FORMAT, 0x403, 6, 0
+0x6956, 0x6564, 0x006f, 
+    IDC_COMBO_SOURCE_FORMAT, 0x403, 7, 0
+0x7543, 0x7473, 0x6d6f, "\000" 
+    0
+END
+
+IDD_DIALOG_AUDIO_OPTIONS DLGINIT
+BEGIN
+    IDC_COMBO_AUDIO_STREAMID, 0x403, 5, 0
+0x7830, 0x3038, "\000" 
+    IDC_COMBO_AUDIO_STREAMID, 0x403, 5, 0
+0x7830, 0x3138, "\000" 
+    0
+END
+
+IDD_DIALOG_SETUP DLGINIT
+BEGIN
+    IDC_VIDEO_PRIO, 0x403, 5, 0
+0x6469, 0x656c, "\000" 
+    IDC_VIDEO_PRIO, 0x403, 7, 0
+0x6f6c, 0x6577, 0x7473, "\000" 
+    IDC_VIDEO_PRIO, 0x403, 13, 0
+0x6562, 0x6f6c, 0x2077, 0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_VIDEO_PRIO, 0x403, 7, 0
+0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_VIDEO_PRIO, 0x403, 13, 0
+0x6261, 0x766f, 0x2065, 0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_VIDEO_PRIO, 0x403, 5, 0
+0x6968, 0x6867, "\000" 
+    IDC_VIDEO_PRIO, 0x403, 8, 0
+0x6968, 0x6867, 0x7365, 0x0074, 
+    IDC_DISK_PRIO, 0x403, 5, 0
+0x6469, 0x656c, "\000" 
+    IDC_DISK_PRIO, 0x403, 7, 0
+0x6f6c, 0x6577, 0x7473, "\000" 
+    IDC_DISK_PRIO, 0x403, 13, 0
+0x6562, 0x6f6c, 0x2077, 0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_DISK_PRIO, 0x403, 7, 0
+0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_DISK_PRIO, 0x403, 13, 0
+0x6261, 0x766f, 0x2065, 0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_DISK_PRIO, 0x403, 5, 0
+0x6968, 0x6867, "\000" 
+    IDC_DISK_PRIO, 0x403, 8, 0
+0x6968, 0x6867, 0x7365, 0x0074, 
+    IDC_LST_LANGUAGES, 0x403, 5, 0
+0x6469, 0x656c, "\000" 
+    IDC_LST_LANGUAGES, 0x403, 7, 0
+0x6f6c, 0x6577, 0x7473, "\000" 
+    IDC_LST_LANGUAGES, 0x403, 13, 0
+0x6562, 0x6f6c, 0x2077, 0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_LST_LANGUAGES, 0x403, 7, 0
+0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_LST_LANGUAGES, 0x403, 13, 0
+0x6261, 0x766f, 0x2065, 0x6f6e, 0x6d72, 0x6c61, "\000" 
+    IDC_LST_LANGUAGES, 0x403, 5, 0
+0x6968, 0x6867, "\000" 
+    IDC_LST_LANGUAGES, 0x403, 8, 0
+0x6968, 0x6867, 0x7365, 0x0074, 
+    0
+END
+
+IDD_DIALOG_PROJECT DLGINIT
+BEGIN
+    IDC_CMB_SPLIT_PARTS, 0x403, 2, 0
+0x0032, 
+    IDC_CMB_SPLIT_PARTS, 0x403, 2, 0
+0x0033, 
+    IDC_CMB_SPLIT_PARTS, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_SPLIT_PARTS, 0x403, 2, 0
+0x0035, 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SimpleDivX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NET                 ICON                    "res\\net.ico"
+
+IDI_ICON_LOGFILE        ICON                    "res\\statistics logfile.ICO"
+
+IDI_TOOLS               ICON                    "res\\install 2.ico"
+
+IDI_VOLUME              ICON                    "res\\volume.ico"
+
+IDI_CALC                ICON                    "res\\calculator.ico"
+
+IDI_DVDDRIVE            ICON                    "res\\dvd - drive + dvd.ico"
+
+IDI_DVDICON             ICON                    "res\\dvd - dvd.ico"
+
+IDI_FILM                ICON                    "res\\document - movie.ico"
+
+IDI_FOLDER1             ICON                    "res\\map - open.ico"
+
+IDI_GEAR                ICON                    "res\\document - configuration.ico"
+
+IDI_INFO                ICON                    "res\\info.ico"
+
+IDI_INFO1               ICON                    "res\\question.ico"
+
+IDI_MAPFOLDER           ICON                    "res\\map - programs.ico"
+
+IDI_NOTE                ICON                    "res\\notepad.ico"
+
+IDI_RESIZE              ICON                    "res\\monitor - resize.ico"
+
+IDI_SPEAKER             ICON                    "res\\speaker.ico"
+
+IDI_SUNSET              ICON                    "res\\document - sunset.ico"
+
+IDI_AUDIOVIDEO          ICON                    "res\\document - audio + video.ico"
+
+IDI_TIME                ICON                    "res\\time.ico"
+
+IDI_PIECE               ICON                    "res\\piece.ico"
+
+IDI_MPG                 ICON                    "res\\end - credits.ico"
+
+IDI_GEARS3              ICON                    "res\\configuration 4.ico"
+
+IDI_KEY1                ICON                    "res\\key 1.ico"
+
+IDI_SPK2                ICON                    "res\\speaker 1.ico"
+
+IDI_NOTEPAD2            ICON                    "res\\notepad 2.ico"
+
+IDI_DIVX                ICON                    "res\\divx.ico"
+
+IDI_WORLDSOUND          ICON                    "res\\world + sound.ico"
+
+IDI_PROC                ICON                    "res\\processor 1.ico"
+
+IDI_AUDIO               ICON                    "res\\document - audio.ico"
+
+IDI_NOTEPAD             ICON                    "res\\notepad 1.ico"
+
+IDI_LANGSEL             ICON                    "res\\character icon.ico"
+
+IDI_SUBTITLES           ICON                    "res\\document - font-aa.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "About"
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SimpleDivX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

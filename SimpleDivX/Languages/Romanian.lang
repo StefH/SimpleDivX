@@ -1,0 +1,157 @@
+; English
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Intrare
+TAB_VIDEO=Video
+TAB_AUDIO=Audio
+TAB_CODEC=Codec-uri
+TAB_COMPRESSION=Compresie
+TAB_MISC=Diverse
+TAB_PROJECT=Proiect
+TAB_OUTPUT=Iesire
+TAB_SETUP=Setare
+
+;General
+QUIT=Iesire
+
+;Input
+INPUT_FILES=Fisiere intrare
+FOLDER=Dosar
+VOB_FILES=Fisiere VOB / IFO
+CHECK_MAIN=Selectare film principal
+CHECK_ALL=Selectare tuturor fisierelor
+VIDEO_INFORMATION=Informatii video
+RESOLUTION=Rezolutie
+ASPECT_RATIO=Proportie
+FRAME_RATE=Cantitate cadre
+VIDEO_FORMAT=Format video
+MOVIE_LENGTH=Lungime film
+FRAMES=Cadre
+
+;Video
+VIDEO_OPTIONS=Optiuni video
+FRAME_OPTIONS=Optiuni cadre
+FRAMES_PER_SECOND=Cadre/Secunda
+ADVANCED=Avansat
+VIDEO_CHECKING=Activare verificare ID curent video
+VIDEO_STREAM_ID=ID curent video
+CHECK_AUTO=Taiere si redimensionare automata
+WIDTH=Latime
+HEIGHT=Inaltime
+PREVIEW=Previzualizare
+RESIZING=Redimensionare
+CROPPING=Taiere
+CUSTOM_OUTPUT_FORMAT=Format iesire dupa obicei
+OPEN_VOB_LBA=Deschide curent de bit VOB la LBA
+FRAME_RANGE=Zona cadre de la
+TO=la
+
+;Audio
+GENERAL_AUDIO=Audio general
+CREATE_AUDIO=Creaza audio
+AUDIO_STREAMS_LANGUAGES=Curenti si limbi audio
+CHECK_AUDIO=Verifica audio
+EXTRACT_ALL_AUDIO=Extrage toate audio
+CONVERT_ALL_AUDIO=Transforma toate audio
+AUDIO_FORMAT=Format audio
+TWO_CHANNELS=(2 chanale)
+SIX_CHANNELS=(6 chanale)
+AUDIO_BITRATE_AND_CONVERSION=Cantitate biti audio si transformare
+AUDIO_KBPS=Cantitate biti (kbps)
+SAMPLE_RATE_CONVERSION=Conversie viteza esantionare
+AMPLIFY=Amplifica
+NORMALIZE=Normalizare nivel varfuri.
+NORMALIZE_MIDNIGHT=Normalizare nivel varfuri. (Mod Midnight)
+
+;Codec
+CODEC_OPTIONS=Optiuni codec
+DIVX_OPTIONS=Optiuni Divx
+CHOOSE_CODEC=Alege codec
+ADVANCED_SETTINGS=Setari avansate
+MAX_KEYFRAME=Maximum cadre-cheie
+FIRST_PASS_LOCATION=Locatie fisier de inregistrare a primei transformari
+AUTO_LOGFILENAMING=Automat (Fisierul de inregistrare va fi numit dupa numele proiectului.)
+MANUAL_LOGFILENAMING=Manual
+PASS_OPTIONS=Optiuni transformare
+CREATE_ONE_PASS_MOVIE=Creaza film cu 1-pass
+CREATE_TWO_PASS_MOVIE=Creaza film cu 2-pass
+ONLY_FIRST_PASS=Executa numai 1-pass.
+ONLY_SECOND_PASS=Executa numai 2-pass.
+BOTH_PASSES=Executa ambele transformari.
+
+;Compression
+BITRATE_FILE_OPTIONS=Cantitate biti / Optiuni fisier
+ADVANCED_BITRATE=Parametrii avansati ai cantitatii de biti
+END_CREDITS_OPTIONS=Optiuni creditare
+ENTER_BITRATE=Introducere cantitate biti
+ENTER_FINAL_FILESIZE=Introducere dimiensiune finala film
+GET_TIME=Preia timpul din film.
+FILESIZE=Dimensiune fisier
+VIDEO_BITRATE=Cantitate biti
+DESCRIPTION=Descriere
+HOURS=Ora(ore)
+MINUTES=Minut(minute)
+SECONDS=Secunde(secunde)
+SLOW=Nu prea multa actiune in film.
+NORMAL=Actiune normala in film.
+FAST=Multa actiune in film sau culori stralucitoare.
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Nu include creditare in film.
+ENDCREDITS_RECOMPRESS=Recomprima creditare la
+RECOMPRESS_PCT=% din cantitate de biti din filmul principal.
+ENDCREDITS_AUTOMATIC=Detectare automata.
+ENDCREDITS_MANUAL=Creditarea manuala incepe la
+WORKAROUND1=Fix 'mpeg2avi hangs when doing a 2-pass'.
+
+;Misc
+GENERAL_SUBTITLES=Optiuni generale subtitrare
+CREATE_SUBTITLES=Creaza subtitrari folosind VobSub
+SELECT_ALL_LANGUAGES=Alegere toate limbile.
+CONTAINER_FORMAT=Formatul containerului video
+
+;Project
+PROJECT_OPTIONS=Optiuni proiect
+BATCH_SETTINGS=Setari serie
+PROJECT_NAME=Nume proiect
+TEMP_FOLDER=Dosar temporar
+OUTPUT_FOLDER=Dosar iesire
+OVERWRITE_FILES=Suprascriere fisiere (fara avertisment)
+DELETE_TEMP=Stergere fisiere temporare la finalizare.
+SPLIT_FILE=Impartire fisier in
+SPLIT_PARTS=parti, de
+SPLIT_MB=MB. fiecare
+NORMAL_MODE=Normal
+BATCH_MODE=Mod serie
+BUTTON_UP=Sus
+BUTTON_DOWN=Jos
+BUTTON_ADD=Adauga
+BUTTON_REMOVE=Sterge
+BUTTON_MODIFY=Modifica
+BUTTON_CLEAR=Sterge lista
+DELETE_BATCH=Sterge intrare element serie la finalizare.
+
+;OutputFiles
+SYSTEM_SETTINGS=Setari sistem
+STATUS_INFORMATION=Informatii stare
+PROGRESS=Inaintare
+SHUTDOWN=Inchide Windows la finalizare.
+
+;Settings
+EXTERNAL_PROGRAMS=Programe externe
+ADVANCED_AUDIO_SETTINGS=Setari audio avansate
+AC3_PRELOAD_VALUE=Val. preincarcare AC3
+AC3_INTERLEAVE_VALUE=Val. intercalata AC3
+PRIORITY_SETTINGS=Setari prioritate
+AUDO_PRIORITY=Prioritate codare audio
+VIDEO_PRIORITY=Prioritate codare video
+DISK_PRIORITY=Prioritate citire/scriere disk
+SETTING_WARNING=(*) Setarea Highest nu este recomandata!
+GET_DEFAULT_VALUES=Preia implicite
+LANGUAGE_SETTINGS=Setari limba
+LANGUAGE=Limba
+
+; External Program Settings
+PROGRAM_LOCATIONS=Locatii program extern
+SAVE=Salvare
+CANCEL=Anulare

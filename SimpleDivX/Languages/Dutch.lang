@@ -1,0 +1,159 @@
+;Dutch
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Invoer
+TAB_VIDEO=Beeld
+TAB_AUDIO=Geluid
+TAB_CODEC=Codec
+TAB_COMPRESSION=Compressie
+TAB_MISC=Diverse
+TAB_PROJECT=Project
+TAB_OUTPUT=Uitvoer
+TAB_SETUP=Instellingen
+
+;General
+QUIT=Afsluiten
+
+;Input
+INPUT_FILES=Bron Bestanden
+FOLDER=Map
+VOB_FILES=VOB/IFO Bestanden
+CHECK_MAIN=Selecteer HoofdFilm
+CHECK_ALL=Selecteer Alle Bestanden
+VIDEO_INFORMATION=Video Informatie
+RESOLUTION=Resolutie
+ASPECT_RATIO=Verhouding
+FRAME_RATE=Framerate
+VIDEO_FORMAT=Video Formaat
+MOVIE_LENGTH=Film Lengte
+FRAMES=Beelden
+CHAPTERS=Hoofdstukken
+TITLE=Kies Titel
+STATUS_BUSY=Status : Bezig
+STATUS_READY=Status : Klaar
+
+;Video
+VIDEO_OPTIONS=Video Opties
+FRAME_OPTIONS=Beeld Opties
+FRAMES_PER_SECOND=Beelden/Seconde
+ADVANCED=Geavanceerd
+VIDEO_CHECKING=Check de Video Stream ID
+VIDEO_STREAM_ID=Video Stream ID
+CHECK_AUTO=Automatisch snijden en veranderen
+WIDTH=breedte =
+HEIGHT=hoogte =
+PREVIEW=Voorbeeld
+RESIZING=Schalen
+CROPPING=Snijden
+CUSTOM_OUTPUT_FORMAT=Beeld-Uitvoer Formaat
+OPEN_VOB_LBA=Open de VOB bitstream op LBA
+FRAME_RANGE=Range van
+TO=tot
+SOURCE_FORMAT=Bron Formaat
+DEINTERLACE=Inverse telecine / De-interlace
+
+;Audio
+GENERAL_AUDIO=Algemene Geluids Instellingen
+CREATE_AUDIO=Maak een Film met Geluid
+AUDIO_STREAMS_LANGUAGES=Geluids Sporen en Talen
+CHECK_AUDIO=Controleer het Geluid
+EXTRACT_ALL_AUDIO=Haal alle Geluids-Sporen uit de Film
+CONVERT_ALL_AUDIO=Converteer alle Geluids-Sporen uit de Film
+AUDIO_FORMAT=Geluids Formaat
+TWO_CHANNELS=(2 kanalen)
+SIX_CHANNELS=6 kanalen)
+AUDIO_BITRATE_AND_CONVERSION=Geluids Bitrate en Conversie
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Samplerate Conversion
+AMPLIFY=Versterken
+NORMALIZE=Peak level normalize.
+NORMALIZE_MIDNIGHT=Peak level normalize. (Midnight Mode)
+NO_AUDIO_FOUND=Geen geluid gevonden
+
+;Codec
+CODEC_OPTIONS=Codec Opties
+DIVX_OPTIONS=DivX Opties
+CHOOSE_CODEC=Kies Codec
+ADVANCED_SETTINGS=Instellingen
+MAX_KEYFRAME=Maximale Key-Frame
+FIRST_PASS_LOCATION=Locatie van Log-bestand eerste pass
+AUTO_LOGFILENAMING=Automatisch (Log-bestand zal naar het Project genoemd worden.)
+MANUAL_LOGFILENAMING=Handmatig
+PASS_OPTIONS=Pass Opties
+CREATE_ONE_PASS_MOVIE=Maak een 1-pass film
+CREATE_TWO_PASS_MOVIE=Maak een 2-pass film
+ONLY_FIRST_PASS=Doe alleen de eerste pass.
+ONLY_SECOND_PASS=Doe alleen de tweede pass.
+BOTH_PASSES=Doe beide passes.
+WITH_AUDIO=met XXX geluid.
+WITH_NO_AUDIO=met geen geluid.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / Bestand Opties
+END_CREDITS_OPTIONS=Aftiteling Opties
+ENTER_BITRATE=Geef bitrate
+ENTER_FINAL_FILESIZE=Geef de totale grootte van de film
+GET_TIME=Gebruik de tijd van de film
+FILESIZE=Bestands grootte
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Beschrijving
+HOURS=Uren
+MINUTES=Minuten
+SECONDS=Seconden
+ENDCREDITS_NORMAL=Normaal
+ENDCREDITS_REMOVE=Geen aftiteling.
+ENDCREDITS_RECOMPRESS=Comprimeer de aftiteling extra.
+RECOMPRESS_PCT=% van de bitrate van de film.
+ENDCREDITS_AUTOMATIC=Automatische detectie.
+ENDCREDITS_MANUAL=Handmatig, aftiteling begint bij
+VIDEO_ONLY=(Alleen Beeld)
+VIDEO_AND_AUDIO=(Beeld en Geluid)
+
+;Misc
+GENERAL_SUBTITLES=Algemene instellingen voor ondertiteling
+CREATE_SUBTITLES=Maak ondertiteling met VobSub
+SELECT_ALL_LANGUAGES=Selecteer alle talen
+CONTAINER_FORMAT=Film Container Formaat
+
+;Project
+PROJECT_OPTIONS=Project Opties
+BATCH_SETTINGS=Batch Instelingen
+PROJECT_NAME=Project Naam
+TEMP_FOLDER=Tijdelijke Map
+OUTPUT_FOLDER=Uitvoer Map
+OVERWRITE_FILES=Overschrijf alle bestanden. (Zonder waarschuwing)
+DELETE_TEMP=Verwijder alle tijdelijke bestanden als film klaar is.
+SPLIT_FILE=Splits de film in
+SPLIT_FADEOUT=Splits de film op een fade-out punt.
+SPLIT_PARTS=delen, van
+SPLIT_MB=MB elk
+NORMAL_MODE=Normale Mode
+BATCH_MODE=Batch Mode
+BUTTON_UP=Omhoog
+BUTTON_DOWN=Omlaag
+BUTTON_ADD=Voeg Toe
+BUTTON_REMOVE=Verwijder
+BUTTON_MODIFY=Verandere
+BUTTON_CLEAR=Lijst Wissen
+
+;OutputFiles
+SYSTEM_SETTINGS=Systeem Instellingen
+STATUS_INFORMATION=Voortgangs Informatie
+PROGRESS=Voortgang
+SHUTDOWN=Windows afsluiten als programma klaar is.
+
+;Settings
+EXTERNAL_PROGRAMS=Externe Programma's
+PRIORITY_SETTINGS=Prioriteits Instellingen
+VIDEO_PRIORITY=Beeld Prioriteit
+DISK_PRIORITY=Schijf Lezen/Schrijven Prioriteit
+SETTING_WARNING=(*) Niet aanbevolen om op 'Highest' te zetten!
+GET_DEFAULT_VALUES=Get Defaults
+LANGUAGE_SETTINGS=Taal Instellingen
+LANGUAGE=Taal
+
+; External Program Settings
+PROGRAM_LOCATIONS=Externe programma locaties
+SAVE=opslaan
+CANCEL=afbreken

@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "genericmm", "genericmm\genericmm.vcxproj", "{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleDivX", "simpledivx\simpledivx.vcxproj", "{E958E179-481A-407B-AA2A-A24A94D8F9FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C1D0061-BA38-428C-AA5F-CBCF98E25FE8} = {1C1D0061-BA38-428C-AA5F-CBCF98E25FE8}
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124} = {D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_vob-info", "vob_mpeg2\vstrip\dll\dll.vcxproj", "{1C1D0061-BA38-428C-AA5F-CBCF98E25FE8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmpeg2", "vob_mpeg2\mpeg2dec_lib\vc++\libmpeg2.vcxproj", "{2E11EA94-2F50-4D50-AA69-CCBC229839DC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvo", "vob_mpeg2\mpeg2dec_lib\vc++\libvo.vcxproj", "{231CE3CB-6D16-4F4C-B9C8-5299CB698EF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{786502F5-0D9E-47AD-9C3F-15D50D33C603}"
+	ProjectSection(SolutionItems) = preProject
+		SimpleDivX\Readme.txt = SimpleDivX\Readme.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseClasses", "Dependencies\DirectShow9-BaseClasses\baseclasses.vcxproj", "{9AA87C1D-A27E-47D9-917E-9328D4429B84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Debug|x86.Build.0 = Debug|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release|x86.ActiveCfg = Release|Win32
+		{D4F0C787-1F5A-4B5E-AB15-E6B73DC6A124}.Release|x86.Build.0 = Release|Win32
+		{E958E179-481A-407B-AA2A-A24A94D8F9FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{E958E179-481A-407B-AA2A-A24A94D8F9FD}.Debug|x86.Build.0 = Debug|Win32
+		{E958E179-481A-407B-AA2A-A24A94D8F9FD}.Release|x86.ActiveCfg = Release|Win32
+		{E958E179-481A-407B-AA2A-A24A94D8F9FD}.Release|x86.Build.0 = Release|Win32
+		{1C1D0061-BA38-428C-AA5F-CBCF98E25FE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C1D0061-BA38-428C-AA5F-CBCF98E25FE8}.Debug|x86.Build.0 = Debug|Win32
+		{1C1D0061-BA38-428C-AA5F-CBCF98E25FE8}.Release|x86.ActiveCfg = Release|Win32
+		{1C1D0061-BA38-428C-AA5F-CBCF98E25FE8}.Release|x86.Build.0 = Release|Win32
+		{2E11EA94-2F50-4D50-AA69-CCBC229839DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E11EA94-2F50-4D50-AA69-CCBC229839DC}.Debug|x86.Build.0 = Debug|Win32
+		{2E11EA94-2F50-4D50-AA69-CCBC229839DC}.Release|x86.ActiveCfg = Release|Win32
+		{2E11EA94-2F50-4D50-AA69-CCBC229839DC}.Release|x86.Build.0 = Release|Win32
+		{231CE3CB-6D16-4F4C-B9C8-5299CB698EF7}.Debug|x86.ActiveCfg = Debug|Win32
+		{231CE3CB-6D16-4F4C-B9C8-5299CB698EF7}.Debug|x86.Build.0 = Debug|Win32
+		{231CE3CB-6D16-4F4C-B9C8-5299CB698EF7}.Release|x86.ActiveCfg = Release|Win32
+		{231CE3CB-6D16-4F4C-B9C8-5299CB698EF7}.Release|x86.Build.0 = Release|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug|x86.ActiveCfg = Debug|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Debug|x86.Build.0 = Debug|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release|x86.ActiveCfg = Release|Win32
+		{9AA87C1D-A27E-47D9-917E-9328D4429B84}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

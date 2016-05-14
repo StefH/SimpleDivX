@@ -1,0 +1,156 @@
+;Croatian Translation by : Lizard_ago
+
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Unos
+TAB_VIDEO=Video
+TAB_AUDIO=Zvuk
+TAB_CODEC=Codec
+TAB_COMPRESSION=Kompresija
+TAB_MISC=Ostalo
+TAB_PROJECT=Projekt
+TAB_OUTPUT=Izlazni
+TAB_SETUP=Podešavanje
+
+;General
+QUIT=Odustani
+
+;Input
+INPUT_FILES=Unos Podataka
+FOLDER=Mapa
+VOB_FILES=VOB / IFO Datoteke
+CHECK_MAIN=Odaberi Glavni Film
+CHECK_ALL=Selektiraj Sve Datoteke
+VIDEO_INFORMATION=Video Informacije
+RESOLUTION=Rezolucija
+ASPECT_RATIO=Velièina Prikaza
+FRAME_RATE=Broj Slièica
+VIDEO_FORMAT=Video Format
+MOVIE_LENGTH=Trajanje Filma
+FRAMES=Slièica
+
+;Video
+VIDEO_OPTIONS=Video Postavke
+FRAME_OPTIONS=Opcije Kadara
+FRAMES_PER_SECOND=Kadar/Sekunde
+ADVANCED=Napredno
+VIDEO_CHECKING=Omoguæi ID provjeru Video Zapisa
+VIDEO_STREAM_ID=ID Video Zapisa 
+CHECK_AUTO=Automatska prilagodba rezolucije
+WIDTH=širina
+HEIGHT=visina
+PREVIEW=Pedprikaz
+RESIZING=Odabir Velièine
+CROPPING=Rezanje
+CUSTOM_OUTPUT_FORMAT=Uobièajeni Vanjski format
+OPEN_VOB_LBA=Otvori VOB bitstream u LBA
+FRAME_RANGE=Pozicija Kadra od
+TO=do
+
+;Audio
+GENERAL_AUDIO=Postavke Zvuka 
+CREATE_AUDIO=Napravi zvuèni zapis
+AUDIO_STREAMS_LANGUAGES=Audio Zapisi i Jezici
+CHECK_AUDIO=Provjeri zvuèni zapis
+EXTRACT_ALL_AUDIO=Izvuci zvuèni zapis
+CONVERT_ALL_AUDIO=Konvertiraj zvuèni zapis
+AUDIO_FORMAT=Zvuèni Format
+TWO_CHANNELS=(2 kanala)
+SIX_CHANNELS=(6 kanala)
+AUDIO_BITRATE_AND_CONVERSION=AudioBitrate i Konverzija
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Konverzija semplova
+AMPLIFY=Pojaèanje
+NORMALIZE=Normalizacija Peak nivoa.
+NORMALIZE_MIDNIGHT=Normalizacija Peak nivoa. (Cjelonoæni Rad)
+
+;Codec
+CODEC_OPTIONS=Codec opcije
+DIVX_OPTIONS=DivX opcije
+CHOOSE_CODEC=Odaberi Codec
+ADVANCED_SETTINGS=Napredne Postavke
+MAX_KEYFRAME=Najveæi Key-Frame
+FIRST_PASS_LOCATION=Prvoprolazna log file lokacija
+AUTO_LOGFILENAMING=Automatski (Logfile bit æe imenovan prema imenu Projekta.)
+MANUAL_LOGFILENAMING=Ruèno
+PASS_OPTIONS=Opcije Prolaza
+CREATE_ONE_PASS_MOVIE=Kreiraj u 1-prolazu film
+CREATE_TWO_PASS_MOVIE=Kreiraj u 2-prolaza film
+ONLY_FIRST_PASS=Uèini samo prvi prolaz.
+ONLY_SECOND_PASS=Uèini samo drugi prolaz.
+BOTH_PASSES=Uèini oba prolaza.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / File Opcije
+ADVANCED_BITRATE=Napredni Bitrate Parametri
+END_CREDITS_OPTIONS=Opcije Odjave filma
+ENTER_BITRATE=Unesi bitrate
+ENTER_FINAL_FILESIZE=Unesi konaènu velièinu filma
+GET_TIME=Izvuci Vrijeme iz Filma.
+FILESIZE=Velièina filea
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Opis
+HOURS=Sat(i)
+MINUTES=Minut(e)
+SECONDS=sekund(e)
+SLOW=Ne previše akcije u filmu.
+NORMAL=Normalne kretnje filma.
+FAST=Previše akcije u filmu na svijetlim bojama.
+ENDCREDITS_NORMAL=Normalne
+ENDCREDITS_REMOVE=Ne ukljuèuj odjavu u film.
+ENDCREDITS_RECOMPRESS=Prekodiraj odjavu na
+RECOMPRESS_PCT=% bitratea iz filma.
+ENDCREDITS_AUTOMATIC=Automatska detecija.
+ENDCREDITS_MANUAL=Ruèno=odjavu poèmi na
+WORKAROUND1=Ispravak 'mpeg2avi smrzava pri radu 2-prolaza'.
+
+;Misc
+GENERAL_SUBTITLES=Osnovne postavke titla
+CREATE_SUBTITLES=Kreiraj Titlove koristeæi VobSub
+SELECT_ALL_LANGUAGES=Odaberi sve jezike.
+CONTAINER_FORMAT=Postavke Video Formata
+
+;Project
+PROJECT_OPTIONS=Projekt Opcije
+BATCH_SETTINGS=Batch Postavke
+PROJECT_NAME=Naziv Projekta
+TEMP_FOLDER=Privremena Mapa
+OUTPUT_FOLDER=Radna Mapa
+OVERWRITE_FILES=Prebriši Files (bez upozorenja)
+DELETE_TEMP=Izbriši Privremene Files kad završi.
+SPLIT_FILE=Podjeli konaèno file na
+NORMAL_MODE=Normal
+BATCH_MODE=Batch Mode
+BUTTON_UP=Gore
+BUTTON_DOWN=Dolje
+BUTTON_ADD=Dodaj
+BUTTON_REMOVE=Premjesti
+BUTTON_MODIFY=Modificiraj
+BUTTON_CLEAR=Oèisti Listu
+DELETE_BATCH=Podriši batch entry when ready.
+
+;OutputFiles
+SYSTEM_SETTINGS=Sistemske Postavke
+STATUS_INFORMATION=Informacije Dogaðaja
+PROGRESS=Progres
+SHUTDOWN=Pogasi windowze kad završi.
+
+;Settings
+EXTERNAL_PROGRAMS=Vanjski Programi
+ADVANCED_AUDIO_SETTINGS=Napredne Zvuène Postavke
+AC3_PRELOAD_VALUE=AC3 Preload vrjednost
+AC3_INTERLEAVE_VALUE=AC3 Interleave vrjednost
+PRIORITY_SETTINGS=Postavke Prioriteta
+AUDO_PRIORITY=Pretvaranje zvuka
+VIDEO_PRIORITY=Pretvaranje videa
+DISK_PRIORITY=Disk èitanje/pisanje
+SETTING_WARNING=(*) Najviše postavke ne preporuèamo!
+GET_DEFAULT_VALUES=Vrati na prvobitno stanje
+LANGUAGE_SETTINGS=Jeziène Postavke
+LANGUAGE=Jezici
+
+; External Program Settings
+PROGRAM_LOCATIONS=Vanjske Programske lokacije
+SAVE=Snimi
+CANCEL=odustani

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{E958E179-481A-407B-AA2A-A24A94D8F9FD}</ProjectGuid>
+    <ProjectName>SimpleDivX</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/simpledivx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>.\Debug/simpledivx.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/simpledivx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/simpledivx.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/simpledivx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>.\Release/SimpleDivX.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/simpledivx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/simpledivx.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AdvancedDivX_Settings.cpp" />
+    <ClCompile Include="AdvancedVideo_Settings.cpp" />
+    <ClCompile Include="AllControlsSheet.cpp" />
+    <ClCompile Include="AudioOptionsPage.cpp" />
+    <ClCompile Include="CodecOptions.cpp" />
+    <ClCompile Include="CompressionOptionsPage.cpp" />
+    <ClCompile Include="ConfigData.cpp" />
+    <ClCompile Include="CPUPlatformSDK.cpp" />
+    <ClCompile Include="EncodingInfo.cpp" />
+    <ClCompile Include="FileFindEx.cpp" />
+    <ClCompile Include="GenericSystem.cpp" />
+    <ClCompile Include="ICPUInfo.cpp" />
+    <ClCompile Include="InputFilesPage.cpp" />
+    <ClCompile Include="LanguageSupport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MiscPage.cpp" />
+    <ClCompile Include="MyReg.cpp" />
+    <ClCompile Include="mytooltips.cpp" />
+    <ClCompile Include="OutputFilesPage.cpp" />
+    <ClCompile Include="ParamContainer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ProgramInfo.cpp" />
+    <ClCompile Include="ProgramLocation.cpp" />
+    <ClCompile Include="ProjectOptionsPage.cpp" />
+    <ClCompile Include="SetupPage.cpp" />
+    <ClCompile Include="simpledivx.cpp" />
+    <ClCompile Include="SimpleDivXBatch.cpp" />
+    <ClCompile Include="simpledivxDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="VideoOptionsPage.cpp" />
+    <ClCompile Include="XBrowseForFolder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="simpledivx.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdvancedDivX_Settings.h" />
+    <ClInclude Include="AdvancedVideo_Settings.h" />
+    <ClInclude Include="AllControlsSheet.h" />
+    <ClInclude Include="atlrx.h" />
+    <ClInclude Include="AudioOptionsPage.h" />
+    <ClInclude Include="CodecOptions.h" />
+    <ClInclude Include="CompressionOptionsPage.h" />
+    <ClInclude Include="ConfigData.h" />
+    <ClInclude Include="CPUPlatformSDK.h" />
+    <ClInclude Include="EncodingInfo.h" />
+    <ClInclude Include="FileFindEx.h" />
+    <ClInclude Include="InputFilesPage.h" />
+    <ClInclude Include="LanguageSupport.h" />
+    <ClInclude Include="MiscPage.h" />
+    <ClInclude Include="MyReg.h" />
+    <ClInclude Include="mytooltips.h" />
+    <ClInclude Include="my_includes.h" />
+    <ClInclude Include="OutputFilesPage.h" />
+    <ClInclude Include="ParamContainer.h" />
+    <ClInclude Include="ProgramInfo.h" />
+    <ClInclude Include="ProgramLocation.h" />
+    <ClInclude Include="ProjectOptionsPage.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetupPage.h" />
+    <ClInclude Include="simpledivx.h" />
+    <ClInclude Include="SimpleDivXBatch.h" />
+    <ClInclude Include="simpledivxDlg.h" />
+    <ClInclude Include="simpledivx_Defines.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VideoOptionsPage.h" />
+    <ClInclude Include="XBrowseForFolder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AdvancedBitrate.ico" />
+    <Image Include="res\arrow.bmp" />
+    <Image Include="res\AudioFormat.ICO" />
+    <Image Include="res\Audiohq.ico" />
+    <Image Include="res\audiovideo.ico" />
+    <Image Include="res\calc.bmp" />
+    <Image Include="res\calc.ico" />
+    <Image Include="res\calculator.ico" />
+    <Image Include="res\cdrom - audio +.ico" />
+    <Image Include="res\character icon.ico" />
+    <Image Include="res\Check.bmp" />
+    <Image Include="res\configuration 4.ico" />
+    <Image Include="res\divx.ico" />
+    <Image Include="res\divx5logo_177x60.bmp" />
+    <Image Include="res\divx5logo_32x16.bmp" />
+    <Image Include="res\divx5logo_32x18.bmp" />
+    <Image Include="res\divx5logo_32x32.bmp" />
+    <Image Include="res\divx5logo_80x27.bmp" />
+    <Image Include="res\divx5logo_94x32.bmp" />
+    <Image Include="res\divxlogo_72x32.bmp" />
+    <Image Include="res\document - audio + video.ico" />
+    <Image Include="res\document - audio.ico" />
+    <Image Include="res\document - configuration.ico" />
+    <Image Include="res\document - font-aa.ico" />
+    <Image Include="res\document - movie.ico" />
+    <Image Include="res\document - sunset.ico" />
+    <Image Include="res\dvd - drive + dvd.ico" />
+    <Image Include="res\dvd - dvd.ico" />
+    <Image Include="res\dvd-drive.bmp" />
+    <Image Include="res\dvd-drive.ico" />
+    <Image Include="res\dvd-icon.ico" />
+    <Image Include="res\dvd_icon.bmp" />
+    <Image Include="res\end - credits.ico" />
+    <Image Include="res\end-credits.bmp" />
+    <Image Include="res\film.ico" />
+    <Image Include="res\folder1.ico" />
+    <Image Include="res\folder_prog.bmp" />
+    <Image Include="res\gear.ico" />
+    <Image Include="res\gears.bmp" />
+    <Image Include="res\gears.ico" />
+    <Image Include="res\gears2.bmp" />
+    <Image Include="res\globe.bmp" />
+    <Image Include="res\globe.ico" />
+    <Image Include="res\globe1.bmp" />
+    <Image Include="res\globe1.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\info.bmp" />
+    <Image Include="res\info.ico" />
+    <Image Include="res\info1.ico" />
+    <Image Include="res\info2.bmp" />
+    <Image Include="res\install 2.ico" />
+    <Image Include="res\key 1.ico" />
+    <Image Include="res\key.ico" />
+    <Image Include="res\key1.bmp" />
+    <Image Include="res\key1.ico" />
+    <Image Include="res\keys.bmp" />
+    <Image Include="res\logfile.ICO" />
+    <Image Include="res\map - open.ico" />
+    <Image Include="res\map - programs.ico" />
+    <Image Include="res\map-folder.ico" />
+    <Image Include="res\map.bmp" />
+    <Image Include="res\middlecheck.bmp" />
+    <Image Include="res\monitor - resize.ico" />
+    <Image Include="res\mpg.ico" />
+    <Image Include="res\net.ico" />
+    <Image Include="res\note.ico" />
+    <Image Include="res\noteblock.bmp" />
+    <Image Include="res\notepad 1.ico" />
+    <Image Include="res\notepad 2.ico" />
+    <Image Include="res\notepad.ico" />
+    <Image Include="res\notepad2.ico" />
+    <Image Include="res\piece.bmp" />
+    <Image Include="res\piece.ico" />
+    <Image Include="res\plusaudio.bmp" />
+    <Image Include="res\plusaudio.ico" />
+    <Image Include="res\processor 1.ico" />
+    <Image Include="res\question.ico" />
+    <Image Include="res\resize.bmp" />
+    <Image Include="res\resize.ico" />
+    <Image Include="res\satelite.ico" />
+    <Image Include="res\simpledivx.ico" />
+    <Image Include="res\speaker 1.ico" />
+    <Image Include="res\speaker.ico" />
+    <Image Include="res\speaker1.ico" />
+    <Image Include="res\statistics logfile.ICO" />
+    <Image Include="res\sub.bmp" />
+    <Image Include="res\sunset.ico" />
+    <Image Include="res\time.ico" />
+    <Image Include="res\tools.bmp" />
+    <Image Include="res\tools.ico" />
+    <Image Include="res\tools32.ico" />
+    <Image Include="res\UnCheck.bmp" />
+    <Image Include="res\volume.ico" />
+    <Image Include="res\world + sound.ico" />
+    <Image Include="res\world.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\simpledivx.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dependencies\DirectShow9-BaseClasses\baseclasses.vcxproj">
+      <Project>{9aa87c1d-a27e-47d9-917e-9328d4429b84}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\genericmm\genericmm.vcxproj">
+      <Project>{d4f0c787-1f5a-4b5e-ab15-e6b73dc6a124}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vob_mpeg2\mpeg2dec_lib\vc++\libmpeg2.vcxproj">
+      <Project>{2e11ea94-2f50-4d50-aa69-ccbc229839dc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vob_mpeg2\mpeg2dec_lib\vc++\libvo.vcxproj">
+      <Project>{231ce3cb-6d16-4f4c-b9c8-5299cb698ef7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vob_mpeg2\vstrip\dll\dll.vcxproj">
+      <Project>{1c1d0061-ba38-428c-aa5f-cbcf98e25fe8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="simpledivx.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,135 @@
+;Translation by : <<Neo the Hellenic from Peristeri>>
+
+[SimpleDivX]
+;Input
+INPUT_FILES=Αρχεία εισόδου
+FOLDER=Φάκελος
+VOB_FILES=Αρχεία VOB 
+CHECK_MAIN=Επιλογή Κύριας Ταινίας
+CHECK_ALL=Επιλογή όλων των αρχείων
+VIDEO_INFORMATION=Πληροφορίες Βίντεο
+RESOLUTION=Ανάλυση
+ASPECT_RATIO=Λόγος
+FRAME_RATE=Ροή καρέ
+VIDEO_FORMAT=Τύπος βίντεο
+MOVIE_LENGTH=Μήκος ταινίας
+FRAMES=Καρέ
+
+;Video
+VIDEO_OPTIONS=Επιλογές βίντεο
+FRAME_OPTIONS=Επιλογές Βάσης χρόνου (fps)
+FRAMES_PER_SECOND=Βάση χρόνου (fps)/δευτερόλεπτο
+ADVANCED=Γιά προχωρημένους
+VIDEO_CHECKING=Ενεργοποιήση αναγνώρισης βίντεο
+VIDEO_STREAM_ID=Στοιχεία βίντεο
+CHECK_AUTO=Αυτόματη αποκοπή & αλλαγή ανάλυσης.
+WIDTH=Πλάτος
+HEIGHT=Ύψος
+PREVIEW=Προεπισκόπιση
+RESIZING=Αλλάζωντας την ανάλυση
+CROPPING=Κόβωντας
+CUSTOM_OUTPUT_FORMAT=Εθιμιτό Φορμά Εξόδου
+OPEN_VOB_LBA=’νοιγμα VOB bitstream στο LBA
+FRAME_RANGE=Εμβέλεια καρέ από
+TO=εώς
+
+;Audio
+GENERAL_AUDIO=Ήχος
+CREATE_AUDIO=Δημιουργία ήχου
+AUDIO_STREAMS_LANGUAGES=Τύποι ήχου και γλώσσες
+CHECK_AUDIO=Συμπεριέλαβε τον ήχο
+EXTRACT_ALL_AUDIO=Βγάλε όλους τους ήχους
+CONVERT_ALL_AUDIO=Μετέτρεψε όλους τους ήχους
+AUDIO_FORMAT=Τύπος ήχου
+TWO_CHANNELS=(Στερεοφωνικός)
+SIX_CHANNELS=(Εξακάναλος)
+AUDIO_BITRATE_AND_CONVERSION=Ρυθμός μετάδοσης ήχου και μετατροπή σε
+AUDIO_KBPS=Ρυθμός μετάδοσης (kbps)
+SAMPLE_RATE_CONVERSION=Μετατροπή Δειγματοληψίας
+AMPLIFY=Αύξηση έντασης
+NORMALIZE=Εξωμάλυνση του ήχου.
+NORMALIZE_MIDNIGHT=Εξωμάλυνση του ήχου. (Σε σημεία που πρέπει)
+
+;Codec
+CODEC_OPTIONS=Επιλογές συμπιεστή
+DIVX_OPTIONS=Επιλογές DivX
+CHOOSE_CODEC=Επέλεξε κωδικοποιητή
+ADVANCED_SETTINGS=Για πρωχορημένους
+MAX_KEYFRAME=Μέγιστος αριθμός Key-Frame
+FIRST_PASS_LOCATION=Προορισμός αρχείου ενός-περάσματος
+AUTO_LOGFILENAMING=Αυτόματα (Το αρχείο θα ονομαστεί απο το όνομα του έργου.)
+MANUAL_LOGFILENAMING=Χεροκίνητα
+PASS_OPTIONS=Επιλογές περάσματος
+CREATE_ONE_PASS_MOVIE=Δημιουργία ενός περάσματος
+CREATE_TWO_PASS_MOVIE=Δημιουργία δύο περασμάτων
+ONLY_FIRST_PASS=Δημιουργία μόνο ενός περάσματος.
+ONLY_SECOND_PASS=Δημιουργία μόνο δεύτερου περάσματος.
+BOTH_PASSES=Δημιουργία και των δύο.
+
+;Compression
+BITRATE_FILE_OPTIONS=Ρυθμός μετάδοσης / Επιλογές αρχείου
+ADVANCED_BITRATE=Παράμετροι ρυθμού μετάδοσης 
+END_CREDITS_OPTIONS=Επιλογές τίτλου τέλους
+ENTER_BITRATE=Πληκτρολόγησε Ρυθμό μετάδοσης
+ENTER_FINAL_FILESIZE=Πληκτρολόγησε το τελικό μέγεθος
+GET_TIME=Πάρε τον χρόνο απο την ταινία.
+FILESIZE=Μέγεθος αρχείου(σε Megabyte)
+VIDEO_BITRATE=Ρυθμός μετάδοσης
+DESCRIPTION=Περιγραφή
+HOURS=Ώρα(ες)
+MINUTES=Λεπτά
+SECONDS=δευτερόλεπτα
+SLOW=Ταινία μικρης κίνησης.
+NORMAL=Ταινία με κανονικές σκηνές.
+FAST=Ταινία με γρήγορες σκηνές δράσης.
+ENDCREDITS_NORMAL=Κανονικά
+ENDCREDITS_REMOVE=Μην συμπεριλαμβάνεις τους τίτλους τέλους.
+ENDCREDITS_RECOMPRESS=Κωδικοποίηση τίτλων στο
+RECOMPRESS_PCT=% ρυθμού μετάδοσης.
+ENDCREDITS_AUTOMATIC=Αυτοματη αναγνώριση.
+ENDCREDITS_MANUAL=Ξεκίνημα τίτλοι τέλους από
+WORKAROUND1=Επιδιόρθωση 'mpeg2avi έρχεται σε σύγκρουση όταν κάνει δύο περάσματα'.
+
+;Project
+PROJECT_OPTIONS=Επιλογές έργου
+BATCH_SETTINGS=Επιλογές εργασιών
+PROJECT_NAME=Όνομα έργου
+TEMP_FOLDER=Φάκελος προσωρινών αρχείων
+OUTPUT_FOLDER=Φάκελος έτοιμων αρχείων
+OVERWRITE_FILES=Επικάλυψη αρχείων
+DELETE_TEMP=Διαγραφή προσωρινών αρχείων οταν τελειώσει.
+SPLIT_FILE=Χωρισμός ανα
+NORMAL_MODE=Κανονικά
+BATCH_MODE=Επίπεδο εργασιών
+BUTTON_UP=Πάνω
+BUTTON_DOWN=Κάτω
+BUTTON_ADD=Προσθήκη
+BUTTON_REMOVE=Μετακίνηση
+BUTTON_MODIFY=Αλλαγή
+BUTTON_CLEAR=Καθαρισμός
+DELETE_BATCH=Delete batch entry when ready.
+
+;OutputFiles
+SYSTEM_SETTINGS=Επιλογές συστήματος
+STATUS_INFORMATION=Πληροφορίες κατάστασης
+PROGRESS=Progress
+SHUTDOWN=Κλείσιμο των Windows όταν τελειώσει.
+
+;Settings
+EXTERNAL_PROGRAMS=Εξωτερικά Προγράμματα
+ADVANCED_AUDIO_SETTINGS=Επιλογές ήχου για προχωρημένους
+AC3_PRELOAD_VALUE=AC3 Preload value
+AC3_INTERLEAVE_VALUE=AC3 Interleave Value
+PRIORITY_SETTINGS=Ρυθμίσεις προτεραιότητας
+AUDO_PRIORITY=Προτεραιότητα κωδικοποίησης ήχου
+VIDEO_PRIORITY=Προτεραιότητα κωδικοποίησης βίντεο
+DISK_PRIORITY=Προτεραιότητα διαβάσματος/εγγραφής από/στο δίσκο
+SETTING_WARNING=(*) Το Highest δεν προτείνεται!
+GET_DEFAULT_VALUES=Προεπιλεγμένες ρυθμίσεις
+LANGUAGE_SETTINGS=Ρυθμίσεις γλώσσας
+LANGUAGE=Γλώσσα
+
+; External Program Settings
+PROGRAM_LOCATIONS=Διαδρομές εξωτερικών προγραμμάτων
+SAVE=Αποθήκευση
+CANCEL=’κυρο

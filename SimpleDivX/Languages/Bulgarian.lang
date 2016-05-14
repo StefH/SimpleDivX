@@ -1,0 +1,151 @@
+;Bulgarian language by K12
+
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Вход
+TAB_VIDEO=Видео
+TAB_AUDIO=Аудио
+TAB_CODEC=Кодек
+TAB_COMPRESSION=Компресия
+TAB_MISC=Misc
+TAB_PROJECT=Проект
+TAB_OUTPUT=Изходни файлове
+TAB_SETUP=Настройки
+
+;General
+QUIT=Изход
+
+
+;Вход
+INPUT_FILES=Входни файлове
+FOLDER=Директория
+VOB_FILES=VOB-файлове
+CHECK_MAIN=Избери главния филм
+CHECK_ALL=Избери всички файлове
+VIDEO_INFORMATION=Видео информация
+RESOLUTION=Резолюция
+ASPECT_RATIO=Пропорции
+FRAME_RATE=Честота
+VIDEO_FORMAT=Видео формат
+MOVIE_LENGTH=Времетраене
+FRAMES=кадъра
+
+;Видео
+VIDEO_OPTIONS=Видео опции
+FRAME_OPTIONS=Опции по кадри
+FRAMES_PER_SECOND=Брой кадри в секунда
+ADVANCED=За напреднали
+VIDEO_CHECKING=Проверка ID на видеопотока
+VIDEO_STREAM_ID=ID на видеопотока
+CHECK_AUTO=Автоинформация за рязане и размери
+WIDTH=Ширина
+HEIGHT=Дължина
+PREVIEW=Преглед
+RESIZING=Размери
+CROPPING=Рязане
+CUSTOM_OUTPUT_FORMAT=Избери изх. формат
+OPEN_VOB_LBA=Отвори VOB-потока на LBA
+FRAME_RANGE=Кадри в обхвата от
+TO=до
+
+;Аудио
+GENERAL_AUDIO=Общи аудио опции
+CREATE_AUDIO=Създай аудио
+AUDIO_STREAMS_LANGUAGES=Аудиопотоци и езици
+CHECK_AUDIO=Проверка на аудио
+EXTRACT_ALL_AUDIO=Извличане на всички аудиопотоци
+CONVERT_ALL_AUDIO=Превръщане на всички аудиопотоци
+AUDIO_FORMAT=Аудио формат
+TWO_CHANNELS=(2 канала)
+SIX_CHANNELS=(6 канала)
+AUDIO_BITRATE_AND_CONVERSION=Аудио битрейт и превръщане
+AUDIO_KBPS=Битрейт (kbps)
+SAMPLE_RATE_CONVERSION=Честота на семплиране
+AMPLIFY=Усилване
+NORMALIZE=Нормализация на пиковите нива
+NORMALIZE_MIDNIGHT=Нормализация на пиковите нива (среднощен режим)
+
+;Кодек
+CODEC_OPTIONS=Опции на кодека
+DIVX_OPTIONS=DivX опции
+CHOOSE_CODEC=Избор на Кодек
+ADVANCED_SETTINGS=За напреднали
+MAX_KEYFRAME=Максимален ключов кадър
+FIRST_PASS_LOCATION=Местоположение на logfile-а за 1-ва стъпка
+AUTO_LOGFILENAMING=Автоматично (Името на logfile-а ще бъде като това на проекта)
+MANUAL_LOGFILENAMING=Ръчно
+PASS_OPTIONS=Опции по стъпки
+CREATE_ONE_PASS_MOVIE=Едностъпков DivX
+CREATE_TWO_PASS_MOVIE=Двустъпков DivX
+ONLY_FIRST_PASS=Направи само 1-ва стъпка
+ONLY_SECOND_PASS=Направи само 2-ра стъпка
+BOTH_PASSES=Направи и двете стъпки
+
+;Компресия
+BITRATE_FILE_OPTIONS=Битрейт / Файлови опции
+ADVANCED_BITRATE=Параметри на битрейта за напреднали
+END_CREDITS_OPTIONS=Опции за финалните надписи
+ENTER_BITRATE=Въведи битрейт
+ENTER_FINAL_FILESIZE=Въведи размера на филма
+GET_TIME=Вземи времето от филма
+FILESIZE=Размер на файла
+VIDEO_BITRATE=Битрейт
+DESCRIPTION=Описание
+HOURS=Час(а)
+MINUTES=Минути
+SECONDS=Секунди
+SLOW=Филм с бавно действие
+NORMAL=Нормален филм
+FAST=Екшън или много ярки цветове
+ENDCREDITS_NORMAL=Нормално
+ENDCREDITS_REMOVE=Не включвай финалните надписи във филма
+ENDCREDITS_RECOMPRESS=Рекомпресия с
+RECOMPRESS_PCT=% от битрейта на главния филм
+ENDCREDITS_AUTOMATIC=Автоматично откриване
+ENDCREDITS_MANUAL=Ръчно=финални надписи с
+WORKAROUND1=Оправи забиването на mpeg2avi при втората стъпка.
+
+;Проект
+PROJECT_OPTIONS=Опции на проекта
+BATCH_SETTINGS=Групови настройки
+PROJECT_NAME=Име на проекта
+TEMP_FOLDER=Временна директория
+OUTPUT_FOLDER=Изходна директория
+OVERWRITE_FILES=Запиши отгоре файловете (без предупреждение)
+DELETE_TEMP=Изтрий временните файлове, когато свършиш
+SPLIT_FILE=Разцепи целия файл на
+NORMAL_MODE=Нормално
+BATCH_MODE=Групов режим
+BUTTON_UP=Нагоре
+BUTTON_DOWN=Надолу
+BUTTON_ADD=Добави
+BUTTON_REMOVE=Премахни
+BUTTON_MODIFY=Обнови
+BUTTON_CLEAR=Изтрий списъка
+DELETE_BATCH=Изтрий груповите настройки, когато си готов
+
+;Изходни файлове
+SYSTEM_SETTINGS=Системни настройки
+STATUS_INFORMATION=Информация за статуса
+PROGRESS=Прогрес
+SHUTDOWN=Затвори Windows, когато свършиш.
+
+;Настройки
+EXTERNAL_PROGRAMS=Външни програми
+ADVANCED_AUDIO_SETTINGS=Аудио настройки за напреднали
+AC3_PRELOAD_VALUE=AC3 буферна стойност
+AC3_INTERLEAVE_VALUE=Честота на AC3-потока
+PRIORITY_SETTINGS=Настройки на приоритета
+AUDO_PRIORITY=Приоритет на аудиокодиране
+VIDEO_PRIORITY=Приоритет на видеокодиране
+DISK_PRIORITY=Приоритет на дисковите операции
+SETTING_WARNING=(*) "Highest" не се препоръчва!
+GET_DEFAULT_VALUES=По подразбиране
+LANGUAGE_SETTINGS=Настройки на езика
+LANGUAGE=Език
+
+;Настройки на външните програми
+PROGRAM_LOCATIONS=Местоположение на външните програми
+SAVE=Запази
+CANCEL=Отказ

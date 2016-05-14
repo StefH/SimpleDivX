@@ -1,0 +1,135 @@
+;Translation by : not yet
+
+[SimpleDivX]
+;Input
+INPUT_FILES=Vstupne subory
+FOLDER=Adresar
+VOB_FILES=VOB Subory
+CHECK_MAIN=Vyber hlavny film
+CHECK_ALL=Vyber vsetky subory
+VIDEO_INFORMATION=Video informacie
+RESOLUTION=Rozlisenie
+ASPECT_RATIO=Pomer stran
+FRAME_RATE=Frekvencia snimkov
+VIDEO_FORMAT=Video format
+MOVIE_LENGTH=Dlzka filmu
+FRAMES=Snimky
+
+;Video
+VIDEO_OPTIONS=Moznosti videa
+FRAME_OPTIONS=Moznosti snimkov
+FRAMES_PER_SECOND=Snimky/Sekundu
+ADVANCED=Pokrocile volby
+VIDEO_CHECKING=Kontrolovanie toku videa
+VIDEO_STREAM_ID=ID video toku
+CHECK_AUTO=Auto-oprava orezania a velkosti
+WIDTH=Sirka
+HEIGHT=Vyska
+PREVIEW=Nahlad
+RESIZING=Zmena velkosti
+CROPPING=Orezanie
+CUSTOM_OUTPUT_FORMAT=Vlastny vystupny format
+OPEN_VOB_LBA=Otvor VOB datovy tok ako LBA
+FRAME_RANGE=Rosah snimkov od
+TO=do
+
+;Audio
+GENERAL_AUDIO=Audio vseobecne
+CREATE_AUDIO=Vytvor audio
+AUDIO_STREAMS_LANGUAGES=Audio stopy a jazyk
+CHECK_AUDIO=Over audio
+EXTRACT_ALL_AUDIO=Extrahuj vsetko audio
+CONVERT_ALL_AUDIO=Konvertuj vsetko audio
+AUDIO_FORMAT=Audio format
+TWO_CHANNELS=(2 kanaly)
+SIX_CHANNELS=(6 kanalov)
+AUDIO_BITRATE_AND_CONVERSION=Audio prenos.rychlost a konverzia
+AUDIO_KBPS=Prenos.rychlost (kbps)
+SAMPLE_RATE_CONVERSION=Konverzia vzorkovacej frekvencie
+AMPLIFY=Zosilnit
+NORMALIZE=Normalizuj spicky.
+NORMALIZE_MIDNIGHT=Normalizuj spicky. (Polnocny mod)
+
+;Codec
+CODEC_OPTIONS=Moznosti Kodekov
+DIVX_OPTIONS=DivX moznosti
+CHOOSE_CODEC=Vyber kodek
+ADVANCED_SETTINGS=Pokrocile moznosti
+MAX_KEYFRAME=Maximum klucovych-snimkov
+FIRST_PASS_LOCATION=Umiestnenie log suboru prvoho prechodu
+AUTO_LOGFILENAMING=Automaticky (Logsubor bude nazvany podla nazvu projektu.)
+MANUAL_LOGFILENAMING=Manualne
+PASS_OPTIONS=Moznosti prechodu
+CREATE_ONE_PASS_MOVIE=Vytvor 1-prechodovy DivX subor
+CREATE_TWO_PASS_MOVIE=Vytvor 2-prechodovy DivX subor
+ONLY_FIRST_PASS=Urob iba prvy prechod.
+ONLY_SECOND_PASS=Urob iba druhy prechod.
+BOTH_PASSES=Urob oba prechody.
+
+;Compression
+BITRATE_FILE_OPTIONS=Datovy tok / Moznosti suboru
+ADVANCED_BITRATE=Rozsirene parametre datoveho toku
+END_CREDITS_OPTIONS=Moznosti koncovych titulkov
+ENTER_BITRATE=Zadaj datovy tok
+ENTER_FINAL_FILESIZE=Zadaj koncnu velkost suboru
+GET_TIME=Zisti cas z filmu.
+FILESIZE=Velkost suboru
+VIDEO_BITRATE=Datovy tok
+DESCRIPTION=Popis
+HOURS=Hodina(y)
+MINUTES=Minuta(y)
+SECONDS=Sekunda(y)
+SLOW=Film s malym mnozstvom pohybu.
+NORMAL=Film s normalnym pohybom.
+FAST=Vela pohybu alebo ostre prechody farieb.
+ENDCREDITS_NORMAL=Normalne
+ENDCREDITS_REMOVE=Nezahrn konecne titulky do filmu.
+ENDCREDITS_RECOMPRESS=Rekomprimuj konecne titulky na
+RECOMPRESS_PCT=% z datoveho toku filmu.
+ENDCREDITS_AUTOMATIC=Automaticka detekcia.
+ENDCREDITS_MANUAL=Manualne=konecne titulky zacinaju na
+WORKAROUND1=Oprava 'mpeg2avi mrznutia pocas 2-priechodu'.
+
+;Project
+PROJECT_OPTIONS=Moznosti projektu
+BATCH_SETTINGS=Davkove nastavenia
+PROJECT_NAME=Meno projektu
+TEMP_FOLDER=Docasny adresar
+OUTPUT_FOLDER=Vystupny adresar
+OVERWRITE_FILES=Prepis subory (bez varovania!)
+DELETE_TEMP=Zmaz docasne subory na konci.
+SPLIT_FILE=Rozdel celkovy subor na
+NORMAL_MODE=Normalne mod
+BATCH_MODE=Davkovy mod
+BUTTON_UP=Hore
+BUTTON_DOWN=Dole
+BUTTON_ADD=Pridaj
+BUTTON_REMOVE=Odstran
+BUTTON_MODIFY=Zmen
+BUTTON_CLEAR=Vymaz zoznam
+DELETE_BATCH=Zmaz davkovy zapis ked hotovo.
+
+;OutputFiles
+SYSTEM_SETTINGS=Systemove nastavenia
+STATUS_INFORMATION=Informacia o stave
+PROGRESS=Pokrok
+SHUTDOWN=Vypni windows na konci.
+
+;Settings
+EXTERNAL_PROGRAMS=Externe programy
+ADVANCED_AUDIO_SETTINGS=Rozsirene audio nastavenia
+AC3_PRELOAD_VALUE=Uroven vybudenia AC3
+AC3_INTERLEAVE_VALUE=Hodnota AC3 rozkladu
+PRIORITY_SETTINGS=Nastavenie priorit
+AUDO_PRIORITY=Priorita audio kodovania
+VIDEO_PRIORITY=Priorita video kodovania
+DISK_PRIORITY=Disk read/write priorita
+SETTING_WARNING=(*) Najvysiie nastavenie nedoporucujeme!
+GET_DEFAULT_VALUES=Nastav predvolene
+LANGUAGE_SETTINGS=Nastavenie jazyka
+LANGUAGE=Jazyk
+
+; External Program Settings
+PROGRAM_LOCATIONS=External Program locations [*]
+SAVE=save [*]
+CANCEL=cancel [*]

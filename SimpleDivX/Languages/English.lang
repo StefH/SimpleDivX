@@ -1,0 +1,160 @@
+; English
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=Input
+TAB_VIDEO=Video
+TAB_AUDIO=Audio
+TAB_CODEC=Codec
+TAB_COMPRESSION=Compression
+TAB_MISC=Misc
+TAB_PROJECT=Project
+TAB_OUTPUT=Output
+TAB_SETUP=Setup
+
+;General
+QUIT=Quit
+
+;Input
+INPUT_FILES=Input Files
+FOLDER=Folder
+VOB_FILES=VOB / IFO Files
+CHECK_MAIN=Select Main Movie
+CHECK_ALL=Select All Files
+VIDEO_INFORMATION=Video Information
+RESOLUTION=Resolution
+ASPECT_RATIO=Aspect Ratio
+FRAME_RATE=Framerate
+VIDEO_FORMAT=Video Format
+MOVIE_LENGTH=Movie Length
+FRAMES=Frames
+CHAPTERS=Chapters
+TITLE=Choose Title
+STATUS_BUSY=Status : Busy
+STATUS_READY=Status : Ready
+
+;Video
+VIDEO_OPTIONS=Video Options
+FRAME_OPTIONS=Frame Options
+FRAMES_PER_SECOND=Frames/Second
+ADVANCED=Advanced
+VIDEO_CHECKING=Enable Video Stream ID checking
+VIDEO_STREAM_ID=Video Stream ID
+CHECK_AUTO=Auto cropping and resizing
+WIDTH=width
+HEIGHT=height
+PREVIEW=Preview
+RESIZING=Resizing
+CROPPING=Cropping
+CUSTOM_OUTPUT_FORMAT=Custom Output Format
+OPEN_VOB_LBA=Open VOB bitstream at LBA
+FRAME_RANGE=Range from
+TO=to
+SOURCE_FORMAT=Source Format
+DEINTERLACE=Inverse telecine / De-interlace
+
+;Audio
+GENERAL_AUDIO=General Audio
+CREATE_AUDIO=Create Audio
+AUDIO_STREAMS_LANGUAGES=Audio Streams and Languages
+CHECK_AUDIO=Check Audio
+EXTRACT_ALL_AUDIO=Extract all Audio
+CONVERT_ALL_AUDIO=Convert all Audio
+AUDIO_FORMAT=Audio Format
+TWO_CHANNELS=(2 channels)
+SIX_CHANNELS=(6 channels)
+AUDIO_BITRATE_AND_CONVERSION=AudioBitrate and Conversion
+AUDIO_KBPS=Bitrate (kbps)
+SAMPLE_RATE_CONVERSION=Samplerate Conversion
+AMPLIFY=Amplify
+NORMALIZE=Peak level normalize.
+NORMALIZE_MIDNIGHT=Peak level normalize. (Midnight Mode)
+NO_AUDIO_FOUND=No Audio Found
+
+;Codec
+CODEC_OPTIONS=Codec Options
+DIVX_OPTIONS=DivX Options
+CHOOSE_CODEC=Choose Codec
+ADVANCED_SETTINGS=Advanced Settings
+MAX_KEYFRAME=Maximum Key-Frame
+FIRST_PASS_LOCATION=First-Pass log file location
+AUTO_LOGFILENAMING=Automatic (Logfile will be named after the Project Name.)
+MANUAL_LOGFILENAMING=Manual
+PASS_OPTIONS=Pass Options
+CREATE_ONE_PASS_MOVIE=Create a 1-pass movie
+CREATE_TWO_PASS_MOVIE=Create a 2-pass movie
+ONLY_FIRST_PASS=Do only first pass.
+ONLY_SECOND_PASS=Do only second pass.
+BOTH_PASSES=Do both passes.
+WITH_AUDIO=with XXX audio.
+WITH_NO_AUDIO=with no sound.
+
+;Compression
+BITRATE_FILE_OPTIONS=Bitrate / File Options
+END_CREDITS_OPTIONS=End-Credits Options
+ENTER_BITRATE=Enter bitrate
+ENTER_FINAL_FILESIZE=Enter final movie size
+GET_TIME=Get Time from Movie.
+FILESIZE=File size
+VIDEO_BITRATE=Bitrate
+DESCRIPTION=Description
+HOURS=Hour(s)
+MINUTES=Minute(s)
+SECONDS=Second(s)
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Do not include end-credits in movie.
+ENDCREDITS_RECOMPRESS=Recompress end-credits at
+RECOMPRESS_PCT=% of the bitrate from main movie.
+ENDCREDITS_AUTOMATIC=Automatic detection.
+ENDCREDITS_MANUAL=Manual=end-credits start at
+VIDEO_ONLY=(Video Only)
+VIDEO_AND_AUDIO=(Video and Audio)
+
+;Misc
+GENERAL_SUBTITLES=General Subtitle Options
+CREATE_SUBTITLES=Create Subtitles using VobSub
+SELECT_ALL_LANGUAGES=Select all languages.
+CONTAINER_FORMAT=Movie Container Format
+
+;Project
+PROJECT_OPTIONS=Project Options
+BATCH_SETTINGS=Batch Settings
+PROJECT_NAME=Project Name
+TEMP_FOLDER=Temp Folder
+OUTPUT_FOLDER=Output Folder
+OVERWRITE_FILES=Overwrite Files (without warning)
+DELETE_TEMP=Delete Temp Files when finished.
+SPLIT_FILE=Split total file at
+SPLIT_FADEOUT=Split on Fade-Out
+SPLIT_PARTS=parts, of
+SPLIT_MB=MB. each
+NORMAL_MODE=Normal
+BATCH_MODE=Batch Mode
+BUTTON_UP=Up
+BUTTON_DOWN=Down
+BUTTON_ADD=Add
+BUTTON_REMOVE=Remove
+BUTTON_MODIFY=Modify
+BUTTON_CLEAR=Clear List
+DELETE_BATCH=Delete batch entry when ready.
+
+;OutputFiles
+SYSTEM_SETTINGS=System Settings
+STATUS_INFORMATION=Status Information
+PROGRESS=Progress
+SHUTDOWN=Shutdown windows when finished.
+
+;Settings
+EXTERNAL_PROGRAMS=External Programs
+PRIORITY_SETTINGS=Priority Settings
+VIDEO_PRIORITY=Video Encoding Priority
+DISK_PRIORITY=Disk read/write Priority
+SETTING_WARNING=(*) Setting to Highest is not recommended!
+GET_DEFAULT_VALUES=Get Defaults
+LANGUAGE_SETTINGS=Language Settings
+LANGUAGE=Language
+
+; External Program Settings
+PROGRAM_LOCATIONS=External Program locations
+SAVE=save
+CANCEL=cancel

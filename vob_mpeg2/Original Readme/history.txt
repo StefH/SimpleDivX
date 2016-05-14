@@ -1,0 +1,164 @@
+  0.8d:
+  - added demacrovision (enabled by default)
+  - removed r1-patriot specific program_stream_2 fix (i hope the general resync takes care of this)
+  - improved PROGRAM_STREAM_2 parsing a bit (no more "last_system" funkyness)
+  - added info to subp & audio info (in [] -> in which program chains they are active)
+    - changed SDDS to DTS
+  - added (ifo) video info
+  - GUI:
+    - rearranged output screen to show dependency of outputs
+    - added chapters
+    - added video info (IFO)
+    - changed flags/type
+    - fixed incorrect fio_BUFFERSIZE
+    - better popup menu in ifo selection (chapter/cell sensitive, set start & end)
+    - ask before adding menu vobs
+    - eta/throughput
+
+  0.8c:
+  - implemented read-ahead for aspi, now it is as fast as windows/clib read
+    (subtracting the time needed for seeks on the disc for parsing the udf-filesystem)
+  - fixed incorrect output to stderr (aspect ratios)
+  - fixed a (STUPID!) bug in the aspi-seek routines (used offset where i should have used origin)
+    this should correct strange behaviour in aspi-files after key-search etc.
+    
+  0.8b:
+  - improved 1gb handling (using flags) to use the extent_flags as size (bit 31)
+  - corrected a few exports/statics definitions
+  - udf-LBAs are now returned absolute (not relative to partition start)
+  - fixed _BAD_ listmode bug when using ASPI (ups... got the boolean negation wrong!)
+  
+  0.8a:
+  - fixed command-line parsing bug
+  
+  0.8:
+  - fiddled a bit with language mapping (thx 2 qbert, tsunami, bruce)
+  - now it _really_ should compile under linux (maybe not anymore, due to aspi/udf)
+  - works on non 2048 byte streams , 'e' switch (only had 1 for testing) [big hack]
+  - udf-parsing (using aspi), direct dvd access (t & u switches)
+  
+  0.7c:
+  - added ifo audio & subpicture info (lang)
+  - revived linux (cmdline) support (due to Arne Zellentin (arne@unix-ag.org))
+  
+  0.7b:
+  - incorporated a few (interface) changes by Ingo Korb (ik@akana.de)
+    - removed frame-rate descriptions and display them in 2 columns in the usage screen (to fit better)
+    - -o and -i now accept an optional space (and -i warns if no param given)
+  - renamed ofs_packets & num_packets to start_lba & end_lba
+  - made it stop after (not on) end_lba, therefore now 0xffffffff means process all (and is default)
+  - fixed ifo-parsing times (hex -> dec conversion)
+  - tweaked DeCSS+ Keysearch settings
+    
+  0.7a:
+  - fixed problem with multi-cell keysearch (would never really start looking)
+  - fixed problem with empty/non existent list-file
+  - improved ifo-multi-angle support (with tips from fu2k (thanks!))
+
+  0.7:
+  - fixed (many) use-the-same variable twice in the IFO-code (wasn't *that* clean after all),
+    which lead to crashes and unpredictable behaviour (mixture of stupidity & cut/paste)
+  - added support for up to 8 outputs at the same time (not useable from cmdline)
+    (didn't want to cause too much hassle to DannyDin & doom9 which different cmdline-switches)
+    
+  0.6i:
+  - enabled user_func even on do_output
+  - sti.lba etc. always set
+  - fixed a bug that closed a file twice on some occasions (splitting)
+  - dll support
+  - cleaned up ifo a lot (newer livid version, better encapsulation)
+  - delphi GUI
+    
+  0.6h2:
+  - fixed *stupid* rearrangement of code (display WRONG PTS-times)
+
+  0.6h:
+  - updated IFO-Parser a bit, added multi-angle support (seems to work on Disney R1 now)
+    - added 'j' option to select angle (set to 0 to ignore angle flag), only works when IFO-Parsing
+  - fixed a problem where IFO-Parsing might have resulted in skipping alternating VOB/CELL-IDs
+  - rearranged loops a little
+
+  0.6g:
+  - changed compiler to VisualC (don't know whether it still compiles under linux)
+  - changed file-io to _open (using _O_SEQUENTIAL hint under Visual C)
+  - added string-list to file_io (list of input-files, terminated by \0\0), as opposed to string-file
+    - moved stream-list parsing to main.c (vstrip only recognizes string-list ':' and single files now)
+    - made '@' optional when ".LST" extension is used
+  - added PTS-Info
+  - added delay info w/ respect to VIDEO_STREAM_0 (0xe0) (based on DVD2AVI)
+  - added errormessage on out-of-diskspace
+  - fixed wrong lba printed when using -sX (seek)
+  - fixed missing errormessage when no keys (at all) were found
+  - improved DeCSS+ Method to be bit-based (as in DeCSS+2pre2), which is ~70% better than before
+  - correctly (hopefully) redirected output to stdout/stderr (what about usage-infos?)
+
+  0.6f:
+  - added error message to empty file (also not authenticated)
+
+  0.6e:
+  - fixed bug in IFO-parsing (didn't alloc enought mem), was introduced in 0.6d, thanks to Johan N.
+
+  0.6d:
+  - changed into a one block/call method (vs_strip_one_block), the old interface is still available, though (internal)
+  - fixed bug in resync-code (was not used w/ the old default value of 0)
+  - added a default value of 2048 to main.c for number of resync bytes (instead of 0)
+  - added check for "invalid" program streams: PROGRAM_STREAM_2 packets that either have
+    invalid packet length or a missing padding stream (depends on how you look at it), so i skip that packet
+    (fixed length of 1024 bytes assumed for PCI & DSI packets), thanks to robert m. for test-data.
+    this should fix "Lost Sync [@ LBA 0]" errors that some people have reported (i thought they were due to the
+    clib not being able to open files under certain circumstances).
+
+  0.6c:
+  - fixed incorrect CSS-detection
+  - added key probability-counting based on repetative patterns (as in DeCSS+)
+    - added 'm' option to set the value of a padding-stream derived key in comparison to a normal guess (=32)
+    - added 'n' option to set the number of times a key needs to repeat (=32)
+    - added 'q' option to set the percentage a candidate key has to have of all keys (=90)
+  - added key refinding per vob-id
+
+  0.6b:
+  - added 'l' option to print cell-list (when ifo parsing)
+
+  0.6a:
+  - fixed stupid command-line parsing bug (e.g. vstrip in.vob out.vob (which is not valid anymore))
+
+  0.6:
+  - parsing vob-/cell-id as words now (not bytes anymore)
+  - completely changed argument parsing (using - for options now)
+    - renamed 'r' option to 'a'
+    - added output file splitting support (-$N, where N is the size in megs)
+    - output-file is an option now (-oOutName)
+  - ifo-parsing (-i option for filename, -p for program-chain-selection)
+
+  0.5e:
+  - improved SPLIT option
+
+  0.5d:
+  - bugfix for accidentally deleting output-files
+
+  0.5c:
+  - added only keep GOPs option (producing small VOBs)
+
+  0.5b:
+  - fixed fio_close() bug if filelen == 0
+
+  0.5a:
+  - used VobDec lfsr-reversal code
+  - changed filename-# to 2-digits
+
+  0.5:
+  - now under GPL v2
+  - added support for writing raw PCM-Audio files (skipping 7 byte header)
+    (see vs_KEEP_PCM_IDENT_BYTES), new default behaviour
+  - when splitting by CELL/VOB-ID, any "we don't know where to put it" data
+    is written to a out_PRE_outext file
+  - the LBA for the CELL/VOB-IDs is now printed out
+  - added lba-seeking (ofs_packets), see s-option
+  - added num_packets in flags
+  - decryption option when key is known
+  - user_functions return bool value (cont. stripping)
+  - fixed stupid "eof"-bug in list-mode (when exactly hitting the buffer boundary)
+    (thx QWERT (the files didn't help, though ;))
+
+  0.4b:
+  - fixed too many open files-bug

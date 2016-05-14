@@ -1,0 +1,132 @@
+;Translation by : Patryk
+
+[SimpleDivX]
+;Inmatnig
+INPUT_FILES=Inmatnig av Filer
+FOLDER=Mapp
+STATUS=Klar
+VOB_FILES=VOB Filer
+CHECK_MAIN=Välj Önskad VOB Fil
+CHECK_ALL=Välj Alla Vob Filer
+VIDEO_INFORMATION=Video Information
+RESOLUTION=Upplösning
+ASPECT_RATIO=Aspekt Förhållande
+FRAME_RATE=Bild värde
+VIDEO_FORMAT=Video Format
+MOVIE_LENGTH=Film Tid
+FRAMES=Bilder
+
+;Video
+VIDEO_OPTIONS=Video Alternativ
+FRAME_OPTIONS= Alternativ
+FRAMES_PER_SECOND=Bilder Per Sekund
+ADVANCED=Avancerat
+VIDEO_CHECKING=Möjliggör Video ström ID Kontroll
+VIDEO_STREAM_ID=Video Ström ID
+CHECK_AUTO=Automatiskt Bild Format
+WIDTH=Bredd
+HEIGHT=Längd
+PREVIEW=Förhandsvisning
+RESIZING=Bild Storlek
+CROPPING=Ram Storlek
+CUSTOM_OUTPUT_FORMAT=Bild Format
+OPEN_VOB_LBA=Öppna VOB Bitström På LBA  
+FRAME_RANGE=Bild Omfång från
+TO=Till
+
+;Ljud
+GENERAL_AUDIO=Generellt Ljud
+CREATE_AUDIO=Skapa Ljud
+AUDIO_STREAMS_LANGUAGES=Ljud Ström Och Språk
+CHECK_AUDIO=Kontrollera Ljud
+EXTRACT_ALL_AUDIO=Packa Up Allt Ljud
+CONVERT_ALL_AUDIO=Konvertera Allt Ljud
+AUDIO_FORMAT=Ljud Format
+LANGUAGE=Språk
+TWO_CHANNELS=(2 Kanaler)
+SIX_CHANNELS=(6 Kanaler)
+AUDIO_BITRATE_AND_CONVERSION=Ljud Bitsvärde(Kbps) Och Omvandling 
+AUDIO_KBPS=Bitsvärde (kbps)
+SAMPLE_RATE_CONVERSION=Prov värde Omvandling
+AMPLIFY=Förstärka
+NORMALIZE=Topp Nivå Normalisera
+NORMALIZE_MIDNIGHT=Topp Nivå Normalisera. (Midnatts Läge)
+
+;Codec
+CODEC_OPTIONS=Codec Alternativ
+DIVX_OPTIONS=DivX Alternativ
+CHOOSE_CODEC=Välj Codec
+ADVANCED_SETTINGS=Avancerde Inställnigar
+MAX_KEYFRAME=Maximalt Antal Bilder
+FIRST_PASS_LOCATION=Första-Pass log fils Plats
+AUTO_LOGFILENAMING=Automatisk (Logfil Kommer Bli Döpt Efter  Projktets Namn.)
+MANUAL_LOGFILENAMING=Manuel
+PASS_OPTIONS=Pass Alternativ
+CREATE_ONE_PASS_MOVIE=Skapa 1-pass DivX fil
+CREATE_TWO_PASS_MOVIE=Skapa 2-pass DivX fil
+ONLY_FIRST_PASS=Gör Endast Första Passet .
+ONLY_SECOND_PASS=Gör Endast Andra Passet .
+BOTH_PASSES=Gör Båda Passen.
+
+;Compression
+BITRATE_FILE_OPTIONS=Värde / Fil valmöjligheter
+ADVANCED_BITRATE=Avancerad värde parametrar
+END_CREDITS_OPTIONS=Slut-Kredit valmöjligheter
+ENTER_BITRATE=Välj Värde
+ENTER_FINAL_FILESIZE=Välj slutlig film storlek
+GET_TIME=Få Tid från Filmen.
+FILESIZE=Fil storlek
+VIDEO_BITRATE=Värde
+DESCRIPTION=Kvalitet
+HOURS=Timmar
+MINUTES=Minuter
+SECONDS=Sekunder
+SLOW=Inte så mycket action i Filmen.
+NORMAL=Normal  rörelse.
+FAST=Mycket action i Filmen eller ljus, färger.
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=ingen Slut-Kredit i filmen.
+ENDCREDITS_RECOMPRESS=komprimera slut-kredit
+RECOMPRESS_PCT=% av Värdet från huvud filmen.
+ENDCREDITS_AUTOMATIC=Automatisk avkänning.
+ENDCREDITS_MANUAL=Manuellt=Slut-Kredit startar på
+WORKAROUND1=Laga 'mpeg2avi hänger när gjort ett 2-pass'.
+
+;Project
+PROJECT_OPTIONS=Projekt Valmöjligheter
+BATCH_SETTINGS=Hop Inställningar
+PROJECT_NAME=Projekt Namn
+TEMP_FOLDER=Tillfällig Mapp
+OUTPUT_FOLDER=Spara i Mapp
+OVERWRITE_FILES=Överskriv Filer (utan varning)
+DELETE_TEMP=Ta bort tillfällig filer när allt är klart.
+SPLIT_FILE=Dela totala filen vid
+NORMAL=Normal
+BATCH_MODE=Hop Läge
+BUTTON_UP=Upp
+BUTTON_DOWN=Ner
+BUTTON_ADD=Lägga till
+BUTTON_REMOVE=Ta bort
+BUTTON_MODIFY=Modifiera
+BUTTON_CLEAR=Rensa Lista
+DELETE_BATCH=Ta bort hop tillägg när allt är klart.
+
+;OutputFiles
+SYSTEM_SETTINGS=System Inställningar
+STATUS_INFORMATION=Status Information
+PROGRESS=Framsteg
+SHUTDOWN=Stäng av windows när allt är klart.
+
+;Settings
+EXTERNAL_PROGRAMS=Program som SimpleDivX Använder
+ADVANCED_AUDIO_SETTINGS=Avancerad Ljud Inställningar
+AC3_PRELOAD_VALUE=AC3 Förladda värde
+AC3_INTERLEAVE_VALUE=AC3 Interfoliera Värde
+PRIORITY_SETTINGS=Prioritet Inställningar
+AUDO_PRIORITY=Ljud Avkodande Prioritet
+VIDEO_PRIORITY=Video Avkodande Prioritet
+DISK_PRIORITY=Disk läsa/skriva Prioritet
+SETTING_WARNING=(*) Ställa in på Högsta rekommederas INTE!
+GET_DEFAULT_VALUES=Återställ Allt
+LANGUAGE_SETTINGS=Språk Inställningar
+LANGUAGE=Språk

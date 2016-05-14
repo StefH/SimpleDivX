@@ -1,0 +1,155 @@
+;Swedish by : Robert robert.hedberg@compaqnet.se  V 1.1
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=In
+TAB_VIDEO=Video
+TAB_AUDIO=Ljud
+TAB_CODEC=Codec
+TAB_COMPRESSION=Kompression
+TAB_MISC=Övrigt
+TAB_PROJECT=Projekt
+TAB_OUTPUT=Ut
+TAB_SETUP=Inställningar
+
+;General
+QUIT=Sluta
+
+;Input
+INPUT_FILES=Välj Filer
+FOLDER=Mapp
+VOB_FILES=VOB Filer
+CHECK_MAIN=Välj Huvudfilm
+CHECK_ALL=Välj Allt
+VIDEO_INFORMATION=Video Information
+RESOLUTION=Upplösning
+ASPECT_RATIO=Bild Förhållande
+FRAME_RATE=Rutor/Sekund
+VIDEO_FORMAT=Video Format
+MOVIE_LENGTH=Film Längd
+FRAMES=Rutor/Sekund
+
+;Video
+VIDEO_OPTIONS=Video Alternativ
+FRAME_OPTIONS= Alternativ
+FRAMES_PER_SECOND=Rutor/Sekund
+ADVANCED=Avancerat
+VIDEO_CHECKING=Möjliggör Video ström ID Kontroll
+VIDEO_STREAM_ID=Video Ström ID
+CHECK_AUTO=Automatiskt Bild Format
+WIDTH=Bredd
+HEIGHT=Höjd
+PREVIEW=Förhandsvisning
+RESIZING=Bild Storlek
+CROPPING=Ram Storlek
+CUSTOM_OUTPUT_FORMAT=Bild Format
+OPEN_VOB_LBA=Öppna VOB Bitström På LBA  
+FRAME_RANGE=Film Omfång från
+TO=Till
+
+;Audio
+GENERAL_AUDIO=Ljud
+CREATE_AUDIO=Skapa Ljud
+AUDIO_STREAMS_LANGUAGES=Ljud Ström Och Språk
+CHECK_AUDIO=Kontrollera Ljud
+EXTRACT_ALL_AUDIO=Extrahera Allt Ljud
+CONVERT_ALL_AUDIO=Konvertera Allt Ljud
+AUDIO_FORMAT=Ljud Format
+LANGUAGE=Språk
+TWO_CHANNELS=(2 Kanaler)
+SIX_CHANNELS=(6 Kanaler)
+AUDIO_BITRATE_AND_CONVERSION=Bitsvärde & Samplingsvärde
+AUDIO_KBPS=Bitsvärde (kbps)
+SAMPLE_RATE_CONVERSION=Samplingsvärde
+AMPLIFY=Förstärka
+NORMALIZE=Topp Nivå Normalisera
+NORMALIZE_MIDNIGHT=Topp Nivå Normalisera. (Midnatts Läge)
+
+;Codec
+CODEC_OPTIONS=Codec Alternativ
+DIVX_OPTIONS=DivX Alternativ
+CHOOSE_CODEC=Välj Codec
+ADVANCED_SETTINGS=Avancerade Inställnigar
+MAX_KEYFRAME=Max Keyframe
+FIRST_PASS_LOCATION=2-pass loggfils Plats
+AUTO_LOGFILENAMING=Automatisk
+MANUAL_LOGFILENAMING=Manuell
+PASS_OPTIONS=2-Pass Alternativ
+CREATE_ONE_PASS_MOVIE=Skapa 1-pass DivX fil
+CREATE_TWO_PASS_MOVIE=Skapa 2-pass DivX fil
+ONLY_FIRST_PASS=Gör Endast Första Passet .
+ONLY_SECOND_PASS=Gör Endast Andra Passet .
+BOTH_PASSES=Gör Båda Passen.
+
+;Compression
+BITRATE_FILE_OPTIONS=Kvalitet
+ADVANCED_BITRATE=Avancerade värde parametrar
+END_CREDITS_OPTIONS=Sluttext valmöjligheter
+ENTER_BITRATE=Välj Värde
+ENTER_FINAL_FILESIZE=Välj Filstorlek
+GET_TIME=Få Tid från Filmen.
+FILESIZE=Filstorlek
+VIDEO_BITRATE=Värde
+DESCRIPTION=Kvalitet
+HOURS=Timmar
+MINUTES=Minuter
+SECONDS=Sekunder
+SLOW=Inte så mycket action i Filmen.
+NORMAL=Normal  rörelse.
+FAST=Mycket action i Filmen eller ljus, färger.
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Ingen Sluttext i filmen.
+ENDCREDITS_RECOMPRESS=Komprimera Sluttext
+RECOMPRESS_PCT=% av Värdet från huvud filmen.
+ENDCREDITS_AUTOMATIC=Automatisk avkänning.
+ENDCREDITS_MANUAL=Manuellt=Sluttext startar på
+WORKAROUND1=Laga 'mpeg2avi hänger när gjort ett 2-pass'.
+
+;Misc
+GENERAL_SUBTITLES=Undertexter
+CREATE_SUBTITLES=Skapa Undertext Med VobSub
+SELECT_ALL_LANGUAGES=Välj Alla Språk
+CONTAINER_FORMAT=Film Format
+
+;Project
+PROJECT_OPTIONS=Projekt Valmöjligheter
+BATCH_SETTINGS=Batch Inställningar
+PROJECT_NAME=Projekt Namn
+TEMP_FOLDER=Tillfällig Mapp
+OUTPUT_FOLDER=Spara i Mapp
+OVERWRITE_FILES=Överskriv Filer (utan varning)
+DELETE_TEMP=Ta bort tillfällig filer när allt är klart.
+SPLIT_FILE=Dela totala filen vid
+NORMAL=Normal
+BATCH_MODE=BatchLäge
+BUTTON_UP=Upp
+BUTTON_DOWN=Ner
+BUTTON_ADD=Lägga till
+BUTTON_REMOVE=Ta bort
+BUTTON_MODIFY=Modifiera
+BUTTON_CLEAR=Rensa Lista
+
+;OutputFiles
+SYSTEM_SETTINGS=System Inställningar
+STATUS_INFORMATION=Status Information
+PROGRESS=Framsteg
+SHUTDOWN=Stäng av windows när allt är klart.
+
+;Settings
+EXTERNAL_PROGRAMS=Program som SimpleDivX Använder
+ADVANCED_AUDIO_SETTINGS=Avancerad Ljud Inställningar
+AC3_PRELOAD_VALUE=AC3 Förladda värde
+AC3_INTERLEAVE_VALUE=AC3 Interfoliera Värde
+PRIORITY_SETTINGS=Prioritet Inställningar
+AUDO_PRIORITY=Ljud
+VIDEO_PRIORITY=Video
+DISK_PRIORITY=Disk
+SETTING_WARNING=(*) Ställa in på Högsta rekommederas INTE!
+GET_DEFAULT_VALUES=Återställ Allt
+LANGUAGE_SETTINGS=Språk Inställningar
+LANGUAGE=Språk
+
+;External Program Settings
+PROGRAM_LOCATIONS=Sökväg till program
+SAVE=Spara
+CANCEL=Avbryt

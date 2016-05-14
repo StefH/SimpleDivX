@@ -1,0 +1,55 @@
+# Rename this file to Tests.txt
+
+#
+# Search the frame where the (video) filesize is 100MB
+#
+filesize2frame
+param1=f:\\divx\\The Manchurian Candidate - 1.avi
+param2=100
+
+filesize2frame
+param1=f:\\divx\\The Manchurian Candidate - 2.avi
+param2=222
+
+#
+# Resolution = 25 frames
+# threshold = 20Kb
+# Minimum time between points = 30 sec
+# Split on a keyframe = true
+#
+searchsplitpoints
+param1=f:\\divx\\The Manchurian Candidate - 1.avi
+param2=25
+param3=20
+param4=30
+param5=1
+
+searchsplitpoints
+param1=f:\\divx\\The Manchurian Candidate - 1.avi
+param2=25
+param3=20
+param4=30
+param5=0
+
+#
+# Resolution = 5 frames
+# threshold = 2Kb
+# Minimum time between points = 30 sec
+# Split on a keyframe = false
+#
+searchsplitpoints
+param1=f:\\divx\\The Manchurian Candidate - 1.avi
+param2=5
+param3=2
+param4=30
+param5=1
+
+searchsplitpoints
+param1=f:\\divx\\The Manchurian Candidate - 1.avi
+param2=5
+param3=2
+param4=30
+param5=0
+
+listcodecs
+

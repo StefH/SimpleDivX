@@ -1,0 +1,2946 @@
+<!-- Creator     : groff version 1.18.1 -->
+<!-- CreationDate: Wed Dec  7 19:50:50 2005 -->
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta name="Content-Style" content="text/css">
+<title>MKVMERGE</title>
+</head>
+<body>
+
+<h1 align=center>MKVMERGE</h1>
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#USAGE">USAGE</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#TRACK IDS">TRACK IDS</a><br>
+<a href="#SUBTITLES">SUBTITLES</a><br>
+<a href="#FILE LINKING">FILE LINKING</a><br>
+<a href="#DEFAULT VALUES">DEFAULT VALUES</a><br>
+<a href="#ATTACHMENTS">ATTACHMENTS</a><br>
+<a href="#CHAPTERS">CHAPTERS</a><br>
+<a href="#TAGS">TAGS</a><br>
+<a href="#MATROSKA FILE LAYOUT">MATROSKA FILE LAYOUT</a><br>
+<a href="#EXTERNAL TIMECODE FILES">EXTERNAL TIMECODE FILES</a><br>
+<a href="#EXIT CODES">EXIT CODES</a><br>
+<a href="#NOTES">NOTES</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#WWW">WWW</a><br>
+
+<hr>
+<a name="NAME"></a>
+<h2>NAME</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>mkvmerge &minus; Merge multimedia streams into a Matroska
+file</p>
+</td>
+</table>
+<a name="SYNOPSIS"></a>
+<h2>SYNOPSIS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>mkvmerge</b> [<i>global options</i>] &minus;o
+<i>out</i> [<i>options1</i>] &lt;file1&gt;
+[[<i>options2</i>] &lt;file2&gt; ...] [@optionsfile]</p>
+</td>
+</table>
+<a name="DESCRIPTION"></a>
+<h2>DESCRIPTION</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>This program takes the input from several media files and
+joins their streams (all of them or just a selection) into a
+Matroska file. &lt;http://www.matroska.org/&gt;</p>
+<!-- INDENTATION -->
+<p>Global options:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;v</b>, <b>&minus;&minus;verbose</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Increase verbosity.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;q</b>, <b>&minus;&minus;quiet</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Suppress status output.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;o</b>, <b>&minus;&minus;output</b>
+<i>out</i></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Write to the file &rsquo;<i>out</i>&rsquo;. If splitting
+is used then this parameter is treated a bit differently.
+See the <b>&minus;&minus;split</b> parameter discussion for
+details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;title</b> &lt;<i>title</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the general title for the output file, e.g. the
+movie name.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;global&minus;tags</b>
+&lt;<i>file</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Read global tags from the XML <i>file</i>. See the
+section about tags below for details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;default&minus;language</b>
+&lt;<i>lng</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the default language code. Unless overridden with
+the <b>&minus;&minus;language</b> option this language code
+will be used. The default language code is &rsquo;und&rsquo;
+for &rsquo;undefined&rsquo;.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Chapter handling: (global options)</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;chapter&minus;language</b>
+&lt;<i>language</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the ISO639-2 language code that is written for each
+chapter entry. Applies only to simple chapter files.
+Defaults to &quot;eng&quot;. See the section about chapters
+below for details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;chapter&minus;charset</b>
+&lt;<i>charset</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the charset that is used for the conversion to UTF-8
+for simple chapter files. Defaults to the current system
+locale. This switch does also apply to chapters that are
+copied from an Ogg/OGM file. See the section about chapters
+below for details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+
+<p><b>&minus;&minus;cue&minus;chapter&minus;name&minus;format</b>
+&lt;<i>format</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p><b>mkvmerge</b> supports reading CUE sheets for audio
+files as the input for chapters. CUE sheets usually contain
+the entries <i>PERFORMER</i> and <i>TITLE</i> for each index
+entry. <b>mkvmerge</b> uses these two strings in order to
+construct the chapter name. With this option the format used
+for this name can be set. The following meta characters are
+supported:<b><br>
+%p</b> is replaced by the current entry&rsquo;s
+<i>PERFORMER</i> string,<b><br>
+%t</b> is replaced by the current entry&rsquo;s <i>TITLE</i>
+string,<b><br>
+%n</b> is replaced by the current track number and<b><br>
+%N</b> is replaced by the current track number padded with a
+leading zero if it is &lt; 10.<br>
+Everything else is copied as-is.<br>
+If this option is not given then <b>mkvmerge</b> defaults to
+the format &rsquo;<i>%p - %t</i>&rsquo; (the performer,
+followed by a space, a dash, another space and the
+title).</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;chapters
+&lt;</b><i>file</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Read chapter information from the <i>file</i>. See the
+section about chapters below for details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>General output control (advanced global options):</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;track&minus;order</b>
+&lt;<i>FID1:TID1</i>[,<i>FID2:TID2</i>,...]&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>This option changes the order in which the tracks for an
+input file are created. The argument is a comma separated
+list of pairs IDs. Each pair contains first the file ID
+which is simply the number of the file on the command line
+starting at 0. The second is a track ID from that file. If
+some track IDs are omitted then those tracks are created
+after the ones given with this option have been created.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;cluster&minus;length</b>
+<i>n[ms]</i></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Put at most <i>n</i> data blocks into each cluster. If
+the number is postfixed with &rsquo;ms&rsquo; then put at
+most <i>n</i> milliseconds of data into each cluster. The
+maximum length for a cluster is 32767ms. Programs will only
+be able to seek to clusters, so creating larger clusters may
+lead to imprecise seeking and/or processing.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;no&minus;cues</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Tells <b>mkvmerge</b> not to create and write the cue
+data which can be compared to an index in an AVI. Matroska
+files can be played back without the cue data, but seeking
+will probably be imprecise and slower. Use this only if
+you&rsquo;re really desperate for space or for testing
+purposes. See also option <b>&minus;&minus;cues</b> which
+can be specified for each input file.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+
+<p><b>&minus;&minus;no&minus;clusters&minus;in&minus;meta&minus;seek</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Tells <b>mkvmerge</b> not to create a meta seek element
+at the end of the file containing all clusters. See also the
+section about <b>MATROSKA FILE LAYOUT</b>.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;disable&minus;lacing</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Disables lacing for all tracks. This will increase the
+file&rsquo;s size, especially if there are many audio
+tracks. This option is not intended for everyday use.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;enable&minus;durations</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Write durations for all blocks. This will increase file
+size and does not offer any additional value for players at
+the moment.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;timecode&minus;scale</b>
+&lt;<i>n</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Forces the timecode scale factor to <i>n</i>. Valid
+values are in the range 1000..10000000 or the value -1.
+Normally <b>mkvmerge</b> will use a value of 1000000 which
+means that timecodes and durations will have a precision of
+1ms. For files that will not contain a video track but at
+least one audio track <b>mkvmerge</b> will automatically
+chose a timecode scale factor so that all timecodes and
+durations have a precision of one sample. This causes bigger
+overhead but allows precise seeking and extraction. If the
+magical value -1 is used then <b>mkvmerge</b> will use
+sample precision even if a video track is present.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>File splitting and linking (more global options):</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;split</b> size:&lt;<i>d[k|m|g]</i>&gt;
+or shorter <b>&minus;&minus;split</b>
+&lt;<i>d[k|m|g]</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;split</b>
+duration:&lt;<i>HH:MM:SS.nnnnnnnnn</i>|<i>n</i>s&gt; or
+shorter <b>&minus;&minus;split</b>
+&lt;<i>HH:MM:SS.nnnnnnnnn</i>|<i>n</i>s&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;split</b>
+timecodes:<i>A</i>[,<i>B</i>[,<i>C</i>...]]</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Splits the output file after a given size or a given
+time. At the moment <b>mkvmerge</b> supports three different
+modes.<br>
+1. Splitting by size.<br>
+The parameter <i>d</i> may end with <b>k</b>, <b>m</b> or
+<b>g</b> to indicate that the size is in KB, MB or GB
+respectively. Otherwise a size in Bytes is assumed. After
+the current output file has reached this size limit a new
+one will be started. The <b>size:</b> prefix may be omitted
+for compatibility reasons.<br>
+2. Splitting after a duration.<br>
+The paramter must have the form <i>HH:MM:SS.nnnnnnnnn</i>
+for specifying the duration in up to nano-second precision
+or a number <i>n</i> followed by the letter &rsquo;s&rsquo;
+for the duration in seconds. &quot;HH&quot; is the number of
+hours, &quot;MM&quot; the number of minutes, &quot;SS&quot;
+the number of seconds and &quot;nnnnnnnnn&quot; the number
+of nanoseconds. Both the number of hours and the number of
+nanoseconds can be omitted. There can be up to nine digits
+after the decimal point. After the duration of the contents
+in the current output has reached this limit a new output
+file will be started. The <b>duration:</b> prefix may be
+omitted for compatibility reasons.<br>
+3. Splitting after specific timecodes.<br>
+The parameters <i>A</i>, <i>B</i> etc must all have the same
+format as the ones used for the duration (see above). The
+list of timecodes is separated by commas. After the current
+file has reached the current split point&rsquo;s timecode a
+new file is created. Then the next split point given in this
+list is used. The timecodes: prefix must not be omitted.<br>
+For this splitting mode the output filename is treated
+differently than for the normal operation. It may contain a
+printf like expression &rsquo;%d&rsquo; including an
+optional field width, e.g. &rsquo;%02d&rsquo;. If it does
+then the current file number will be formatted appropriately
+and inserted at that point in the filename. If there is no
+such pattern then a pattern of &rsquo;-%03d&rsquo; is
+assumed right before the file&rsquo;s extension: &rsquo;-o
+output.mkv&rsquo; would result in
+&rsquo;output-001.mkv&rsquo; and so on. If there&rsquo;s no
+extension then &rsquo;-%03d&rsquo; will be appended to the
+name.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;split&minus;max&minus;files</b>
+&lt;<i>n</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Create at most <i>n</i> files, even if the last file will
+be longer or larger than indicated by
+<b>&minus;&minus;split</b>.</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="8%">
+
+<p><b>&minus;&minus;link</b></p>
+</td>
+<td width="1%"></td>
+<td width="77%">
+
+<p>Link files to one another when splitting the output
+file. See the section <b>FILE LINKING</b> below for
+details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;link&minus;to&minus;previous</b>
+&lt;<i>SID</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Links the first output file to the segment with the given
+<i>SID</i>. See the section <b>FILE LINKING</b> below for
+details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;link&minus;to&minus;next</b>
+&lt;<i>SID</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Links the last output file to the segment with the given
+<i>SID</i>. See the section <b>FILE LINKING</b> below for
+details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Attachment support (more global options):</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;attachment&minus;description</b>
+&lt;<i>description</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Plain text description of the following attachment.
+Applies to the next <b>&minus;&minus;attach&minus;file</b>
+or <b>&minus;&minus;attach&minus;file&minus;once</b>
+command.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;attachment&minus;mime&minus;type</b>
+&lt;<i>MIME type</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>MIME type of the following attachment. Applies to the
+next <b>&minus;&minus;attach&minus;file</b> or
+<b>&minus;&minus;attach&minus;file&minus;once</b> command. A
+list of officially recognized MIME types can be found e.g.
+at
+&lt;ftp://ftp.isi.edu/in-notes/iana/assignments/media-types/media-types&gt;
+The MIME type is mandatory for an attachment.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;attachment&minus;name</b>
+&lt;<i>name</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the name that will be stored in the output file for
+this attachment. If this option is not given then the name
+will be derived from the file name of the attachment as
+given with the <b>&minus;&minus;attach&minus;file</b> or the
+<b>&minus;&minus;attach&minus;file&minus;once</b>
+option.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;attach&minus;file</b> &lt;<i>file
+name</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;attach&minus;file&minus;once</b>
+&lt;<i>file name</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Creates a file attachment inside the Matroska file. The
+MIME type must have been set before this option can used.
+The difference between the two forms is that during
+splitting the files attached with
+<b>&minus;&minus;attach&minus;file</b> are attached to all
+output files while the ones attached with
+<b>&minus;&minus;attach&minus;file&minus;once</b> are only
+attached to the first file created. If splitting is not used
+then both do the same.<b><br>
+mkvextract</b> can be used to extract attached files from a
+Matroska file.<b><br>
+Note:</b> If an input file is a Matroska file then the
+attached files will not be copied to the output file(s).
+This may change in the future.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Options that can be used for each input file:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;a</b>, <b>&minus;&minus;atracks</b>
+&lt;<i>n</i>,<i>m</i>,...&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Copy the audio tracks <i>n</i>, <i>m</i> etc. The numbers
+are track IDs which can be obtained with the
+<b>&minus;&minus;identify</b> switch. They&rsquo;re
+<b>not</b> simply the track numbers (see section <b>TRACK
+IDS</b>). Default: copy all audio tracks.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;d</b>, <b>&minus;&minus;vtracks</b>
+&lt;<i>n</i>,<i>m</i>,...&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Copy the video tracks <i>n</i>, <i>m</i> etc. The numbers
+are track IDs which can be obtained with the
+<b>&minus;&minus;identify</b> switch (see section <b>TRACK
+IDS</b>). They&rsquo;re <b>not</b> simply the track numbers.
+Default: copy all video tracks.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;s</b>, <b>&minus;&minus;stracks</b>
+&lt;<i>n</i>,<i>m</i>,...&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Copy the subtitle tracks <i>n</i>, <i>m</i> etc. The
+numbers are track IDs which can be obtained with the
+<b>&minus;&minus;identify</b> switch (see section <b>TRACK
+IDS</b>). They&rsquo;re <b>not</b> simply the track numbers.
+Default: copy all subtitle tracks.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;b</b>, <b>&minus;&minus;btracks</b>
+&lt;<i>n</i>,<i>m</i>,...&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Copy the button tracks <i>n</i>, <i>m</i> etc. The
+numbers are track IDs which can be obtained with the
+<b>&minus;&minus;identify</b> switch (see section <b>TRACK
+IDS</b>). They&rsquo;re <b>not</b> simply the track numbers.
+Default: copy all button tracks.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;A</b>, <b>&minus;&minus;noaudio</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Don&rsquo;t copy any audio track from this file.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;D</b>, <b>&minus;&minus;novideo</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Don&rsquo;t copy any video track from this file.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;S</b>, <b>&minus;&minus;nosubs</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Don&rsquo;t copy any subtitle track from this file.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;B</b>, <b>&minus;&minus;nobuttons</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Don&rsquo;t copy any button track from this file.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;no&minus;chapters</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>If the source is a Matroska file then don&rsquo;t copy
+chapters from it.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;no&minus;attachments</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>If the source is a Matroska file then don&rsquo;t copy
+attachments from it.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;no&minus;tags</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>If the source is a Matroska file then don&rsquo;t copy
+tags from it.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;y</b>, <b>&minus;&minus;sync</b>
+&lt;<i>TID</i>:<i>d</i>[,<i>o</i>[/<i>p</i>]]&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Synchronize manually, delay the audio track with the id
+<i>TID</i> by <i>d</i> ms. The track IDs are the same as the
+ones given with <b>&minus;&minus;identify</b> (see section
+<b>TRACK IDS</b>).<i><br>
+d</i> &gt; 0: Pad with silent samples.<i><br>
+d</i> &lt; 0: Remove samples from the beginning.<i><br>
+o</i>/<i>p</i>: adjust the timestamps by <i>o</i>/<i>p</i>
+to fix linear drifts. <i>p</i> defaults to 1000 if omitted.
+Both <i>o</i> and <i>p</i> can be floating point
+numbers.<br>
+Defaults: no manual sync correction (which is the same as
+<i>d</i> = 0 and <i>o</i>/<i>p</i> = 1.0).<br>
+This option can be used multiple times for an input file
+applying to several tracks by selecting different track IDs
+each time.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;delay</b>
+&lt;<i>TID</i>:<i>x</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>The delay to apply to the packets of the track by simply
+adjusting the timecodes. The argument <i>x</i> must be
+postfixed with <b>s</b>, <b>ms</b>, <b>us</b> or <b>ns</b>
+to specify seconds, milliseconds, microseconds and
+nanoseconds respectively.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;cues</b>
+&lt;<i>TID</i>:<i>none</i>|<i>iframes</i>|<i>all</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Controls for which tracks cue (index) entries are created
+for the given track (see section <b>TRACK IDS</b>).
+<i>none</i> inhibits the creation of cue entries. For
+<i>iframes</i> only blocks with no backward or forward
+references ( = I frames in video tracks) are put into the
+cue sheet. <i>all</i> causes <b>mkvmerge</b> to create cue
+entries for all blocks which will make the file very
+big.<br>
+The default is <i>iframes</i> for video tracks and
+<i>none</i> for all others. See also option
+<b>&minus;&minus;no&minus;cues</b> which inhibits the
+creation of cue entries regardless of the
+<b>&minus;&minus;cues</b> options used.<br>
+This option can be used multiple times for an input file
+applying to several tracks by selecting different track IDs
+each time.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;default&minus;track</b>
+&lt;<i>TID</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the &rsquo;default&rsquo; flag for the given track
+(see section <b>TRACK IDS</b>). If the user does not
+explicitly select a track himself then the player should
+prefer the track that has his &rsquo;default&rsquo; flag
+set. Only one track of each kind (audio, video, subtitles,
+buttons) can have his &rsquo;default&rsquo; flag set.<br>
+This option can be used multiple times for an input file
+applying to several tracks by selecting different track IDs
+each time.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;blockadd</b>
+&lt;<i>TID</i>:<i>level</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Keep only the BlockAdditions up to this <i>level</i> for
+the given track. The default is to keep all levels. This
+option only affects certain kinds of codecs like
+WAVPACK4.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;track&minus;name</b>
+&lt;<i>TID</i>:<i>name</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the track name for the given track (see section
+<b>TRACK IDS</b>) to <i>name</i>.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;language</b>
+&lt;<i>TID</i>:<i>language</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the language for the given track (see section
+<b>TRACK IDS</b>). Both ISO639-2 language codes and ISO639-1
+country codes are allowed. The country codes will be
+converted to language codes automatically. All languages
+including their ISO639-2 codes can be listed with the
+<b>&minus;&minus;list&minus;languages</b> option.<br>
+This option can be used multiple times for an input file
+applying to several tracks by selecting different track IDs
+each time.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;t</b>, <b>&minus;&minus;tags</b>
+&lt;<i>TID</i>:<i>file</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Read tags for the track with the number <i>TID</i> from
+the <i>file</i>. See the section about tags below for
+details.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;aac&minus;is&minus;sbr</b>
+&lt;<i>TID</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Tells <b>mkvmerge</b> that the track with the ID
+<i>TID</i> is SBR AAC (also known as HE-AAC or AAC+). This
+options is needed if a) the source file is an AAC file (NOT
+for a Matroska file) and b) the AAC file contains SBR AAC
+data. The reason for this switch is that it is technically
+impossible to automatically tell normal AAC data from SBR
+AAC data without decoding a complete AAC frame. As there are
+several patent issues with AAC decoders I won&rsquo;t
+implement this decoding stage. So for SBR AAC files this
+switch is mandatory. The resulting file might not play back
+correctly or even not at all if the switch was omitted.<br>
+If the source file is a Matroska file then the CodecID
+should be enough to detect SBR AAC. However, if the CodecID
+is wrong then this switch can be used to correct that.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;timecodes</b>
+&lt;<i>TID</i>:<i>filename</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Read the timecodes to be used for the specific track ID
+from <i>filename</i>. These timecodes forcefully override
+the timecodes that <b>mkvmerge</b> normally calculates. Read
+the section about <b>EXTERNAL TIMECODE FILES</b>.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;default&minus;duration</b>
+&lt;<i>TID</i>:<i>x</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Forces the default duration of a given track to the
+specified value. The argument <i>x</i> must be postfixed
+with <b>s</b>, <b>ms</b>, <b>us</b> or <b>ns</b> to specify
+the default duration in seconds, milliseconds, microseconds
+and nanoseconds respectively.<br>
+This argument is mainly useful for debugging purposes and
+should normally not be used. If the default duration is not
+forced then mkvmerge will try to derive the track&rsquo;s
+default duration from the container and/or codec used.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;append&minus;to</b>
+&lt;<i>SFID1:STID1:DFID1:DTID1</i>[,...]&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>This option controls to which track another track is
+appended. Each spec contains four IDs: a file ID, a track
+ID, another file ID and a second track ID. The first pair,
+&quot;source file ID&quot; and &quot;source track ID&quot;,
+identifies the track that is to be appended. The second
+pair, &quot;destination file ID&quot; and &quot;destination
+track ID&quot;, identifies the track the first one is
+appended to.<br>
+If this option has been omitted then a standard mapping is
+used. This standard mapping appends each track from the
+current file to a track from the previous file with the same
+track ID. This allows for easy appending if a movie has been
+split into two parts and both file have the same number of
+tracks and track IDs with the command<b><br>
+mkvmerge -o output.mkv part1.mkv +part2.mkv</b></p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Options that only apply to video tracks:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;f</b>, <b>&minus;&minus;fourcc</b>
+&lt;<i>TID</i>:<i>FourCC</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Forces the FourCC to the specified value. Works only for
+video tracks in the &acute;MS compatibility mode&rsquo;.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;display&minus;dimensions</b>
+&lt;<i>TID</i>:<i>width</i>x<i>height</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Matroska files contain two values that set the display
+properties that a player should scale the image on playback
+to: display width and display height. These values can be
+set with this option, e.g. &rsquo;1:640x480&rsquo;.<br>
+Another way to specify the values is to use the
+<b>&minus;&minus;aspect&minus;ratio</b> or the
+<b>&minus;&minus;aspect&minus;ratio&minus;factor</b> option
+(see below). These options are mutually exclusive.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;aspect&minus;ratio</b>
+&lt;<i>TID</i>:<i>ar</i>|<i>w</i>/<i>h</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Matroska files contain two values that set the display
+properties that a player should scale the image on playback
+to: display width and display height. With this option
+<b>mkvmerge</b> will automatically calculate the display
+width and display height based on the image&rsquo;s original
+width and height and the aspect ratio given with this
+option. The ratio can be given either as a floating point
+number or as &acute;width/height&rsquo;, e.g. 16/9.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;aspect&minus;ratio&minus;factor</b>
+&lt;<i>TID</i>:<i>ar</i>|<i>w</i>/<i>h</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Another way to set the aspect ratio is to specify a
+factor. The original aspect ratio is first multiplied with
+this factor and used as the target aspect ratio
+afterwards.<br>
+Another way to specify the values is to use the
+<b>&minus;&minus;aspect&minus;ratio</b> option (see above).
+These options are mutually exclusive.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;cropping</b>
+&lt;<i>TID</i>:<i>left</i>,<i>top</i>,<i>right</i>,<i>bottom</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the pixel cropping parameters of a video track to
+the given values.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Options that only apply to text subtitle tracks:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;sub&minus;charset</b>
+&lt;<i>TID</i>:<i>charset</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the charset for the conversion to UTF-8 for UTF-8
+subtitles for the given track ID. If not specified the
+charset will be derived from the current locale settings.
+Note that a charset is not needed for subtitles read from
+Matroska files as these are always stored in UTF-8.<br>
+This option can be used multiple times for an input file
+applying to several tracks by selecting different track IDs
+each time.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Options that only apply to VobSub subtitle tracks:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;compression</b>
+&lt;<i>TID</i>:<i>method</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Selects the compression method to be used for the VobSub
+track. Note that the player also has to support this method!
+Valid values are &rsquo;none&rsquo; and &rsquo;zlib&rsquo;.
+The default is &rsquo;zlib&rsquo; compression.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Other options:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;i</b>, <b>&minus;&minus;identify</b>
+&lt;<i>filename</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Will let <b>mkvmerge</b> probe the single file and report
+its type, the tracks contained in the file and their track
+IDs. If this option is used then the only other option
+allowed is the filename.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;l</b>,
+<b>&minus;&minus;list&minus;types</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Lists supported input file types.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;list&minus;languages</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Lists all languages and their ISO639-2 code which can be
+used with the <b>&minus;&minus;language</b> option.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;priority</b>
+&lt;<i>priority</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the process priority that <b>mkvmerge</b> runs with.
+Valid values are &quot;lowest&quot;, &quot;lower&quot;,
+&quot;normal&quot;, &quot;higher&quot; and
+&quot;highest&quot;. If nothing is given then
+&quot;normal&quot; is used. On Unix like systems
+<b>mkvmerge</b> will use the nice(2) function. Therefore
+only the super user can use &quot;higher&quot; and
+&quot;highest&quot;. On Windows all values are useable for
+every user.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;command&minus;line&minus;charset</b>
+&lt;<i>charset</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the charset to convert strings given on the command
+line from. It defaults to the charset given by
+system&rsquo;s current locale. This settings applies to
+arguments of the following options:
+<b>&minus;&minus;title</b>,
+<b>&minus;&minus;track&minus;name</b> and
+<b>&minus;&minus;attachment&minus;description</b>.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;&minus;output&minus;charset</b>
+&lt;<i>charset</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Sets the charset to which strings are converted that are
+to be output. It defaults to the charset given by
+system&rsquo;s current locale.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>-r</b>, <b>&minus;&minus;redirect&minus;output</b>
+&lt;<i>filename</i>&gt;</p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Writes all messages to the file <i>filename</i> instead
+of to the console. While this can be done easily with output
+redirection there are cases in which this option is needed:
+when the terminal reinterprets the output before writing it
+to a file. The charset set with
+<b>&minus;&minus;output-charset</b> is honored.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>@</b><i>optionsfile</i></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Reads additional command line arguments from the file
+<i>optionsfile</i>. Lines whose first non-whitespace
+character is a hash mark (#) are treated as comments and
+ignored. White spaces at the start and end of a line will be
+stripped. Each line must contain exactly one option. There
+is no meta character escaping.<br>
+The command line <b>mkvmerge &minus;o &quot;my
+file.mkv&quot; -A &quot;a movie.avi&quot; sound.ogg</b>
+could be converted into the following option file:<br>
+# Write to the file &quot;my file.mkv&quot;.<br>
+&minus;o<br>
+my file.mkv<br>
+# Only take the video from &quot;a movie.avi&quot;.<br>
+&minus;A<br>
+a movie.avi<br>
+sound.ogg</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;h</b>, <b>&minus;&minus;help</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Show usage information.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>&minus;V</b>, <b>&minus;&minus;version</b></p></td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>Show version information.</p>
+</td>
+</table>
+<a name="USAGE"></a>
+<h2>USAGE</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>For each file the user can select which tracks
+<b>mkvmerge</b> should take. They are all put into the file
+specified with &rsquo;-o&rsquo;. A list of known (and
+supported) source formats can be obtained with the
+&rsquo;-l&rsquo; option.</p>
+</td>
+</table>
+<a name="EXAMPLES"></a>
+<h2>EXAMPLES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Let&rsquo;s assume you have a file called
+<i>MyMovie.avi</i> and the audio track in a separate file,
+e.g. <i>MyMovie.wav</i>. First you want to encode the audio
+to OGG:</p>
+<!-- INDENTATION -->
+<p>$ <b>oggenc -q4 -oMyMovie.ogg MyMovie.wav</b></p>
+<!-- INDENTATION -->
+<p>After a couple of minutes you can join video and
+audio:</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o MyMovie-with-sound.mkv MyMovie.avi
+MyMovie.ogg</b></p>
+<!-- INDENTATION -->
+<p>If your AVI already contains an audio track then it will
+be copied as well (if <b>mkvmerge</b> supports the audio
+format). To avoid that simply do</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o MyMovie-with-sound.mkv -A MyMovie.avi
+MyMovie.ogg</b></p>
+<!-- INDENTATION -->
+<p>After some minutes of consideration you rip another audio
+track, e.g. the director&rsquo;s comments or another
+language to <i>MyMovie-add-audio.wav</i>. Encode it again
+and join it up with the other file:</p>
+<!-- INDENTATION -->
+<p>$ <b>oggenc -q4 -oMyMovie-add-audio.ogg
+MyMovie-add-audio.wav</b><br>
+$ <b>mkvmerge -o MM-complete.mkv MyMovie-with-sound.mkv
+MyMovie-add-audio.ogg</b></p>
+<!-- INDENTATION -->
+<p>The same result can be achieved with</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o MM-complete.mkv -A MyMovie.avi
+MyMovie.ogg \<br>
+MyMovie-add-audio.ogg</b></p>
+<!-- INDENTATION -->
+<p>Now fire up mplayer and enjoy. If you have multiple audio
+tracks (or even video tracks) then you can tell mplayer
+which track to play with the &rsquo;<b>-vid</b>&rsquo; and
+&rsquo;<b>-aid</b>&rsquo; parameters. These are 0-based and
+do not distinguish between video and audio.</p>
+<!-- INDENTATION -->
+<p>If you need an audio track synchronized you can do that
+easily. First find out which track ID the Vorbis track has
+with</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge --identify outofsync.ogg</b></p>
+<!-- INDENTATION -->
+<p>Now you can use that ID in the following command
+line:</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o goodsync.mkv -A source.avi -y 12345:200
+outofsync.ogg</b></p>
+<!-- INDENTATION -->
+<p>This would add 200ms of silence at the beginning of the
+audio track with the ID 12345 taken from
+<i>outofsync.ogg</i>.</p>
+<!-- INDENTATION -->
+<p>Some movies start synced correctly but slowly drift out
+of sync. For these kind of movies you can specify a delay
+factor that is applied to all timestamps - no data is added
+or removed. So if you make that factor too big or too small
+you&rsquo;ll get bad results. An example is that an episode
+I transcoded was 0.2 seconds out of sync at the end of the
+movie which was 77340 frames long. At 29.97fps 0.2 seconds
+correspond to approx. 6 frames. So I did</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o goodsync.mkv -y 23456:0,77346/77340
+outofsync.mkv</b></p>
+<!-- INDENTATION -->
+<p>The result was fine.</p>
+<!-- INDENTATION -->
+<p>The sync options can also be used for subtitles in the
+same manner.</p>
+<!-- INDENTATION -->
+<p>For text subtitles you can either use some Windows
+software (like <b>SubRipper</b>) or the <b>subrip</b>
+package found in <b>transcode(1)</b>&rsquo;s sources (in
+<b>contrib/subrip</b>). The general process is:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="5" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>1.</p>
+</td>
+<td width="13%"></td>
+<td width="67%">
+
+<p>extract a raw subtitle stream from the source:</p>
+</td>
+<td width="4%">
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>$ <b>tccat -i /path/to/copied/dvd/ -T 1 -L | \<br>
+tcextract -x ps1 -t vob -a 0x20 | \<br>
+subtitle2pgm -o mymovie</b></p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>2.</p>
+</td>
+<td width="13%"></td>
+<td width="72%">
+
+<p>convert the resulting PGM images to text with
+<b>gocr</b>:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>$ <b>pgm2txt mymovie</b></p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="5" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>3.</p>
+</td>
+<td width="13%"></td>
+<td width="54%">
+
+<p>spell-check the resulting text files:</p>
+</td>
+<td width="17%">
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>$ <b>ispell -d american *txt</b></p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="5" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>4.</p>
+</td>
+<td width="13%"></td>
+<td width="54%">
+
+<p>convert the text files to a SRT file:</p>
+</td>
+<td width="17%">
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="21%"></td>
+<td width="77%">
+<p>$ <b>srttool -s -w -i mymovie.srtx -o mymovie.srt</b></p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The resulting file can be used as another input file for
+<b>mkvmerge</b>:</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o mymovie.mkv mymovie.avi
+mymovie.srt</b></p>
+<!-- INDENTATION -->
+<p>If you want to specify the language for a given track
+then this is easily done. First find out the ISO639-2 code
+for your language. <b>mkvmerge</b> can list all of those
+codes for you:</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge --list-languages</b></p>
+<!-- INDENTATION -->
+<p>Search the list for the languages you need. Let&rsquo;s
+assume you have put two audio tracks into a Matroska file
+and want to set their language codes and that their track
+IDs are 2 and 3. This can be done with</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o with-lang-codes.mkv --language 2:ger
+--language 3:dut without-lang-codes.mkv</b></p>
+<!-- INDENTATION -->
+<p>As you can see you can use the <b>--language</b> switch
+multiple times.</p>
+<!-- INDENTATION -->
+<p>Maybe you&rsquo;d also like to have the player use the
+Dutch language as the default language. You also have extra
+subtitles, e.g. in English and French, and want to have the
+player display the French ones by default. This can be done
+with</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -o with-lang-codes.mkv --language 2:ger
+--language 3:dut --default-track 3 without-lang-codes.mkv
+--language 0:eng english.srt --default-track 0 --language
+0:fre french.srt</b></p>
+<!-- INDENTATION -->
+<p>If you do not see the language or default track flags
+that you&rsquo;ve specified in <b>mkvinfo</b>&rsquo;s output
+then please read the section about <b>DEFAULT
+VALUES</b>.</p>
+</td>
+</table>
+<a name="TRACK IDS"></a>
+<h2>TRACK IDS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Some of the options for <b>mkvmerge</b> need a track ID
+to specify which track they should be applied to. Those
+track IDs are printed by the readers when demuxing the
+current input file, or if <b>mkvmerge</b> is called with the
+<b>&minus;&minus;identify</b> option. An example for such
+output:</p>
+<!-- INDENTATION -->
+<p>$ <b>mkvmerge -i v.mkv</b><br>
+File &rsquo;v.mkv&rsquo;: container: Matroska<br>
+Track ID 1: video (V_MS/VFW/FOURCC, DIV3)<br>
+Track ID 2: audio (A_MPEG/L3)</p>
+<!-- INDENTATION -->
+<p>Track IDs are assigned like this:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>AVI files: The video track has the ID 0. All audio
+tracks get the ID 1, 2...</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>AAC, AC3, MP3, SRT and WAV files: The one
+&rsquo;track&rsquo; in that file gets the ID 0.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Ogg/OGM files: The track&rsquo;s ID is its position in
+the Ogg stream. The first stream encountered has the ID 0,
+the second one the ID 1 etc.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Matroska files: The track&rsquo;s ID is the track number
+as reported by <b>mkvinfo</b> or <b>mkvmerge
+&minus;&minus;identify</b>. It is <b>not</b> the track
+UID.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The special track ID &rsquo;-1&rsquo; is a wild card and
+applies the given switch to all tracks that are read from an
+input file. This was the behavior of these switches prior to
+version 0.4.4.</p>
+<!-- INDENTATION -->
+<p>The options that use the track IDs are the ones whose
+description contains &acute;TID&acute;. The following
+options use track IDs as well: <b>&minus;&minus;atracks</b>,
+<b>&minus;&minus;vtracks</b>, <b>&minus;&minus;stracks</b>
+and <b>&minus;&minus;btracks</b>.</p>
+</td>
+</table>
+<a name="SUBTITLES"></a>
+<h2>SUBTITLES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>There are several text subtitle formats that can be
+embedded into Matroska. At the moment <b>mkvmerge</b>
+supports only text subtitle formats. These subtitles must be
+recoded to UTF-8 so that they can be displayed correctly by
+a player.</p>
+<!-- INDENTATION -->
+<p><b>mkvmerge</b> does this conversion automatically based
+on the system&rsquo;s current locale. If the subtitle
+charset is not the same as the system&rsquo;s current
+charset then the user can use
+<b>&minus;&minus;sub&minus;charset</b> switch. If the
+subtitles are already encoded in UTF-8 then you can use
+<b>&minus;&minus;sub&minus;charset UTF&minus;8</b>.</p>
+<!-- INDENTATION -->
+<p>The following subtitle formats are supported at the
+moment:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="1%">
+
+<p>*</p>
+</td>
+<td width="8%"></td>
+<td width="77%">
+
+<p>Subtitle Ripper (SRT) files</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="1%">
+
+<p>*</p>
+</td>
+<td width="8%"></td>
+<td width="77%">
+
+<p>Substation Alpha (SSA) / Advanced Substation Alpha
+scripts (ASS)</p>
+</td>
+</table>
+<a name="FILE LINKING"></a>
+<h2>FILE LINKING</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Matroska supports file linking which simply says that a
+specific file is the predecessor or successor of the current
+file. To be precise, it&rsquo;s not really the files that
+are linked but the Matroska segments. As most files will
+probably only contain one Matroska segment I simply say
+&rsquo;file linking&rsquo; although &rsquo;segment
+linking&rsquo; would be more appropriate.</p>
+<!-- INDENTATION -->
+<p>Each segment is identified by a unique 128 bit wide
+segment UID. This UID is automatically generated by
+<b>mkvmerge</b>. The linking is done primarily via putting
+the segment UIDs (short: SID) of the previous/next file into
+the segment header information. <b>mkvinfo(1)</b> prints
+these SIDs if it finds them.</p>
+<!-- INDENTATION -->
+<p>If a file is split into several smaller ones and linking
+is used then the timecodes will not start at 0 again but
+will continue where the last file has left off. This way the
+absolute time is kept even if the previous files are not
+available (e.g. when streaming). If no linking is used then
+the timecodes should start at 0 for each file. By default
+<b>mkvmerge</b> does not use file linking. If you want that
+you can turn it on with the &acute;<b>&minus;link</b>&acute;
+option. This option is only useful if splitting is activated
+as well.</p>
+<!-- INDENTATION -->
+<p>Regardless of whether splitting is active or not the user
+can tell <b>mkvmerge</b> to link the produced files to
+specific SIDs. This is achieved with the options
+&rsquo;<b>&minus;&minus;link&minus;to&minus;previous</b>&rsquo;
+and
+&rsquo;<b>&minus;&minus;link&minus;to&minus;next</b>&rsquo;.
+These options accept a segment SID in the format that
+<b>mkvinfo(1)</b> outputs: 16 hexadecimal numbers between
+0x00 and 0xff prefixed with &rsquo;0x&rsquo; each, e.g.
+<i>0x41 0xda 0x73 0x66 0xd9 0xcf 0xb2 0x1e 0xae 0x78 0xeb
+0xb4 0x5e 0xca 0xb3 0x93</i>. Alternatively a shorter form
+can be used: 16 hexadecimal numbers between 0x00 and 0xff
+without the &rsquo;0x&rsquo; prefixes and without the
+spaces, e.g. <i>41da7366d9cfb21eae78ebb45ecab393</i>.</p>
+<!-- INDENTATION -->
+<p>If splitting is used then the first file is linked to the
+SID given with
+&acute;<b>&minus;&minus;link&minus;to&minus;previous</b>&acute;
+and the last file is linked to the SID given with
+&acute;<b>&minus;&minus;link&minus;to&minus;next</b>&acute;.
+If splitting is not used then the one output file will be
+linked to both of the two SIDs.</p>
+</td>
+</table>
+<a name="DEFAULT VALUES"></a>
+<h2>DEFAULT VALUES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The Matroska specs say that some elements have a default
+value. Usually an element is not written to the file if its
+value is equal to its default value in order to save space.
+The elements that the user might miss in
+<b>mkvinfo</b>&rsquo;s output are the <i>language</i> and
+the <i>default track flag</i>. The default value for the
+<i>language</i> is English (<i>eng</i>), and the default
+value for the <i>default track flag</i> is <i>true</i>.
+Therefore if you used <b>--language 0:eng</b> for a track
+then it will not show up in <b>mkvinfo</b>&rsquo;s
+output.</p>
+</td>
+</table>
+<a name="ATTACHMENTS"></a>
+<h2>ATTACHMENTS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Maybe you also want to keep some photos along with your
+Matroska file, or you&rsquo;re using SSA subtitles and need
+a special TrueType font that&rsquo;s really rare. In these
+cases you can attach those files to the Matroska file. They
+will not be just appended to the file but embedded in it. A
+player can then show those files (the &rsquo;photos&rsquo;
+case) or use them to render the subtitles (the
+&rsquo;TrueType fonts&rsquo; case).</p>
+<!-- INDENTATION -->
+<p>Here&rsquo;s an example how to attach a photo and a
+TrueType font to the output file:<br>
+$ <b>mkvmerge -o output.mkv -A video.avi sound.ogg
+&minus;&minus;attachment&minus;description &quot;Me and the
+band behind the stage in a small get-together&quot;
+&minus;&minus;attachment&minus;mime&minus;type image/jpeg
+&minus;&minus;attach&minus;file me_and_the_band.jpg
+&minus;&minus;attachment&minus;description &quot;The real
+rare and unbelievably good looking font&quot;
+&minus;&minus;attachment&minus;type
+application/octet&minus;stream
+&minus;&minus;attach&minus;file really_cool_font.ttf</b></p>
+</td>
+</table>
+<a name="CHAPTERS"></a>
+<h2>CHAPTERS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The Matroska chapter system is more powerful than the old
+known system used by OGMs. The full specs can be found at
+&lt;http://www.matroska.org/technical/specs/chapters/index.html&gt;</p>
+<!-- INDENTATION -->
+<p><b>mkvmerge</b> supports two kinds of chapter files as
+its input. The first format, called &rsquo;simple chapter
+format&rsquo;, is the same format that the OGM tools expect.
+The second format is a XML based chapter format which
+supports all of Matroska&rsquo;s chapter functionality.</p>
+<!-- INDENTATION -->
+<p><b>The simple chapter format</b></p>
+<!-- INDENTATION -->
+<p>It looks basically like this:</p>
+<!-- INDENTATION -->
+<p>CHAPTER01=00:00:00.000<br>
+CHAPTER01NAME=Intro<br>
+CHAPTER02=00:02:30.000<br>
+CHAPTER02NAME=Baby prepares to rock<br>
+CHAPTER03=00:02:42.300<br>
+CHAPTER03NAME=Baby rocks the house</p>
+<!-- INDENTATION -->
+<p><b>mkvmerge</b> will transform every pair or lines
+(CHAPTERxx and CHAPTERxxNAME) into one Matroska
+<i>ChapterAtom</i>. It does not set any
+<i>ChapterTrackNumber</i> which means that the chapters all
+apply to all tracks in the file.</p>
+<!-- INDENTATION -->
+<p>The charset used in the file is assumed to be the same
+charset that the current system&rsquo;s locale returns. If
+this is not the case then the switch
+<i>&minus;&minus;chapter&minus;charset</i> should be used.
+If the file contains a valid BOM (byte order marker) then
+all UTF styles are converted automatically. In this case
+<i>&minus;&minus;chapter&minus;charset</i> is simply
+ignored. You can use <b>mkvinfo</b> or <b>mkvextract</b> to
+verify that the chapter names have been converted
+properly.</p>
+<!-- INDENTATION -->
+<p><b>The XML based chapter format</b></p>
+<!-- INDENTATION -->
+<p>The XML based chapter format looks like this:</p>
+<!-- INDENTATION -->
+<p>&lt;?xml version=&quot;1.0&quot;
+encoding=&quot;ISO-8859-1&quot;?&gt;<br>
+&lt;!DOCTYPE Chapters SYSTEM
+&quot;matroskachapters.dtd&quot;&gt;<br>
+&lt;Chapters&gt;<br>
+&lt;EditionEntry&gt;<br>
+&lt;ChapterAtom&gt;<br>
+
+&lt;ChapterTimeStart&gt;00:00:30.000&lt;/ChapterTimeStart&gt;<br>
+
+&lt;ChapterTimeEnd&gt;00:01:20.000&lt;/ChapterTimeEnd&gt;<br>
+&lt;ChapterDisplay&gt;<br>
+&lt;ChapterString&gt;A short
+chapter&lt;/ChapterString&gt;<br>
+&lt;ChapterLanguage&gt;eng&lt;/ChapterLanguage&gt;<br>
+&lt;/ChapterDisplay&gt;<br>
+&lt;ChapterAtom&gt;<br>
+
+&lt;ChapterTimeStart&gt;00:00:46.000&lt;/ChapterTimeStart&gt;<br>
+
+&lt;ChapterTimeEnd&gt;00:01:10.000&lt;/ChapterTimeEnd&gt;<br>
+&lt;ChapterDisplay&gt;<br>
+&lt;ChapterString&gt;A part of that short
+chapter&lt;/ChapterString&gt;<br>
+&lt;ChapterLanguage&gt;eng&lt;/ChapterLanguage&gt;<br>
+&lt;/ChapterDisplay&gt;<br>
+&lt;/ChapterAtom&gt;<br>
+&lt;/ChapterAtom&gt;<br>
+&lt;/EditionEntry&gt;<br>
+&lt;/Chapters&gt;</p>
+<!-- INDENTATION -->
+<p>With this format three things are possible that are not
+possible with the simple chapter format: 1) The timestamp
+for the end of the chapter can be set, 2) chapters can be
+nested, 3) the language and country can be set.</p>
+<!-- INDENTATION -->
+<p>The mkvtoolnix distribution contains some sample files in
+the <i>doc</i> subdirectory which can be used as a
+basis.</p>
+<!-- INDENTATION -->
+<p><b>General notes</b></p>
+<!-- INDENTATION -->
+<p>When splitting files <b>mkvmerge</b> will correctly
+adjust the chapters as well. This means that each file only
+includes the chapter entries that apply to it, and that the
+timecodes will be offset to match the new timecodes of each
+output file.</p>
+<!-- INDENTATION -->
+<p><b>mkvmerge</b> is able to copy chapters from Matroska
+source files unless this is explicitly disabled with the
+<i>&minus;&minus;no&minus;chapters</i> option. At the moment
+<b>mkvmerge</b> is limited to one &rsquo;bunch of
+chapters&rsquo; globally. This means that only the first
+chapter section found in all source files is used. If the
+user specified chapters on the command line then these take
+precedence over any chapters found in source files.
+<b>mkvmerge</b> does not merge chapters. This must be done
+manually by using <b>mkvextract</b> to extract the chapter
+information and editing the resulting files.</p>
+<!-- INDENTATION -->
+<p>One shortcoming is that <b>mkvmerge</b> cannot parse
+chapter information found in OGM files.</p>
+</td>
+</table>
+<a name="TAGS"></a>
+<h2>TAGS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>Introduction</b></p>
+<!-- INDENTATION -->
+<p>Matroska supports an extensive set of tags that is
+deprecated and a new, simpler system like it is is used in
+most other containers: <i>KEY=VALUE</i>. However, in
+Matroska these tags can also be nested, and both the
+<i>KEY</i> and the <i>VALUE</i> are elements of their own.
+The example file <i>example-tags-2.xml</i> shows how to use
+this new system.</p>
+<!-- INDENTATION -->
+<p><b>Scope of the tags</b></p>
+<!-- INDENTATION -->
+<p>Matroska tags do not automatically apply to the complete
+file. They can, but they also may apply to different parts
+of the file: to one or more tracks, to one or more chapters,
+or even to a combination of both. The aforementioned URL
+gives more details about this fact.</p>
+<!-- INDENTATION -->
+<p>One important fact is that tags are linked to tracks or
+chapters with the <i>Targets</i> Matroska tag element, and
+that the UIDs used for this linking are NOT the track IDs
+<b>mkvmerge</b> uses everywhere. Instead the numbers used
+are the UIDs which <b>mkvmerge</b> calculates automatically
+(if the track is taken from a file format other than
+Matroska) or which are copied from the source file if the
+track&rsquo;s source file is a Matroska file. Therefore it
+is difficult to know which UIDs to use in the tag file
+before the file is handed over to <b>mkvmerge</b>.</p>
+<!-- INDENTATION -->
+<p><b>mkvmerge</b> knows two options with which you can add
+tags to Matroska files: The
+<b>&minus;&minus;global&minus;tags</b> and the
+<b>&minus;&minus;tags</b> options. The difference is that
+the former option, <b>&minus;&minus;global&minus;tags</b>,
+will make the tags apply to the complete file by removing
+any of those <i>Targets</i> elements mentioned above. The
+latter option, <b>&minus;&minus;tags</b>, automatically
+inserts the UID that <b>mkvmerge</b> generates for the tag
+specified with the <i>TID</i> part of the
+<b>&minus;&minus;tags</b> option.</p>
+<!-- INDENTATION -->
+<p><b>Example</b></p>
+<!-- INDENTATION -->
+<p>Let&rsquo;s say that you want to add tags to a video
+track read from an AVI. <b>mkvmerge -i file.avi</b> tells
+you that the video track&rsquo;s ID (do not mix this ID with
+the UID!) is 0. So you create your tag file, leave out any
+<i>Targets</i> element and call <b>mkvmerge</b>:<br>
+$ <b>mkvmerge -o file.mkv --tags 0:tags.xml file.avi</b></p>
+<!-- INDENTATION -->
+<p><b>Tag file format</b></p>
+<!-- INDENTATION -->
+<p><b>mkvmerge</b> supports a XML based tag file format. The
+format is very easy and closely connected to the Matroska
+tag specs found at the URL mentioned above. Both the binary
+and the source <b>mkvtoolnix</b> distributions come with a
+sample file called \xample-tags-2.xml which simply lists all
+known tags and which can be used as a basis for real life
+tag files.</p>
+<!-- INDENTATION -->
+<p>The basics are:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>The outermost element must be <b>&lt;Tags&gt;</b>.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>One logical tag is contained inside one pair of
+<b>&lt;Tag&gt;</b> XML tags.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>White spaces directly before and after tag contents are
+ignored.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>Data types</b></p>
+<!-- INDENTATION -->
+<p>The new Matroska tagging system only knows two data
+types, a UTF-8 string and a binary type. The first is used
+for the tag&rsquo;s name and the <i>&lt;String&gt;</i>
+element while the binary type is used for the
+<i>&lt;Binary&gt;</i> type.</p>
+<!-- INDENTATION -->
+<p>As binary data itself would not fit into a XML file
+<b>mkvmerge</b> supports two other methods of storing binary
+data. If the contents of a XML tag starts with
+&rsquo;@&rsquo; then the following text is treated as a
+<i>file name</i>. The corresponding file&rsquo;s content is
+copied into the Matroska element.</p>
+<!-- INDENTATION -->
+<p>Otherwise the data is expected to be <i>Base64</i>
+encoded. This is an encoding that transforms binary data
+into a limited set of ASCII characters and is used e.g. in
+email programs. <b>mkvtoolnix</b> comes with a utility,
+<b>base64tool</b>, that can be used to encode to and decode
+from Base64. <b>mkvextract</b> will output Base64 encoded
+data for binary elements.</p>
+<!-- INDENTATION -->
+<p>The deprecated tagging system knows some more data types
+which can be found in the official Matroska tag specs.
+<b>The following two paragraphs only apply to the deprecated
+tags</b> (an example file is still available and called
+<i>example-tags-deprecated.xml</i>):</p>
+<!-- INDENTATION -->
+<p>The types <i>integer</i>, <i>unsigned integer</i>,
+<i>float</i>, <i>string</i> and <i>UTF-8 string</i> look
+just like you expect them to: <i>4254</i>, <i>-2</i>,
+<i>5.0</i>, <i>hello world</i> and <i>hello world</i>.</p>
+<!-- INDENTATION -->
+<p>The date format used by both <b>mkvmerge</b> when reading
+XML tag files and by <b>mkvextract</b> when outputting XML
+tag data is the <i>ISO-8601</i> format. It has the following
+structure:
+<i>YYYY</i>-<i>MM</i>-<i>DD</i>T<i>HH</i>:<i>MM</i>:<i>SS+TZTZ</i>.
+<i>YYYY</i> is the year (four digits long), <i>MM</i> the
+month (two digits long starting with 01), <i>DD</i> the day
+of the month (two digits long starting with 01), <i>HH</i>
+the hour of the day (two digits long, range 00 - 23),
+<i>MM</i> the minute (two digits long, range 00 - 59),
+<i>SS</i> the seconds (two digits long, range 00 - 59).
+<i>+TZTZ</i> is the time zone, e.g. +0100 or -0200. An
+example would be 2003-07-30T19:10:16+0200.</p>
+</td>
+</table>
+<a name="MATROSKA FILE LAYOUT"></a>
+<h2>MATROSKA FILE LAYOUT</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The Matroska file layout is quite flexible.
+<b>mkvmerge</b> will render a file in a predefined way. The
+resulting file looks like this:</p>
+<!-- INDENTATION -->
+<p>[EBML head] [segment {meta seek #1} {attachments}
+{chapters} [segment information] [track information]
+[cluster 1] {cluster 2} ... {cluster n} {cues} {meta seek
+#2} {tags}]</p>
+<!-- INDENTATION -->
+<p>The elements in curly braces are optional and depend on
+the contents and options used. Some notes:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>meta seek #1 includes only a small number of level 1
+elements, and only if they actually exist: attachments,
+chapters, cues, tags, meta seek #2. Older versions of
+<b>mkvmerge</b> used to put the clusters into this meta seek
+element as well. Therefore some imprecise guessing was
+necessary to reserve enough space. It often failed. Now only
+the clusters are stored in meta seek #2, and meta seek #1
+refers to the meta seek element #2.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Attachment, chapter and tag elements are only present if
+they were added.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The shortest possible Matroska file would look like
+this:</p>
+<!-- INDENTATION -->
+<p>[EBML head] [segment [segment information] [track
+information] [cluster 1]]</p>
+<!-- INDENTATION -->
+<p>This might be the case for audio-only files.</p>
+</td>
+</table>
+<a name="EXTERNAL TIMECODE FILES"></a>
+<h2>EXTERNAL TIMECODE FILES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>mkvmerge</b> allows the user to chose the timecodes
+for a specific track himself. This can be used in order to
+create files with variable frame rate video or include gaps
+in audio. A frame in this case is the unit that
+<b>mkvmerge</b> creates separately per Matroska block. For
+video this is exactly one frame, for audio this is one
+packet of the specific audio type. E.g. for AC3 this would
+be a packet containing 1536 samples.</p>
+<!-- INDENTATION -->
+<p>Timecode files that are used when tracks are appended to
+each other must only be specified for the first part in a
+chain of tracks. For example if you append two files, v1.avi
+and v2.avi, and want to use timecodes then your command line
+must look something like this:<b><br>
+mkvmerge ... --timecodes 0:my_timecodes.txt v1.avi
++v2.avi</b></p>
+<!-- INDENTATION -->
+<p>There are three formats that are recognized by
+<b>mkvmerge</b>. The first line always contains the version
+number. Empty lines, lines containing only whitespace and
+lines beginning with &rsquo;#&rsquo; are ignored.</p>
+<!-- INDENTATION -->
+<p><b>Timecode file format v1</b></p>
+<!-- INDENTATION -->
+<p>This format starts with this line:<b><br>
+# timecode format v1</b><br>
+The second line gives the default number of frames per
+second:<b><br>
+assume 27.930</b><br>
+All following lines contain three numbers separated by
+commas: the start frame (0 is the first frame), the end
+frame and the number of frames in this range. The FPS is a
+floating point number with the dot default FPS is used.
+Example:<b><br>
+800,1000,25<br>
+1500,1700,30</b></p>
+<!-- INDENTATION -->
+<p><b>Timecode file format v2</b></p>
+<!-- INDENTATION -->
+<p>In this format each line contains a timecode for the next
+frame. This timecode must be given in ms precision. It can
+be a floating point number, but it doesn&rsquo;t have to be.
+You <b>must</b> give at least as many timecode lines as
+there are frames in the track. The timecodes in this file
+must be sorted. Example for 25fps:<b><br>
+# timecode format v2<br>
+0<br>
+40<br>
+80</b><br>
+etc.</p>
+<!-- INDENTATION -->
+<p><b>Timecode file format v3</b></p>
+<!-- INDENTATION -->
+<p>In this format each line contains a duration in seconds
+followed by an optional number of frames per second. Both
+can be floating point numbers. If the number of frames per
+second is not present the default one is used. For audio you
+should let the codec calculate the frame timecodes itself.
+For that you should be using 0.0 as the number of frames per
+second. You can also create gaps in the stream by using the
+<b>gap</b> keyword followed by the duration of the gap.
+Example for an audio file:<b><br>
+# timecode format v3<br>
+assume 0.0<br>
+25.325<br>
+7.530,38.236<br>
+gap, 10.050<br>
+2.000,38.236</b><br>
+etc.</p>
+<!-- INDENTATION -->
+<p><b>Timecode file format v4</b></p>
+<!-- INDENTATION -->
+<p>This format is identical to the v2 format. The only
+difference is that the timecodes do not have to be sorted.
+This format should almost never be used.</p>
+</td>
+</table>
+<a name="EXIT CODES"></a>
+<h2>EXIT CODES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>mkvmerge</b> exits with one of three exit codes:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="13%"></td>
+<td width="1%">
+
+<p>0</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>This exit codes means that muxing has completed
+successfully.</p>
+</td>
+<tr valign="top" align="left">
+<td width="13%"></td>
+<td width="1%">
+
+<p>1</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>In this case <b>mkvmerge</b> has output at least one
+warning, but muxing did continue. A warning is prefixed with
+the text &acute;Warning:&acute;. Depending on the issues
+involved the resulting file might be ok or not. The user is
+urged to check both the warning and the resulting file.</p>
+</td>
+<tr valign="top" align="left">
+<td width="13%"></td>
+<td width="1%">
+
+<p>2</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>This exit code is used after an error occured.
+<b>mkvmerge</b> aborts right after outputting the error
+message. Error messages range from wrong command line
+arguments over read/write errors to broken files.</p>
+</td>
+</table>
+<a name="NOTES"></a>
+<h2>NOTES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>What works (this list is probably outdated):</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>AVI as the video and audio source (only raw PCM, MP3 and
+AC3 audio tracks at the moment)</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>OGG as the source for video, audio (Vorbis, raw PCM, MP3
+and AC3 audio) and text streams (subtitles).</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>WAV as the audio source</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>AAC audio files (ADTS AAC files and AAC from MP4)</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>AC3 audio files</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>DTS audio files</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>MP3 audio files</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>RealVideo and RealAudio from RealMedia files</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>FLAC audio files (both raw FLAC and OggFLAC)</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Track selection</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Manual audio synchronization by adding silence/removing
+packets for Vorbis audio and for text streams by adjusting
+the starting point and duration.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Manual audio synchronization for AAC, AC3, DTS and MP3
+audio by duplicating or removing packets at the
+beginning.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Text subtitles can be read from SRT (SubRipper / subrip)
+files or taken from other OGM files.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>SSA/ASS subtitles from SSA/ASS files</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Simple chapters.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="2%">
+
+<p>*</p>
+</td>
+<td width="7%"></td>
+<td width="77%">
+
+<p>Full tags support.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>What not works:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="1%">
+
+<p>*</p>
+</td>
+<td width="8%"></td>
+<td width="77%">
+
+<p>Manual audio synchronization for PCM sound (who needs it
+anyway?)</p>
+</td>
+</table>
+<a name="AUTHOR"></a>
+<h2>AUTHOR</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><i>mkvmerge</i> was written by Moritz Bunkus
+&lt;moritz@bunkus.org&gt;.</p>
+</td>
+</table>
+<a name="SEE ALSO"></a>
+<h2>SEE ALSO</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>mkvinfo</b>(1), <b>mkvextract</b>(1),
+<b>mmg</b>(1)</p>
+</td>
+</table>
+<a name="WWW"></a>
+<h2>WWW</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The newest version can always be found at
+&lt;http://www.bunkus.org/videotools/mkvtoolnix/&gt;</p>
+</td>
+</table>
+<hr>
+</body>
+</html>

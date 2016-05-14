@@ -1,0 +1,240 @@
+<html>
+	<head>
+		<title>SimpleDivX : English Guide</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<LINK href="StyleSheet/style.css" type="text/css" rel="stylesheet"></head>
+	<body lang="EN-US" vLink="#800080" link="#0000ff">
+		<table style="BORDER-COLLAPSE: collapse" borderColor="#111111" cellSpacing="10" cellPadding="0"
+			width="100%" bgColor="#ffffff" summary="s" border="2">
+			<tr>
+				<td width="100%">
+					<p style="TEXT-ALIGN: center" align="center">English Guide<br>
+						Created By: Ed McVinny , 06-09-2002<br>
+						Updated By: CyberDemonII , 06-05-2005<br>
+						For: SimpleDivX 1.40<br>
+						<br>
+						<a href="http://www.simpledivx.org">http://www.simpledivx.org</a></p>
+				</td>
+			</tr>
+		</table>
+		<BR>
+		<strong>SimpleDivX</strong> has 9 tabs located near the top of the program, 
+		each labeled with both numbers and a description. This guide will walk you 
+		through the program one tab at a time.
+		<BR>
+		<BR>
+		When you first open SimpleDivX it should look similar to the picture below:
+		<h1><br>
+			Tab 1: Input</h1>
+		<IMG alt="" src="Images/EN/input.png">
+		<H4>Folder:</H4>
+		Click the small box located off to the right and the box pictured below should 
+		appear.
+		<BR>
+		<IMG alt="" src="Images/EN/folder.png">
+		<BR>
+		Select the same folder you ripped your vob files to using smartripper or 
+		dvddecrypter or another ripping tool, then click ok.
+		<h4>Vob Files:</h4>
+		If you used the "files" tab when running smartripper you can check the "select 
+		all files" box, if you used the "movie" tab or perhaps a different ripping tool 
+		you should check the "select main movie" box. It's also possible to select the 
+		vob-files one by one.
+		<h4>Video Information:</h4>
+		This box will tell you all the relevant video information about the DVD you are 
+		backing up.
+		<h1><br>
+			Tab 2: Video</h1>
+		<IMG alt="" src="Images/EN/video.png">
+		<h4>Frames/Second (fps)</h4>
+		Here you select your desired *output* framerate PAL users will select 25.000, 
+		while NTSC users will select 23.976 or 29.970. SimpleDivX does normally select 
+		the detected framerate from the vob files.
+		<h4>Auto cropping and resizing:</h4>
+		Select the checkbox : "Auto cropping and resizing" to automatically find the 
+		correct aspect ratio and fill in automatically the resizing and cropping 
+		values.
+		<h4>Output Format:</h4>
+		Select an output format that suits your needs. Several popular resolutions are 
+		provided, or you can select 'custom' and input your own.<br>
+		<h4>Open VOB Bitstream at LBA</h4>
+		(Advanced Users): Select this if you want to start the dvd movie at a specific 
+		LBA.
+		<h4>Range:</h4>
+		Here you can input the exact amount of seconds you want encoded. This is very 
+		usefull for encoding short clips and then viewing in a player to determine 
+		quality.
+		<h1><br>
+			Tab 3: Audio</h1>
+		<IMG alt="" src="Images/EN/audio.png">
+		<h4>Create Audio:</h4>
+		Uncheck this box if you don't want SimpleDivX to create audio for your video 
+		file.
+		<h4>Audio Language:</h4>
+		When the *.ifo files are also copied from the DVD, SimpleDivX will be able to 
+		tell you exactly what language the selected audio stream contains.
+		<h4>Audio bitrate:</h4>
+		Usefull in deciding wether to compress the audio or not.
+		<h4>Audio Format:</h4>
+		<i>MP3: Compresses audio with MP3 format. (Stereo only)<br>
+			AC3: Retains original audio quality. This can be Dolby-Digital Stereo, 5.0 or 
+			5.1 channels sound. It is possible to choose 6 or 2 channels.<br>
+			OGG: Compresses audio with OGG format. (NOT SUPPORTED ANYMORE)</i>
+		<h4>Audio Compression kbps:</h4>
+		Choose here the compression from the audio stream. For Mp3 128 / 160 kbps is 
+		recommended.<br>
+		When AC3 is choosen as audio format, it is possible to recompress this stream 
+		with a lower bitrate. But for a 6 channel movie is it recommended that you 
+		choose a minimum from 256kbps.
+		<h4>Samplerate Conversion</h4>
+		For Mp3 it is possible to choose 48000 or 44100khz as sample-rate. 
+		Normally you would leave it to 48000 unless your sound-card cannot handle 
+		48000khz.
+		<h4>Amplify</h4>
+		Check this to amplify the sound with some dB. It is not recommended to choose a 
+		higher value then 3dB, or else you will hear some clipping of the sound in loud 
+		parts.
+		<h4>Peak level normalize</h4>
+		When this option is enabled, the sound will be normalized to 100% (This means 
+		that the loudest audio parts will be 100%, so this means no clipping.)
+		<h4>Peak level normalize [midnight mode]</h4>
+		When this option is enabled, the sound will be normalized to 100% and the 
+		softer audio parts will be amplified some more.
+		<h1><br>
+			Tab 4: Codec</h1>
+		<IMG alt="" src="Images/EN/codec.png"><br>
+		<br>
+		<h4>1-Pass file:</h4>
+		1-pass video files are created using constant bitrate, which means every frame 
+		in your movie will have the exact same bitrate.
+		<h4>2-Pass video file:</h4>
+		2-pass movies are created using variable bitrate, which means high-motion 
+		scenes get more bitrate than low motion scenes. This results in a much better 
+		quality movie than 1-pass but takes roughly 2x longer to encode.
+		<h4>Do Only First Pass:</h4>
+		SimpleDivX will only create the first pass of the movie, when it is complete 
+		you will have to come back to this tab and select 'Do Only Second Pass'. This 
+		is usefull when you do only have a limited computer time available. Note that 
+		2-pass modes are only available for divx and xvid.
+		<h3>Advanced Settings</h3>
+		When you have selected "divx (mpeg4)" as codec the next screen will appear :<br>
+		<IMG alt="" src="Images/EN/divx_adv.png"><br>
+		<br>
+		When "xvid" is selected, the next screen will appear :
+		<br>
+		<IMG alt="" src="Images/EN/xvid_adv.png"><br><br>
+		When "h264" is selected, the next screen will appear :
+		<br>
+		<IMG alt="" src="Images/EN/h264_adv.png"><br>
+		
+		The following items are configurable :
+		<h4>Global Motion Compensation:</h4>
+		GMC helps in zooming and panning scenes.
+		<h4>Quarter Pixel:</h4>
+		Quarter pixel increases the accuracy of macro blocks within your film.
+		<h4>Bidirectional Encoding:</h4>
+		Can help increase compression in some scenes by using forward and backward 
+		prediction of frames.
+		<br>
+		
+		<h1><br>
+			<br>
+			Tab 5: Compression</h1>
+		<IMG alt="" src="Images/EN/compression.png">
+		<br>
+		<h4>Enter bitrate / final movie size</h4>
+		Choose 'enter bitrate' if you want to enter the video-bitrate from the divx/xvid
+		yourself. Choose 'enter final movie size' to let simpledivx compute the correct
+		video-bitrate for xvid/divx to fit the exact size.
+		<h4>Get Time From Movie:</h4>
+		This feature will attempt to read the length of the movie from the .ifo/.vob files. 
+		It is not always accurate however, so if it is wrong, enter the length 
+		specified on the back of the DVD case.
+		<h1><br>
+			Tab 6: Misc</h1>
+		<IMG alt="" src="Images/EN/misc.png">
+		<br>
+		At this moment only subtitle options are included on this page. In the future 
+		more options will be added.
+		<h4>Create subtitles</h4>
+		Check this to enable subtitle processing.
+		<h4>Language</h4>
+		Select here the subtitle languages which must be included.
+		<h4>Select all languages</h4>
+		Selecting this option will just select all languages present on the dvd. Click 
+		again to select no language.<br>
+		<br>
+		<i>*Note*</i><br>
+		The subtitles will be extracted using vobsub.dll, this dll creates two extra 
+		files in the final directory. For viewing the subtitles you must have met the 
+		following requirements :<br>
+		- Make sure the two files are on the same location as the final movie and have 
+		the same name. (SimpleDivX should do this for you.)<br>
+		Now you have two options :<br>
+		1) Download the full vobsub package from : 
+		<a href="http://www.divx-digest.com/software/vobsub.html"> divx-digest </a> , now you should be able to see 
+		the subtitles using any video player in windows.<br>
+		2) Download and install the "Media Player Classic" from : <a href="http://sourceforge.net/projects/guliverkli">
+			sourceforge.net : guliverkli</a>, this player is from the 
+		same author as vobsub and automatically includes support for subtitles.
+		<h4>Movie Container Format</h4>
+		Choose here the output format from the movie file. This can be :<br>
+		<i>AVI</i> , This is the default format. Can be used for video+mp3 and 
+		video+ac3.<br>
+		<h1><br>
+			Tab 7: Project</h1>
+		<IMG alt="" src="Images/EN/project.png">
+		<h4>Project Name:</h4>
+		Type the name from the movie you want to make. You may set project name to 
+		whatever you like, most people just use the name of the movie. This will 
+		automatically name most of your output files to the project name.
+		<H4>Temp Folder:</H4>
+		<P>This is where the temp video and logging files will be saved.
+		</P>
+		<h4>Output Folder:</h4>
+		This is where your completed file will be put. (This can be a *.avi or a *.ogm 
+		file.)
+		<h4>Overwrite files:</h4>
+		Select to automatically overwrite the destination files.
+		<h4>Delete temp-files:</h4>
+		Select this to automatically clean-up the generated temp files from SimpleDivX.
+		<h4>Split Total File:</h4>
+		If you are making a 2CD rip SimpleDivX can split the file for you 
+		automatically.
+		<h4>Split on Fade-out</h4>
+		This option automatically splits on a fade-out (black-scene).
+		<h4>Normal</h4>
+		In this mode it is only possible to do 1 conversion at the time. (This is 
+		compatibility mode with SimpleDivX 1.1)
+		<h4>Batch Mode</h4>
+		This enabled you to do more conversions from different movies in one SimpleDivX 
+		session.
+		<h1><br>
+			Tab 8: Output</h1>
+		<IMG alt="" src="Images/EN/output.png"><br>
+		<h4>Shutdown windows</h4>
+		This option does close the current window session and shutsdown the computer. 
+		Press the start button to start the video-processing
+		<h4>Status Information:</h4>
+		This box will keep you informed on the progress of SimpleDivX.
+		<h1><br>
+			Tab 9: Setup</h1>
+		<IMG alt="" src="Images/EN/setup.png">
+		<h4>External Program Locations:</h4>
+		Click the small box off to the right and the box pictured below should appear.<br>
+		<IMG alt="" src="Images/EN/program_locations.png"><br>
+		Now change all four paths to where you installed the SimpleDivX/Tools folder. 
+		This box is provided for users that might already have these programs somewhere 
+		else on their computer, but since SimpleDivX always includes the latest 
+		versions we recommend you leave the paths pointed to the SimpleDivX/Tools 
+		installation folder.
+		<h4>Priority Settings</h4>
+		Choose here your priority settings for :<br>
+		<i>- Video<br>
+			- Disk<br>
+		</i>(Note : Setting it to a higher value will not automatically mean that it 
+		will run faster ! It's just that encoding will get more processor-cycles.
+		<h4>Language</h4>
+		Choose here your language.
+	</body>
+</html>

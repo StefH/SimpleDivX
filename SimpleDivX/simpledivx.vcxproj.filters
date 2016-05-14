@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{17ff47e9-d285-48ca-ac26-1073f4b1ae9c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7d2b1f4a-2c5f-4bc0-8acb-1407cbd7807d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{159d7461-f8e5-4e3b-82bc-7dd02df25cb8}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdvancedDivX_Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedVideo_Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AllControlsSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioOptionsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodecOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressionOptionsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EncodingInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileFindEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputFilesPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiscPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyReg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mytooltips.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputFilesPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgramInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgramLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectOptionsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetupPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simpledivx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleDivXBatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simpledivxDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoOptionsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XBrowseForFolder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ICPUInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUPlatformSDK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="simpledivx.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdvancedDivX_Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedVideo_Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AllControlsSheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioOptionsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CodecOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompressionOptionsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EncodingInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFindEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputFilesPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LanguageSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyReg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mytooltips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputFilesPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgramInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgramLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectOptionsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetupPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simpledivx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simpledivx_Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleDivXBatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simpledivxDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoOptionsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XBrowseForFolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atlrx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUPlatformSDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AdvancedBitrate.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\arrow.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AudioFormat.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Audiohq.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\audiovideo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\calc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\calc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\calculator.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cdrom - audio +.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\character icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Check.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration 4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx5logo_177x60.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx5logo_32x16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx5logo_32x18.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx5logo_32x32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx5logo_80x27.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divx5logo_94x32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divxlogo_72x32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\document - audio + video.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\document - audio.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\document - configuration.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\document - font-aa.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\document - movie.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\document - sunset.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dvd - drive + dvd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dvd - dvd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dvd-drive.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dvd-drive.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dvd-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dvd_icon.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\end - credits.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\end-credits.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\film.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\folder1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\folder_prog.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gear.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gears.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gears.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gears2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\globe.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\globe.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\globe1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\globe1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\info.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\info.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\info1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\info2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\install 2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\key 1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\key.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\key1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\key1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\keys.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\logfile.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\map - open.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\map - programs.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\map-folder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\map.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\middlecheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\monitor - resize.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mpg.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\net.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\note.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\noteblock.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\notepad 1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\notepad 2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\notepad.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\notepad2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\piece.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\piece.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\plusaudio.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\plusaudio.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\processor 1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\question.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\resize.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\resize.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\satelite.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\simpledivx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\speaker 1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\speaker.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\speaker1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\statistics logfile.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sub.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sunset.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\time.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tools.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tools.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tools32.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\UnCheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\volume.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\world + sound.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\world.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\simpledivx.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+</Project>

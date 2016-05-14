@@ -1,0 +1,161 @@
+; Polish / Polski
+; Translated / corrected by BestiaPL/Andrzej Rudnik
+
+[SimpleDivX]
+
+;Tabs
+TAB_INPUT=èrÛd≥o
+TAB_VIDEO=Video
+TAB_AUDIO=Audio
+TAB_CODEC=Kodek
+TAB_COMPRESSION=Kompresja
+TAB_MISC=RÛøne
+TAB_PROJECT=Projekt
+TAB_OUTPUT=Wynik
+TAB_SETUP=Ustawienia
+
+;General
+QUIT=Wyjúcie
+
+;Input
+INPUT_FILES=Pliki ürÛd≥owe
+FOLDER=Folder
+VOB_FILES=Pliki VOB
+CHECK_MAIN=Wybierz pliki filmu
+CHECK_ALL=Wszystkie pliki
+VIDEO_INFORMATION=Informacje video
+RESOLUTION=RozdzielczoúÊ
+ASPECT_RATIO=Proporcje
+FRAME_RATE=PrÍdkoúÊ ramek
+VIDEO_FORMAT=Format video
+MOVIE_LENGTH=D≥ugoúÊ filmu
+FRAMES=ramek
+CHAPTERS=Rozdzia≥y
+TITLE=Wybierz tytu≥
+STATUS_BUSY=Status : ZajÍty
+STATUS_READY=Status : Wolny
+
+;Video
+VIDEO_OPTIONS=Opcje video
+FRAME_OPTIONS=Opcje ramek
+FRAMES_PER_SECOND=Ramek na sek.
+ADVANCED=Zaawansowane
+VIDEO_CHECKING=W≥πcz sprawdzanie ID strumienia video
+VIDEO_STREAM_ID=ID strumienia video
+CHECK_AUTO=Auto-odczyt info o obcinaniu i wielkoúci
+WIDTH=szerokoúÊ
+HEIGHT=wysokoúÊ
+PREVIEW=Podglπd
+RESIZING=Zmiana wielkoúci
+CROPPING=ObciÍcie
+CUSTOM_OUTPUT_FORMAT=Wybrany format wyjúciowy
+OPEN_VOB_LBA=OtwÛrz VOB od bajtu
+FRAME_RANGE=Zakres ramek od
+TO=do
+SOURCE_FORMAT=Format ürÛd≥owy
+DEINTERLACE=OdwrÛÊ obraz / UsuÒ przeplot
+
+;Audio
+GENERAL_AUDIO=Ustawienia ogÛlne
+CREATE_AUDIO=UtwÛrz audio
+AUDIO_STREAMS_LANGUAGES=Strumienie audio i jÍzyki
+CHECK_AUDIO=Sprawdü audio
+EXTRACT_ALL_AUDIO=Wypakuj wszystkie úcieøki
+CONVERT_ALL_AUDIO=Konwertuj wszystkie úcieøki
+AUDIO_FORMAT=Format audio
+TWO_CHANNELS=(2 kana≥y)
+SIX_CHANNELS=(6 kana≥Ûw)
+AUDIO_BITRATE_AND_CONVERSION=CzÍstotliwoúÊ i konwersja
+AUDIO_KBPS=PrÍdkoúÊ (kbps)
+SAMPLE_RATE_CONVERSION=CzÍstotliwoúÊ prÛbkowania
+AMPLIFY=Podbij czÍstotliwoúÊ
+NORMALIZE=Normalizuj
+NORMALIZE_MIDNIGHT=Normalizuj (tryb nocny)
+
+;Codec
+CODEC_OPTIONS=Opcje kodeka
+DIVX_OPTIONS=Opcje DivX
+CHOOSE_CODEC=Wybierz kodek
+ADVANCED_SETTINGS=Zaawansowane
+MAX_KEYFRAME=Ramka kluczowa co...
+FIRST_PASS_LOCATION=Plik zdarzeÒ pierwszego przebiegu
+AUTO_LOGFILENAMING=Automatycznie (nazwa jak nazwa projektu)
+MANUAL_LOGFILENAMING=RÍcznie
+PASS_OPTIONS=Opcje przebiegÛw
+CREATE_ONE_PASS_MOVIE=TwÛrz 1-przebiegowy film
+CREATE_TWO_PASS_MOVIE=TwÛrz 2-przebiegowy film
+ONLY_FIRST_PASS=Uruchom tylko pierwszy przebieg
+ONLY_SECOND_PASS=Uruchom tylko drugi przebieg
+BOTH_PASSES=Uruchom oba przebiegi
+WITH_AUDIO=z XXX audio.
+WITH_NO_AUDIO=bez düwiÍku.
+
+;Compression
+BITRATE_FILE_OPTIONS=CzÍstotliwoúÊ / Opcje pliku
+END_CREDITS_OPTIONS=Opcje napisÛw koÒcowych
+ENTER_BITRATE=Podaj czÍstotliwoúÊ
+ENTER_FINAL_FILESIZE=Podaj wielkoúÊ koÒcowπ filmu
+GET_TIME=Pobierz czas z filmu
+FILESIZE=WielkoúÊ pliku
+VIDEO_BITRATE=CzÍstotliwoúÊ
+DESCRIPTION=Opis
+HOURS=Godzin
+MINUTES=Minut
+SECONDS=Sekund
+ENDCREDITS_NORMAL=Normalnie
+ENDCREDITS_REMOVE=Nie do≥πczaj napisÛw koÒcowych filmu
+ENDCREDITS_RECOMPRESS=ZmieÒ kompr. napisÛw na
+RECOMPRESS_PCT=% ustawionej czÍstotliwoúci filmu
+ENDCREDITS_AUTOMATIC=Automatyczne wykrywanie
+ENDCREDITS_MANUAL=RÍcznie - poczπtek od
+VIDEO_ONLY=(Tylko video)
+VIDEO_AND_AUDIO=(Audio i video)
+
+;Misc
+GENERAL_SUBTITLES=OgÛlne opcje napisÛw
+CREATE_SUBTITLES=TwÛrz napisy uøywajπc VobSub
+SELECT_ALL_LANGUAGES=Wybierz wszystkie jÍzyki
+CONTAINER_FORMAT=Format filmu
+
+;Project
+PROJECT_OPTIONS=Opcje projektu
+BATCH_SETTINGS=Ustawienia wsadowe
+PROJECT_NAME=Nazwa projektu
+TEMP_FOLDER=Folder tymczasowy
+OUTPUT_FOLDER=Folder docelowy
+OVERWRITE_FILES=Zastπp pliki (bez pytania)
+DELETE_TEMP=UsuÒ pliki tymczasowe po zakoÒczeniu
+SPLIT_FILE=Podziel plik koÒcowy po
+NORMAL_MODE=Normalne
+BATCH_MODE=Kolejka
+BUTTON_UP=Wyøej
+BUTTON_DOWN=Niøej
+BUTTON_ADD=Dodaj
+BUTTON_REMOVE=UsuÒ
+BUTTON_MODIFY=Popraw
+BUTTON_CLEAR=WyczyúÊ
+DELETE_BATCH=UsuÒ wpis po kompresji
+BUTTON_MODIFY=Modyfikuj
+BUTTON_CLEAR=WyczyúÊ listÍ
+DELETE_BATCH=UsuÒ proces po zakoÒczeniu.
+
+;OutputFiles
+SYSTEM_SETTINGS=Ustawienia systemu
+STATUS_INFORMATION=Informacja o przebiegu
+PROGRESS=PostÍp
+SHUTDOWN=Zamknij komputer po zakoÒczeniu
+
+;Settings
+EXTERNAL_PROGRAMS=Programy zewnÍtrzne
+PRIORITY_SETTINGS=Ustawienia priorytetu
+VIDEO_PRIORITY=Priorytet kodowania video
+DISK_PRIORITY=Priorytet odczytu/zapisu z dysku
+SETTING_WARNING=(*) 'Higest' nie jest zalecane!
+GET_DEFAULT_VALUES=Ust. domyúlne
+LANGUAGE_SETTINGS=Ustawienia jÍzyka
+LANGUAGE=JÍzyk
+
+; External Program Settings
+PROGRAM_LOCATIONS=Po≥oøenie programÛw zewnÍtrznych
+SAVE=Zapisz
+CANCEL=Anuluj

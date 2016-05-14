@@ -1,0 +1,135 @@
+;Translation by : serge_tc
+
+[SimpleDivX]
+;Giren
+INPUT_FILES=Giren dosyalar
+FOLDER=Klasör
+VOB_FILES=VOB dosyalarý
+CHECK_MAIN=Ana Filmi seç
+CHECK_ALL=Bütün dosyalarý seç
+VIDEO_INFORMATION=Video bilgisi
+RESOLUTION=Çözünürlük
+ASPECT_RATIO=En-Boy oraný
+FRAME_RATE=Kare/Saniye
+VIDEO_FORMAT=Video Formatý
+MOVIE_LENGTH=Film Süresi
+FRAMES=Kare Sayýsý
+
+;Video
+VIDEO_OPTIONS=Video ayarlarý
+FRAME_OPTIONS=Çerçeve ayarlarý
+FRAMES_PER_SECOND=Kare/Saniye
+ADVANCED=Geliþmiþ
+VIDEO_CHECKING=Video akýþ ID denetimini aç
+VIDEO_STREAM_ID=Video akýþ ID
+CHECK_AUTO=Kýrpma ve boyutlandýrma ayarýný otomatik al
+WIDTH=Geniþlik
+HEIGHT=Yükseklik
+PREVIEW=Önizleme
+RESIZING=Boyutlandýrma
+CROPPING=Kýrpma
+CUSTOM_OUTPUT_FORMAT=Özel çýkýþ formatý
+OPEN_VOB_LBA=VOB bitakýþý LBA açma deðeri
+FRAME_RANGE=Çerçeve aralýgý
+TO=ile
+
+;Ses
+GENERAL_AUDIO=Genel ses ayarlarý
+CREATE_AUDIO=Ses yap
+AUDIO_STREAMS_LANGUAGES=Ses akýþý ve dilleri
+CHECK_AUDIO=Sesi kontrol et
+EXTRACT_ALL_AUDIO=Bütün sesleri aç
+CONVERT_ALL_AUDIO=Bütün sesleri dönüþtür
+AUDIO_FORMAT=Ses Formatý
+TWO_CHANNELS=(2 kanal)
+SIX_CHANNELS=(6 kanal)
+AUDIO_BITRATE_AND_CONVERSION=Ses bitdeðeri ve dönüþüm
+AUDIO_KBPS=Bitdeðeri (kbps)
+SAMPLE_RATE_CONVERSION=Örnekdeðer dönüþüm
+AMPLIFY=Yükselt
+NORMALIZE=Tepe Noktasýný normalize et.
+NORMALIZE_MIDNIGHT=Tepe Noktasýný normalize et. (Geceyarýsý Modu)
+
+;Kodlayýcý
+CODEC_OPTIONS=Kodlayýcý ayarlarý
+DIVX_OPTIONS=DivX ayarlarý
+CHOOSE_CODEC=Kodlayýcý seç
+ADVANCED_SETTINGS=Geliþmiþ ayarlar
+MAX_KEYFRAME=Azami Anahtar Çerçeve
+FIRST_PASS_LOCATION=First-Pass log dosyasý yeri
+AUTO_LOGFILENAMING=Otomatik (Log dosyasý Proje ismine göre adlandýrýlýcak.)
+MANUAL_LOGFILENAMING=Manual
+PASS_OPTIONS=Pass Ayarlarý
+CREATE_ONE_PASS_MOVIE=1-pass DivX dosyasý yap
+CREATE_TWO_PASS_MOVIE=2-pass DivX dosyasý yap
+ONLY_FIRST_PASS=Sadece birinci pass'ý yap.
+ONLY_SECOND_PASS=Sadece ikinci pass'ý yap.
+BOTH_PASSES=Her iki pass'ýda yap.
+
+;Sýkýþtýrma
+BITRATE_FILE_OPTIONS=Bitdeðer / Dosya Ayarlarý
+ADVANCED_BITRATE=Geliþmiþ Bitdeðer Parametreleri
+END_CREDITS_OPTIONS=Bitiþ Jeneriði ayarlarý
+ENTER_BITRATE=Bitdeðerine göre
+ENTER_FINAL_FILESIZE=Nihai Film boyutuna göre
+GET_TIME=Filmden süresini al.
+FILESIZE=Dosya boyu
+VIDEO_BITRATE=Bitdeðeri
+DESCRIPTION=Açýklama
+HOURS=Saat
+MINUTES=Dakika
+SECONDS=Saniye
+SLOW=Az hareketli Film.
+NORMAL=Normal hareketli Film.
+FAST=Çok hareketli veya parlak renkli Film.
+ENDCREDITS_NORMAL=Normal
+ENDCREDITS_REMOVE=Bitiþ Jeneriðini Filme ekleme.
+ENDCREDITS_RECOMPRESS=Bitiþ Jeneriðini Filmin bitdeðerinin %
+RECOMPRESS_PCT=i kadar yeniden sýkýþtýr.
+ENDCREDITS_AUTOMATIC=Otomatik algýla.
+ENDCREDITS_MANUAL=Manual=Bitiþ Jeneriði baþlama çerçevesi
+WORKAROUND1='mpeg2avi 2-pass iþleminde çökerse' düzelt.
+
+;Proje
+PROJECT_OPTIONS=Proje ayarlarý
+BATCH_SETTINGS=Yýðýn iþ ayarlarý
+PROJECT_NAME=Proje ismi
+TEMP_FOLDER=Geçici dosya klasörü
+OUTPUT_FOLDER=Çýkýþ klasörü
+OVERWRITE_FILES=Dosyalarýn üzerine yaz (uyarmadan)
+DELETE_TEMP=Bitince geçici dosyarý sil.
+SPLIT_FILE=Toplam dosyayý kesme aralýðý
+NORMAL_MODE=Normal
+BATCH_MODE=Yýðýn iþ modu
+BUTTON_UP=Yukarý
+BUTTON_DOWN=Aþaðý
+BUTTON_ADD=Ekle
+BUTTON_REMOVE=Çýkar
+BUTTON_MODIFY=Deðiþtir
+BUTTON_CLEAR=Listeyi temizle
+DELETE_BATCH=Hazýr olunca yýðýn iþ girdilerini sil.
+
+;Çýkýþ Dosyalarý
+SYSTEM_SETTINGS=Sistem ayarlarý
+STATUS_INFORMATION=Durum bilgisi
+PROGRESS=Ýlerleme
+SHUTDOWN=Bitince Windows'u kapat.
+
+;Settings
+EXTERNAL_PROGRAMS=Harici Programlar
+ADVANCED_AUDIO_SETTINGS=Geliþmiþ Ses ayarlarý
+AC3_PRELOAD_VALUE=AC3 Preload deðeri
+AC3_INTERLEAVE_VALUE=AC3 Interleave deðeri
+PRIORITY_SETTINGS=Öncelik ayarlarý
+AUDO_PRIORITY=Ses öncelik ayarý
+VIDEO_PRIORITY=Video öncelik ayarý
+DISK_PRIORITY=Disk okuma/yazma  öncelik ayarý
+SETTING_WARNING=(*) En yüksek ayar tavsiye edilmez!
+GET_DEFAULT_VALUES=Varsayýlaný Yükle
+LANGUAGE_SETTINGS=Dil Ayarlarý
+LANGUAGE=Program Dili
+
+; Harici Program Ayarlarý
+PROGRAM_LOCATIONS=Harici Program yerleri
+SAVE=Kaydet
+CANCEL=Ýptal

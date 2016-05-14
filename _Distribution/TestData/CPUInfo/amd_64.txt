@@ -1,0 +1,36 @@
+----- REGISTRY METHOD -------
+Name:		AMD Athlon(tm) 64 Processor 3700+
+Speed:		2210MHz
+Vendor:		AuthenticAMD
+Family:		15
+Model:		39
+Stepping:	1
+Features
+	MMX:	no
+	3DNow:	no
+	SSE:	no
+	SSE2:	no
+----- PLATFORM SDK METHOD -------
+Name:		unknown
+Speed:		1624MHz
+Vendor:		AuthenticAMD
+Family:		15
+Model:		39
+Stepping:	1
+Features
+	MMX:	yes
+	3DNow:	yes
+	SSE:	yes
+	SSE2:	yes
+----- ASSEMBLY METHOD -------
+Name:		unknown
+Speed:		2107MHz
+Vendor:		AuthenticAMD
+Family:		15
+Model:		7
+Stepping:	1
+Features
+	MMX:	yes
+	3DNow:	yes
+	SSE:	yes
+	SSE2:	yes
